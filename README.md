@@ -6,13 +6,13 @@
 </h1>
 
 <p align="center">
-**Status**: Esse Curso ainda está em desenvolvimento.</p>
+<strong>Status:</strong> Esse Curso ainda está em desenvolvimento.</p>
 
 ---
 
 ## Sobre o Projeto
 
-Escrito e desenvolvido pelos membros da **He4rt Developers** com o intuito de introduzir iniciantes ao **ReactJS** de maneira simples e clara.
+Escrito e desenvolvido pelos membros da **He4rt Developers** com o intuito de introduzir iniciantes ao **ReactJS** com um conteúdo de simples entendimento.
 
 
 ## Conhecimento Necessário para contribuir
@@ -48,5 +48,6 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 ## Colaboradores
 
 Anna Campelo - *Frontend Developer* [@Annerland](https://twitter.com/Annerland) - [Linkedin](https://www.linkedin.com/in/anna-campelo-559606152/)
+
 
 <p align="center">Made with :purple_heart:</p>
