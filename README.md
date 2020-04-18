@@ -1,5 +1,7 @@
 <h1 align="center">
   <img src="/assets/logo.png" alt="" width="30%">
+</h1>
+<h1 align="center">
   React4noobs desenvolvido pela He4rt Developers
 </h1>
 
@@ -47,4 +49,4 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 
 Anna Campelo - *Frontend Developer* [@Annerland](https://twitter.com/Annerland) - [Linkedin](https://www.linkedin.com/in/anna-campelo-559606152/)
 
-<p>Made with :purple_heart:</p>
+<p align="center">Made with :purple_heart:</p>
