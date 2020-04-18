@@ -1,10 +1,10 @@
-<div style="text-align: center">
+<h1 align="center">
+  <img src="../../assets/logo.png" alt="" width="30%">
+  React4noobs desenvolvido pela He4rt Developers
+</h1>
 
-![](/assets/logo.png =350x)
-
-# React4noobs desenvolvido pela He4rt Developers
-
-**Status**: Esse Curso ainda está em desenvolvimento.</div>
+<p align="center">
+**Status**: Esse Curso ainda está em desenvolvimento.</p>
 
 ---
 
