@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="../../assets/logo.png" alt="" width="30%">
+  <img src="/assets/logo.png" alt="" width="30%">
   React4noobs desenvolvido pela He4rt Developers
 </h1>
 
@@ -34,7 +34,7 @@ Faça um clone do repositório
 
 ## Como Contribuir
 
-Ao contribuir será criado um vínculo com a comunidade open source, na qual todos, incluindo você, utilizam todos os dias para aprender e criar seus projetos. Portanto todas as contribuições nos fazem felizes e gratos :)
+Ao contribuir será criado um vínculo com a comunidade open source, na qual todos, incluindo você, utilizam todos os dias para aprender e criar seus projetos. Portanto todas as contribuições nos fazem felizes e gratos :purple_heart:
 
 1. Faça um Fork do projeto
 2. Crie uma branch sempre que houver uma nova feature (```git chekcout -b 'feature/loveReact'```)
@@ -45,4 +45,6 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 
 ## Colaboradores
 
-Anna Campelo - Frontend Developer [@Annerland](https://twitter.com/Annerland) - [Linkedin](https://www.linkedin.com/in/anna-campelo-559606152/)
+Anna Campelo - *Frontend Developer* [@Annerland](https://twitter.com/Annerland) - [Linkedin](https://www.linkedin.com/in/anna-campelo-559606152/)
+
+<p>Made with :purple_heart:</p>
