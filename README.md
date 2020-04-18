@@ -1,8 +1,8 @@
-![](/assets/logo.png)
+<center>![](/assets/logo.png | width=350)
 
 # React4noobs desenvolvido pela He4rt Developers
 
-##### Esse Curso ainda está em desenvolvimento.
+**Status**: Esse Curso ainda está em desenvolvimento.</center>
 
 
 ## Sobre o Projeto
