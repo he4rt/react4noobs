@@ -10,4 +10,4 @@
   
 ## **Conteúdos**
 #### Começando sua jornada
-1. [Introdução](https://github.com/AnnaCampelo/react4noobs/tree/master/docs/Introducao)
+1. [Introdução](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Introducao/Introducao.md)
