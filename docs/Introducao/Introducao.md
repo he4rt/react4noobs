@@ -1,6 +1,6 @@
 # Introdução
 
-Seja bem-vindo! :)
+Seja bem-vindo! :purple_heart:
 
 O principal objetivo é introduzir todo o conteúdo básico de React para iniciantes
 Antes de começar é necessário conhecer os conceitos básicoas de HTML, CSS e **principalmente** Javascript.
@@ -18,3 +18,5 @@ Temas a serem discutidos:
 + Props e Hooks
 + Bibliotecas úteis
 + Testes com React
+
+Após a pequena jornada percorrida pelos temas discutidos, não iremos nos aprofundar tanto sobre as tecnologias, o foco é você saber o básico de react para se aprofundar no futuro. 

@@ -9,5 +9,5 @@
 + Instalação do [NodeJS](https://nodejs.org/en/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
   
 ## **Conteúdos**
-#### Iniciando o curso
-1. [Introdução]()
+#### Começando sua jornada
+1. [Introdução](https://github.com/AnnaCampelo/react4noobs/tree/master/docs/Introducao)
