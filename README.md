@@ -38,6 +38,8 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 4. Faça Push no seu Branch (```git push origin 'feature/loveReact'```)
 5. Abra um Pull Request e vem pro abraço!
 
+**Extra:** Nós temos um trello para organização de tarefas, ele é público e você pode acessá-lo [aqui](https://trello.com/b/20RhvhAB/react4noobs)
+
 ## Colaboradores
 
 Anna Campelo - *Frontend Developer & Member of He4rt Developers* - [@Annerland](https://twitter.com/Annerland)
