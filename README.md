@@ -1,10 +1,10 @@
-<h1 align="center">
-  React4noobs
-<img align="center" src="/assets/logo.png" alt="" width="30%">
-<h4 align="center"><strong>Status:</strong> Esse Curso ainda está em desenvolvimento.</h4>
-<p align="center"><a href='https://github.com/AnnaCampelo/react4noobs/tree/master/docs'>Explore a documentação »</a></p>
+<div align="center">
+    <h1 align="center">React4Noobs</h1>
+  <img align="center" src="./assets/react.png" alt="" width="30%">
+</div>
 
-</h1>
+<p align="center"><strong>Status: </strong>Esse Curso ainda está em desenvolvimento.</p>
+<p align="center"><a href='https://github.com/AnnaCampelo/react4noobs/tree/master/docs'>Explore a Documentação »</a></p>
 
 ## Sobre o Projeto
 
@@ -33,17 +33,17 @@ Faça um clone do repositório
 Ao contribuir será criado um vínculo com a comunidade open source, na qual todos, incluindo você, utilizam todos os dias para aprender e criar seus projetos. Portanto todas as contribuições nos fazem felizes e aquecem nossos corações roxos :purple_heart:
 
 1. Faça um Fork do projeto
-2. Crie uma branch sempre que houver uma nova feature (```git chekcout -b 'feature/loveReact'```)
-3. Faça seu Commit (```git commit -m 'adding some stuff'```)
-4. Faça Push no seu Branch (```git push origin 'feature/loveReact'```)
+2. Crie uma branch sempre que houver uma nova feature (`git checkout -b 'feature/loveReact'`)
+3. Faça seu Commit (`git commit -m 'adding some stuff'`)
+4. Faça Push no seu Branch (`git push origin 'feature/loveReact'`)
 5. Abra um Pull Request e vem pro abraço!
 
 **Extra:** Nós temos um trello para organização de tarefas, ele é público e você pode acessá-lo [aqui](https://trello.com/b/20RhvhAB/react4noobs)
 
 ## Colaboradores
 
-Anna Campelo - *Frontend Developer & Member of He4rt Developers* - [@Annerland](https://twitter.com/Annerland)
+Anna Campelo - _Frontend Developer & Member of He4rt Developers_ - [@Annerland](https://twitter.com/Annerland)
 
-João Victor - *Frontend Developer, member of He4rt Developers & o mais brabo* - [Linkedin](https://www.linkedin.com/in/jvictorv/)
+João Victor - _Frontend Developer, member of He4rt Developers & o mais brabo_ - [Linkedin](https://www.linkedin.com/in/jvictorv/)
 
 <p align="center">Made with :purple_heart:</p>
