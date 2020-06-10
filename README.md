@@ -44,6 +44,6 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 
 Anna Campelo - *Frontend Developer & Member of He4rt Developers* - [@Annerland](https://twitter.com/Annerland)
 
-João Victor - *Frontend Developer, member of He4rt Developers & o mais brabo* - [Linkedin](https://www.linkedin.com/in/jvictorv/)
+Lara Beatriz - *Computer Engineering student & member of He4rt Developers* - [GitHub](https://github.com/larabeatrizms)
 
 <p align="center">Made with :purple_heart:</p>
