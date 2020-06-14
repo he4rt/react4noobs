@@ -58,3 +58,5 @@ export default function Comment() {
 Nesse componente utilizamos algumas tags HTML, `img` para imagem do usuário do comentário, `section` envolvendo o `strong` que é o nome do usuário e `p` que é o comentário do usuário. Criando este componente, se pode reutiliza-lo por toda a aplicação, bastando apenas importa-lo.
 
 Podemos concluir desse capítulo é que tudo em React é componente, o quanto antes você entender as utilidades deles e como eles 'conversam' entre si(_spoiler_ dos próximos capitulos) mais rápido será seu aprendizado em React.
+
+[Ir para Próxima Seção](./4-JSX.md)
