@@ -12,6 +12,6 @@ const elemento = <h1>Olá, membro He4rt!!</h1>;
 
 Este código acima é o JSX propriamente dito, não é uma string e nem HTML, legal né?
 
-Em JSX, como acabamos misturando sintaxe HTML com Javascript, atributos do HTML como `class` devemos substituir como `className` no JSX.
+Em JSX, como acabamos misturando sintaxe HTML com Javascript, em atributos do HTML como `class` devemos substituir para `className` no JSX.
 
 Se pode utilizar JSX dentro de `if` e laços `for`, para mostrar um elemento, vamos ver os detalhes mais adiante.
