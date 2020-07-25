@@ -33,7 +33,7 @@ Faça um clone do repositório
 Ao contribuir será criado um vínculo com a comunidade open source, na qual todos, incluindo você, utilizam todos os dias para aprender e criar seus projetos. Portanto todas as contribuições nos fazem felizes e aquecem nossos corações roxos :purple_heart:
 
 1. Faça um Fork do projeto
-2. Crie uma branch sempre que houver uma nova feature (```git chekcout -b 'feature/loveReact'```)
+2. Crie uma branch sempre que houver uma nova feature (```git checkout -b 'feature/loveReact'```)
 3. Faça seu Commit (```git commit -m 'adding some stuff'```)
 4. Faça Push no seu Branch (```git push origin 'feature/loveReact'```)
 5. Abra um Pull Request e vem pro abraço!
