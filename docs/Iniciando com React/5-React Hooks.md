@@ -68,14 +68,14 @@ function Contador() {
 }
 ```
 
-Caso o *array* de dependências seja declarado vazio (`[]`), a função de *callback* vai ser executada apenas no momento em que o componente é criado (montado).
+Caso o *array* de dependências seja declarado vazio (`[]`), a função de *callback* vai ser executada apenas no momento em que o componente é montado.
 ```jsx
 useEffect(() => {
   // Essa função vai ser executada apenas quando o componente é montado.
 }, []);
 ```
 
-Caso você queira que uma função seja executada quando o componente é destruído (desmontado), basta retornar essa função dentro do *callback*.
+Caso você queira que uma função seja executada quando o componente é desmontado, basta retornar essa função dentro do *callback*.
 ```jsx
 useEffect(() => {
   // A função returnada pelo callback vai ser executada apenas quando o componente for desmontado.
