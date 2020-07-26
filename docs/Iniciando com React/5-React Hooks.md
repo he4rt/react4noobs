@@ -11,12 +11,7 @@ Hooks são funções utilizadas para ter acesso recursos de **estado** e **ciclo
 ## useState
 O *useState* é um dos hooks utilizados para criar estado dentro de um componente em React. O estado criado pelo *useState* nada mais é que uma variável que o componente consegue reagir quando seu valor é atualizado.
 
-O *useState* recebe como parâmetro o valor inicial do estado. E retorna um *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado. Um jeito fácil de separar esses valores é fazendo *array destructuring* assim:
-```js
-// valor1 = 'He4rt'
-// valor2 = 'Developers'
-const [valor1, valor2] = ['He4rt', 'Developers'];
-```
+O *useState* recebe como parâmetro o valor inicial do estado. E retorna um *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado.
 
 ### Exemplo:
 ```jsx
@@ -24,6 +19,7 @@ import React, { useState } from 'react';
 
 function Contador () {
   // Cria estado 'clicks' com valor inicial 0
+  // Um jeito fácil de separar o retorno do useState é fazendo desestruturação de array
   const [clicks, setClicks] = useState(0);
   
   return(
