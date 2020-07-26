@@ -71,14 +71,14 @@ function Contador() {
 Caso o *array* de dependências seja declarado vazio (`[]`), a função de *callback* vai ser executada apenas no momento em que o componente é montado.
 ```jsx
 useEffect(() => {
-  // Essa função vai ser executada apenas quando o componente é montado.
+  // Essa função vai ser executada apenas quando o componente é montado
 }, []);
 ```
 
 Caso você queira que uma função seja executada quando o componente é desmontado, basta retornar essa função dentro do *callback*.
 ```jsx
 useEffect(() => {
-  // A função returnada pelo callback vai ser executada apenas quando o componente for desmontado.
+  // A função returnada pelo callback vai ser executada apenas quando o componente for desmontado
   return () => { console.log('Component Desmontado') }
 }, []);
 ```
@@ -86,6 +86,6 @@ useEffect(() => {
 Também é possível fazer com que o *callback* seja executado todas as vezes que o componente renderizar novamente. Para isso, basta não passar nada como segundo parâmetro do *useEffect*.
 ```jsx
 useEffect(() => {
-  // Essa função vai ser executada toda vez que o componente renderizar.
+  // Essa função vai ser executada toda vez que o componente renderizar
 });
 ```
