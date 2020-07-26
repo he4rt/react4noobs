@@ -41,7 +41,7 @@ function Contador () {
 ---
 
 ## useEffect
-O *useEffect* é um Hook utilizado para realizar ações quando alguma de suas dependências muda de valor. Esse Hook recebe respectivamente como parâmetros: uma função de *callback* e um *array* de dependências.
+O *useEffect* é um Hook utilizado para realizar ações quando alguma de suas dependências muda de valor. Esse Hook recebe respectivamente como parâmetros: uma função de *callback* e uma *array* de dependências.
 
 Quando uma das variáveis do *array* de dependências muda de valor, a função passada como primeiro parâmetro é executada.
 
