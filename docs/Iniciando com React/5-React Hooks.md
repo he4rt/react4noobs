@@ -79,7 +79,7 @@ useEffect(() => {
 }, []);
 ```
 
-Também é possível fazer com que o *callback* seja executado todas as vezes que o componente renderizar novamente. Para isso, basta não passar nada como segundo parâmetro do *useEffect*.
+Também é possível fazer com que o *callback* seja executado todas as vezes que o componente renderizar novamente. Para isso, basta não passar nada como segundo parâmetro do *useEffect*. Porém, essa prática não é recomendada por questões de performance.
 ```jsx
 useEffect(() => {
   // Essa função vai ser executada toda vez que o componente renderizar
