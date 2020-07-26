@@ -57,7 +57,7 @@ function Contador() {
     document.title = `Você clicou ${clicks} vezes`;
   }, [clicks]);
 
-    return(
+  return(
     <div>
       <h1>{clicks}</h1>
       <button onClick={() => setClicks(clicks + 1)}>
