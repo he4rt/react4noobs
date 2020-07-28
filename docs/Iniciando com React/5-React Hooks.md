@@ -11,7 +11,7 @@ Hooks são funções utilizadas para ter acesso recursos de **estado** e **ciclo
 ## useState
 O *useState* é um dos hooks utilizados para criar estado dentro de um componente em React. O estado criado pelo *useState* nada mais é que uma variável que o componente consegue reagir quando seu valor é atualizado.
 
-O *useState* recebe como parâmetro o valor inicial do estado. E retorna uma *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado.
+O *useState* recebe como parâmetro o valor inicial do estado. E retorna um *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado.
 
 ### Exemplo:
 ```jsx
@@ -37,9 +37,9 @@ function Counter () {
 ---
 
 ## useEffect
-O *useEffect* é um Hook utilizado para realizar ações quando alguma de suas dependências muda de valor. Esse Hook recebe respectivamente como parâmetros: uma função de *callback* e uma *array* de dependências.
+O *useEffect* é um Hook utilizado para realizar ações quando alguma de suas dependências muda de valor. Esse Hook recebe respectivamente como parâmetros: uma função de *callback* e um *array* de dependências.
 
-Quando uma das variáveis da *array* de dependências muda de valor, a função passada como primeiro parâmetro é executada.
+Quando uma das variáveis do *array* de dependências muda de valor, a função passada como primeiro parâmetro é executada.
 
 ### Exemplo:
 ```jsx
