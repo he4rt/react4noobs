@@ -45,7 +45,7 @@ Quando uma das variáveis da *array* de dependências muda de valor, a função 
 ```jsx
 import React, { useState, useEffect } from 'react'
 
-function Contador() {
+function Counter() {
   const [clicks, setClicks] = useState(0);
 
   // Atualiza o título da página toda vez que 'clicks' muda de valor
