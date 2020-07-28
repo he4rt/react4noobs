@@ -17,7 +17,7 @@ O *useState* recebe como parâmetro o valor inicial do estado. E retorna uma *ar
 ```jsx
 import React, { useState } from 'react';
 
-function Contador () {
+function Counter () {
   // Cria estado 'clicks' com valor inicial 0
   // Um jeito fácil de separar o retorno do useState é fazendo desestruturação de array
   const [clicks, setClicks] = useState(0);
