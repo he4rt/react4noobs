@@ -18,7 +18,7 @@ Na imagem abaixo cada área separada com uma cor diferente é um componente, pod
 
 ### Exemplo 1 - Simples
 
-Para que não fiquemos só na parte teórica, podemos exemplicar um componente simples em React. Um componente chamado `Button` que pode ser reutilizado na sua aplicação.
+Para que não fiquemos só na parte teórica, podemos exemplificar um componente simples em React. Um componente chamado `Button` que pode ser reutilizado na sua aplicação.
 
 ```js
 import React from "react";
