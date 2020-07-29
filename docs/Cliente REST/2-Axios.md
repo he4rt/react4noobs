@@ -1,6 +1,8 @@
 ## O que é o Axios?
 
-É uma biblioteca que nos permite interagir com Api rest de maneira simplesmente e dinâmica.
+Axios é uma biblioteca que nos permite interagir com apis de maneira dinamica.
+
+
 
 ## Como instalar o Axios
 
@@ -10,27 +12,41 @@ Para instalar digite os comandos abaixo:
 
 > yarn add axios
 
+## Entendo como funciona uma api 
 
-## Entendo como funciona uma Api Rest
+Antes de colocamos a mão no codigo devemos saber que uma api rest tem regras, ou seja dependendo da situação sera necessario usar um metodo **X** e em outro momento **Y**. Então que tal conhecer esse metodos.
 
-Antes de colocamos a mão no código devemos saber que uma api rest tem regras, ou seja dependendo da situação será necessário usar um método **X** e em outro momento **Y**. Então que tal conhecer esses métodos.
+`GET`: Com o metodo get nossa resposta so teremos dados
+`POST`: Com o metodo Post poderemos realizar interações na Api
+`DELETE`: Com esse metodo podemos apagar os dados da Api
+`PUT`: Com esse metodo podemos alterar dados da api, no entanto ele funciona se já existir o dado, então ele apenas seria atualizado, mas caso não tenha ele é criado. 
+`PATCH`: Esse metodo é parecido com o `PUT`, no entanto ele altera um dados especifico
 
-`GET`: Com o método get nossa resposta só teremos dados
-`POST`: Com o método Post poderemos realizar interações na Api
-`DELETE`: Com esse método podemos apagar os dados da Api
-`PUT`: Com esse método podemos alterar dados da api.
 
 Exemplos:
 
-`GET`: Listar todos os usuários registrados
-`POST`: Registrar um novo usuário
-`DELETE`: Apagar um usuário ou mais de um 
-`PUT`: Alterar a senha do usuário 
+`GET`: Listar todos os usuarios registrados
+`POST`: Registrar um novo usuario
+`DELETE`: Apagar um usuario ou mais de um 
+`PUT`: Alterar o dados de um usario, caso não encontra o usuario ele é criado.
+`PATCH`: Alterar o dado do usuario,como por exemplo apenas a senha
+
+Tambem existem outros metodos que não são usados tanto em uma api, no então caso queira dar uma conferida numa lista completa. [Clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
+
+
+Alem dos metodos apresentados temos os status da api que servem para informar para o desenvolvedor o que aconteceu com sua requisitação.
+
+Por exemplo:
+`201`: Seu pedido foi aceito e foi criado na api
+`200`: Tudo certo com o seu pedido 
+`400`: Sua função é dizer que não entendeu seu pedido, e que ha uma falha na estrutura do seu pedido
+`404`: Muito famoso por dizer que não encontrou o que você pediu
+
+Como são varios recomendo  o site **http cats** que ira te mostrar cada protocolo com um jeito divertido e muitos gatos.[Clique aqui](https://http.cat/)
 
 ### Como usar o Axios
 
-Então chega de teoria, e vamos pra praticar como podemos usar o axios. Para esse exemplo criaremos um novo arquivo com o nome de `api.js`
-
+Então chega de teoria, e vamos praticar o uso do axios?. Para esse exemplo criaremos um novo arquivo com o nome de `api.js` 
 
 ````js
 import axios from 'axios';
@@ -42,8 +58,7 @@ const api = axios.create({
 export default api;
 ````
 
-
-Nesse arquivo iremos criar nosso componente que ficara responsável por interagir com a api
+Nesse arquivo iremos criar nosso componente que ficara responsavel por interagir com a api
 
 Feito isso podemos ir para o arquivo que queremos que tenha uma interação entre o front-end e o back-end.
 
@@ -91,7 +106,13 @@ export default function Register() {
         </div>
     )
 }
-```
-
+```   
 De maneira completamente simples utilizamos o hooks para receber os dados requisitados pelo formulario. Apos isso o metodo responsavel por se conectar api e executar ação `POST` e registrando o novo usuario
   
+
+
+
+
+
+
+[Ir para Próxima Seção]()
