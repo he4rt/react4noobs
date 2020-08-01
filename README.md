@@ -2,7 +2,7 @@
   React4noobs
 <img align="center" src="/assets/logo.png" alt="" width="30%">
 <h4 align="center"><strong>Status:</strong> Esse Curso ainda está em desenvolvimento.</h4>
-<p align="center"><a href='https://github.com/AnnaCampelo/react4noobs/tree/master/docs'>Explore a documentação »</a></p>
+<p align="center"><a href='./docs/README.md'>Explore a documentação »</a></p>
 
 </h1>
 
