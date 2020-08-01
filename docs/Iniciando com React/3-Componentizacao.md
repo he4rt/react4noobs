@@ -59,4 +59,4 @@ Nesse componente utilizamos algumas tags HTML, `img` para imagem do usuário do 
 
 Podemos concluir desse capítulo é que tudo em React é componente, o quanto antes você entender as utilidades deles e como eles 'conversam' entre si(_spoiler_ dos próximos capitulos) mais rápido será seu aprendizado em React.
 
-[Ir para Próxima Seção](./4-JSX.md)
+[Ir para Próxima Seção](./4-JSX%20e%20Babel.md)
