@@ -22,4 +22,4 @@ Temas a serem discutidos:
 
 Após a pequena jornada percorrida pelos temas discutidos, não iremos nos aprofundar tanto sobre as tecnologias, o foco é você saber o básico de react para se aprofundar no futuro.
 
-[Ir para Próxima Seção](./2-O%20que%20e%20React.md)
+[Ir para Próxima Seção](./2-O-que-e-React.md)

@@ -14,11 +14,11 @@
 
 ### Iniciando com React
 
-1. [Introdução](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/1-Introducao.md)
-2. [O que é React?](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/2-O%20que%20e%20React.md)
-3. [Componentização](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/3-Componentizacao.md)
-4. [JSX](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/4-JSX.md)
-5. [React Hooks](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/5-React%20Hooks.md)
+1. [Introdução](./iniciando-com-react/1-Introducao.md)
+2. [O que é React?](./iniciando-com-react/2-O-que-e-React.md)
+3. [Componentização](./iniciando-com-react/3-Componentizacao.md)
+4. [JSX](./iniciando-com-react/4-JSX.md)
+5. [React Hooks](./iniciando-com-react/5-Hooks.md)
 
 ### Ferramentas de build
 <!-- Comentar sobre npm e clientes alternativos como o yarn ou pnpm -->
