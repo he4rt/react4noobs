@@ -1,7 +1,6 @@
 ## O que é o Axios?
 
-Axios é uma biblioteca que nos permite interagir com apis de maneira dinamica.
-
+Axios é uma biblioteca criada com o instuito de realizar conexões HTTP de maneira dinamica,
 
 
 ## Como instalar o Axios
@@ -12,14 +11,18 @@ Para instalar digite os comandos abaixo:
 
 > yarn add axios
 
-## Entendo como funciona uma api 
+## O conceito de API para o Axios
 
-Antes de colocamos a mão no codigo devemos saber que uma api rest tem regras, ou seja dependendo da situação sera necessario usar um metodo **X** e em outro momento **Y**. Então que tal conhecer esse metodos.
+Primeiramente devemos comprender que o termo API é muito amplo e tem inumeras funcões. Sendo assim uma explicação mais simples para o axios seria que ele faz uma ponte entre API, ou seja, em um exemplo mais claro ele se torna um garço que deve trazer seu pedido de comida.
+
+## Regras de uma API HTTP
+
+Antes de colocamos a mão no codigo devemos saber que uma API HTTP tem regras, ou seja dependendo da situação sera necessario usar um metodo **X** e em outro momento **Y**. Então que tal conhecer esse metodos.
 
 `GET`: Com o metodo get nossa resposta so teremos dados
-`POST`: Com o metodo Post poderemos realizar interações na Api
-`DELETE`: Com esse metodo podemos apagar os dados da Api
-`PUT`: Com esse metodo podemos alterar dados da api, no entanto ele funciona se já existir o dado, então ele apenas seria atualizado, mas caso não tenha ele é criado. 
+`POST`: Com o metodo Post poderemos realizar interações na API
+`DELETE`: Com esse metodo podemos apagar os dados da API
+`PUT`: Com esse metodo podemos alterar dados da API, no entanto ele funciona se já existir o dado, então ele apenas seria atualizado, mas caso não tenha ele é criado. 
 `PATCH`: Esse metodo é parecido com o `PUT`, no entanto ele altera um dados especifico
 
 
@@ -31,13 +34,13 @@ Exemplos:
 `PUT`: Alterar o dados de um usario, caso não encontra o usuario ele é criado.
 `PATCH`: Alterar o dado do usuario,como por exemplo apenas a senha
 
-Tambem existem outros metodos que não são usados tanto em uma api, no então caso queira dar uma conferida numa lista completa. [Clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
+Tambem existem outros metodos que não são usados tanto em uma API, no então caso queira dar uma conferida numa lista completa. [Clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
 
 
-Alem dos metodos apresentados temos os status da api que servem para informar para o desenvolvedor o que aconteceu com sua requisitação.
+Alem dos metodos apresentados temos os status da API que servem para informar para o desenvolvedor o que aconteceu com sua requisitação.
 
 Por exemplo:
-`201`: Seu pedido foi aceito e foi criado na api
+`201`: Seu pedido foi aceito e foi criado na API
 `200`: Tudo certo com o seu pedido 
 `400`: Sua função é dizer que não entendeu seu pedido, e que ha uma falha na estrutura do seu pedido
 `404`: Muito famoso por dizer que não encontrou o que você pediu
@@ -51,14 +54,14 @@ Então chega de teoria, e vamos praticar o uso do axios?. Para esse exemplo cria
 ````js
 import axios from 'axios';
 
-const api = axios.create({
-    baseURL: 'link da api'
+const API = axios.create({
+    baseURL: 'link da API'
 })
 
-export default api;
+export default API;
 ````
 
-Nesse arquivo iremos criar nosso componente que ficara responsavel por interagir com a api
+Nesse arquivo iremos criar nosso componente que ficara responsavel por interagir com a API
 
 Feito isso podemos ir para o arquivo que queremos que tenha uma interação entre o front-end e o back-end.
 
@@ -83,7 +86,7 @@ export default function Register() {
         };
 
         try {
-            const response = await api.post('users', data)
+            const response = await API.post('users', data)
             console.log('Registrado com sucesso ');
 
         } catch (error) {
@@ -107,7 +110,7 @@ export default function Register() {
     )
 }
 ```   
-De maneira completamente simples utilizamos o hooks para receber os dados requisitados pelo formulario. Apos isso o metodo responsavel por se conectar api e executar ação `POST` e registrando o novo usuario
+De maneira completamente simples utilizamos o hooks para receber os dados requisitados pelo formulario. Apos isso o metodo responsavel por se conectar API e executar ação `POST` e registrando o novo usuario
   
 
 
