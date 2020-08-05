@@ -1,6 +1,6 @@
 ## O que é o Axios?
 
-Axios é uma biblioteca criada com o instuito de realizar conexões HTTP de maneira dinamica,
+Axios é uma biblioteca criada com o intuito de realizar conexões HTTP de maneira dinamica.
 
 
 ## Como instalar o Axios
@@ -13,36 +13,36 @@ Para instalar digite os comandos abaixo:
 
 ## O conceito de API para o Axios
 
-Primeiramente devemos comprender que o termo API é muito amplo e tem inumeras funcões. Sendo assim uma explicação mais simples para o axios seria que ele faz uma ponte entre API, ou seja, em um exemplo mais claro ele se torna um garço que deve trazer seu pedido de comida.
+Primeiramente devemos comprender que o termo API é muito amplo e tem inúmeras funcões. Sendo assim uma explicação mais simples para o axios seria que ele faz uma ponte entre API, ou seja, em um exemplo mais claro ele se torna um garçom  que deve trazer seu pedido de comida.
 
 ## Regras de uma API HTTP
 
-Antes de colocamos a mão no codigo devemos saber que uma API HTTP tem regras, ou seja dependendo da situação sera necessario usar um metodo **X** e em outro momento **Y**. Então que tal conhecer esse metodos.
+Antes de colocamos a mão no código devemos saber que uma API HTTP tem regras, ou seja dependendo da situação sera necessario usar um método **X** e em outro momento **Y**. Então que tal conhecer esse metodos.
 
-`GET`: Com o metodo get nossa resposta so teremos dados
-`POST`: Com o metodo Post poderemos realizar interações na API
-`DELETE`: Com esse metodo podemos apagar os dados da API
-`PUT`: Com esse metodo podemos alterar dados da API, no entanto ele funciona se já existir o dado, então ele apenas seria atualizado, mas caso não tenha ele é criado. 
-`PATCH`: Esse metodo é parecido com o `PUT`, no entanto ele altera um dados especifico
+`GET`: Com o método GET solicitamos dados de um recurso especifico  
+`POST`: Com o método POST poderemos realizar interações na API
+`DELETE`: Com esse método podemos apagar os dados da API
+`PUT`: Com esse método podemos alterar dados da API, no entanto ele funciona se já existir o dados, então ele apenas seria atualizado, mas caso não tenha ele é criado. 
+`PATCH`: Esse método é parecido com o `PUT`, no entanto ele altera um dados especifico
 
 
 Exemplos:
 
-`GET`: Listar todos os usuarios registrados
-`POST`: Registrar um novo usuario
-`DELETE`: Apagar um usuario ou mais de um 
-`PUT`: Alterar o dados de um usario, caso não encontra o usuario ele é criado.
-`PATCH`: Alterar o dado do usuario,como por exemplo apenas a senha
+`GET`: Listar todos os usuários registrados
+`POST`: Registrar um novo usuário
+`DELETE`: Apagar um usuário ou mais de um 
+`PUT`: Alterar os dados de um usuário, caso não encontre o usuario ele é criado.
+`PATCH`: Alterar o dado do usuário, como por exemplo apenas a senha
 
 Tambem existem outros metodos que não são usados tanto em uma API, no então caso queira dar uma conferida numa lista completa. [Clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
 
 
-Alem dos metodos apresentados temos os status da API que servem para informar para o desenvolvedor o que aconteceu com sua requisitação.
+Alem dos metodos apresentados temos os status da API que servem para informar para o desenvolvedor o que aconteceu com sua requisição.
 
 Por exemplo:
 `201`: Seu pedido foi aceito e foi criado na API
 `200`: Tudo certo com o seu pedido 
-`400`: Sua função é dizer que não entendeu seu pedido, e que ha uma falha na estrutura do seu pedido
+`400`: Sua função é dizer que não entendeu seu pedido, e que há uma falha na estrutura do seu pedido
 `404`: Muito famoso por dizer que não encontrou o que você pediu
 
 Como são varios recomendo  o site **http cats** que ira te mostrar cada protocolo com um jeito divertido e muitos gatos.[Clique aqui](https://http.cat/)
@@ -61,7 +61,7 @@ const API = axios.create({
 export default API;
 ````
 
-Nesse arquivo iremos criar nosso componente que ficara responsavel por interagir com a API
+Nesse arquivo iremos criar nosso componente que ficará responsável por interagir com a API
 
 Feito isso podemos ir para o arquivo que queremos que tenha uma interação entre o front-end e o back-end.
 
@@ -110,7 +110,7 @@ export default function Register() {
     )
 }
 ```   
-De maneira completamente simples utilizamos o hooks para receber os dados requisitados pelo formulario. Apos isso o metodo responsavel por se conectar API e executar ação `POST` e registrando o novo usuario
+De maneira completamente simples utilizamos o hooks para receber os dados requisitados pelo formulário. Apos isso o metodo responsável por se conectar API e executar ação `POST` e registrando o novo usuário
   
 
 
