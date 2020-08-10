@@ -17,7 +17,7 @@ Recomendamos que você acesse o site de cada um dos pré processadores e veja o 
 
 De início vamos usar o Sass porque desde 2018 o React já traz uma ótima compatibilidade com ele. 
 
-<img align="center" src="/assets/estilizacao/SassReact.png" width="100%"> 
+<img align="center" src="/assets/estilizacao/SassReact.png" width="70%"> 
 
 ### Agora podemos instalar o Sass, utilizando o Node.js, com o npm execute:
 ```
