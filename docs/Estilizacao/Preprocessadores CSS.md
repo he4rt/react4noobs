@@ -7,7 +7,7 @@ Basicamente é como se você programasse em uma linguagem de programação compi
 ### ⚠ Aviso:
 > Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de [css](https://www.w3schools.com/css/).
 ---
-## Qual os mais ultilizados?
+## Qual os mais utilizados?
 São muitos nomes no mercado, porém os mais poderosos e badalados são  [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/). 
 
 ## Afinal, Qual devo usar?
