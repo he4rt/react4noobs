@@ -74,7 +74,7 @@ moment.locale('pt-br'); // Locale alterado para Português - Brasil
 
 ### Funções de utilidade 
 
-Conforme apresentado anteriormente, o node tem diversas funções utilitárias para manipulação de datas
+Conforme apresentado anteriormente, o moment tem diversas funções utilitárias para manipulação de datas
 
 ```js
 // Datas "desde agora" (tempo relativo)
