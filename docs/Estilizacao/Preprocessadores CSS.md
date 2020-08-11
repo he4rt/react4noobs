@@ -44,7 +44,7 @@ brew install sass / sass / sass
 > Vamos seguir o padrão mostrando primeiro como é feito em Sass e em seguida como seria em CSS puro(ou como o próprio Sass iria compilar para CSS)
 
 ### Variáveis
-Pense nas variáveis ​​como uma forma de armazenar informações que você deseja reutilizar em sua folha de estilo. Você pode armazenar coisas como cores, fontes ou qualquer valor CSS que achar que deseja reutilizar. **Sass usa o $ símbolo** para tornar algo uma variável.
+Pense nas variáveis ​​como uma forma de armazenar informações que você deseja reutilizar em sua folha de estilo. Você pode armazenar coisas como cores, fontes ou qualquer valor CSS que achar que deseja reutilizar. **Sass usa o $** para tornar algo uma variável.
 
 #### Sass:
 ```
