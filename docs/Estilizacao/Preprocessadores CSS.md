@@ -5,7 +5,7 @@
 Basicamente é como se você programasse em uma linguagem de programação compilada. Você escreve na sintaxe definida (Less/Sass/etc) e o pré processador compila para CSS e então você acrescenta o arquivo CSS a sua página normalmente.
 
 ### ⚠ Aviso:
-> Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS, caso você ainda não se sinta confotável com essa tecnologia [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
+> Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS, caso você ainda não se sinta confortável com essa tecnologia [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
 ---
 ## Qual os mais utilizados?
 São muitos nomes no mercado, porém os mais poderosos e badalados são  [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/). 
