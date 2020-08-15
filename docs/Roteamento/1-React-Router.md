@@ -4,7 +4,7 @@ O React Router é uma biblioteca essencial em nossas aplicações devido à capa
 
 # Como instalar o React Router
 
-Para instalar digite os comandos abaixo:
+Para instalar digite um dos comandos abaixo:
 
 ```cmd
 npm install react-router-dom
@@ -16,18 +16,14 @@ yarn add react-router-dom
 
 Então chega de teoria, e vamos praticar como usar o React Routes? Para esse exemplo criaremos uma pasta chamada 'Routes' é ela que ficara com nosso componente.
 
-Nessa pasta criaremos o nome da nossa page como, por exemplo 'Home' e dentro dela (dois) arquivos um **index.js** e um **style.css**
+Nessa pasta criaremos o nome da nossa page como 'Home' e dentro dela dois arquivos um **index.js** e um **style.css**
 
->Estrutura do Index.js
+## Estrutura do Index.js
 
 ```js
 
-import React, {useEffect, useState} from 'react';
-import LogoImg from '../../assents/logo.svg'
+import React from 'react';
 import './style.css';
-import { Link, useHistory } from 'react-router-dom';
-import { FiPower, FiTrash2 } from 'react-icons/fi'
-import api from '../../services/api';
 
 export default function Home() {
 
@@ -38,10 +34,11 @@ return (
 
 );
 ```
+A esse ponto você deve notar que a estrutura de cada pagina segue o mesmo padrão da App.js.
 
-Feito isso podemos criar um arquivo na raiz do nosso projeto chamado 'router.js' ele que sera responsável por controlar as rotas e seus componentes. Veja o código abaixo:
+E a partir disso podemos criar um arquivo na raiz do nosso projeto chamado 'router.js' ele que sera responsável por controlar as rotas e seus componentes. Veja o código abaixo:
 
-'''js
+```js
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 
@@ -56,16 +53,17 @@ return (
 }
 
 export default Routes;
-'''
-Abaixo você encontrara a explicação do routes.js
+```
+Abaixo você encontrará a explicação do routes.js
 - BrowserRouter: Responsável por trocar nossa rota dependendo da URL;
-- Route: Responsável por trocar nossa rota dependendo da URL;
--- **path**: Seria o nosso caminho como, por exemplo ''/login'', ''/home''
--- **exact**: Necessário apenas na primeira pagina de nossa aplicação como o /
+- BrowserRouter: Responsável por observar a URL digitada e passar a informação para o **Route**;
+- Route: Responsável por carregar na tela nosso componente, dependendo da URL que o BrowserRouter enviar;
+-- **path**: seria o nosso caminho como, por exemplo ''/login'', ''/home''
+-- **exact**: Responsável pela função de carregar determinada rota apenas se a URL for exatamente a pedida. Sendo ela em nosso exemplo apenas necessária na primeira pagina da nossa aplicação
 
-E pronto estamos pronto para utilizar o routes em nosso App.js
+E pronto e apartir desse momento podemos para utilizar o routes em nosso App.js
 
-'''js
+```js
 import React from 'react';
 import Routes from './routes';
 
@@ -78,6 +76,6 @@ return (
 }
 
 export default App;
-'''
+```
 
 E pronto a partir de agora nossas paginas são dinâmicas dependendo da URL.
