@@ -6,19 +6,21 @@ O React Router é uma biblioteca essencial em nossas aplicações devido à capa
 
 Para instalar digite os comandos abaixo:
 
-> npm install react-router-dom
+```cmd
+npm install react-router-dom
 
-> yarn add react-router-dom
+yarn add react-router-dom
+```
 
 # Como usar o React Router
 
-Então chega de teoria, e vamos praticar como usar o React Routes? Para esse exemplo criaremos uma pasta chamada 'Pages' é ela que ficara com nosso componente.
+Então chega de teoria, e vamos praticar como usar o React Routes? Para esse exemplo criaremos uma pasta chamada 'Routes' é ela que ficara com nosso componente.
 
 Nessa pasta criaremos o nome da nossa page como, por exemplo 'Home' e dentro dela (dois) arquivos um **index.js** e um **style.css**
 
 >Estrutura do Index.js
 
-'''js
+```js
 
 import React, {useEffect, useState} from 'react';
 import LogoImg from '../../assents/logo.svg'
@@ -35,7 +37,7 @@ return (
 </div>
 
 );
-'''
+```
 
 Feito isso podemos criar um arquivo na raiz do nosso projeto chamado 'router.js' ele que sera responsável por controlar as rotas e seus componentes. Veja o código abaixo:
 
@@ -43,7 +45,7 @@ Feito isso podemos criar um arquivo na raiz do nosso projeto chamado 'router.js'
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 
-import Home from './pages/Home';
+import Home from './Routes/Home';
 
 function Routes() {
 return (
