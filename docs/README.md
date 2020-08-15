@@ -8,7 +8,7 @@
 
 - Conhecimento em HTML, CSS
 - Conhecimento em Javascript
-- Instalação do [NodeJS](https://nodejs.org/en/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
+- Instalação do [NodeJS](https://nodejs.org/pt-br/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
 
 ## **Conteúdos**
 
