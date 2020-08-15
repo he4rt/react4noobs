@@ -34,7 +34,7 @@ return (
 
 );
 ```
-A esse ponto você deve notar que a estrutura de cada pagina segue o mesmo padrão da App.js.
+A este ponto você deve notar que a estrutura de cada pagina segue o mesmo padrão da App.js.
 
 E a partir disso podemos criar um arquivo na raiz do nosso projeto chamado 'router.js' ele que sera responsável por controlar as rotas e seus componentes. Veja o código abaixo:
 
@@ -61,7 +61,7 @@ Abaixo você encontrará a explicação do routes.js
 -- **path**: seria o nosso caminho como, por exemplo ''/login'', ''/home''
 -- **exact**: Responsável pela função de carregar determinada rota apenas se a URL for exatamente a pedida. Sendo ela em nosso exemplo apenas necessária na primeira pagina da nossa aplicação
 
-E pronto e apartir desse momento podemos para utilizar o routes em nosso App.js
+E pronto e apartir deste  momento podemos para utilizar o routes em nosso App.js
 
 ```js
 import React from 'react';
