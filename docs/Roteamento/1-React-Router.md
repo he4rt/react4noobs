@@ -61,7 +61,7 @@ Abaixo você encontrará a explicação do routes.js
 -- **path**: seria o nosso caminho como, por exemplo ''/login'', ''/home''
 -- **exact**: Responsável pela função de carregar determinada rota apenas se a URL for exatamente a pedida. Sendo ela em nosso exemplo apenas necessária na primeira pagina da nossa aplicação
 
-E pronto e apartir deste  momento podemos para utilizar o routes em nosso App.js
+E pronto e a partir deste  momento podemos para utilizar o routes em nosso App.js
 
 ```js
 import React from 'react';
