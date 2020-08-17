@@ -6,13 +6,13 @@ Basicamente é como se você programasse em uma linguagem de programação compi
 
 ### ⚠ Aviso:
 
-> Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS, caso você ainda não se sinta confotável com essa tecnologia [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
+> Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS, caso você ainda não se sinta confortável com essa tecnologia [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
 
 ---
 
 ## qual os mais utilizados?
 
-São muitos nomes no mercado, porém os mais poderosos e badalados são [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/).
+São muitos nomes no mercado, porém, os mais poderosos e badalados são [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/).
 
 ## Afinal, Qual devo usar?
 
@@ -53,7 +53,7 @@ brew install sass / sass / sass
 Agora todos os seus arquivos CSS devem usar a extensão .scss, Por exemplo, ao invés de usar "App.css" use "App.scss".
 ## O básico de Sass:
 
-> Vamos seguir o padrão mostrando primeiro como é feito em Sass e em seguida como seria em CSS puro (ou como o próprio Sass iria compilar para CSS)
+> Vamos seguir o padrão mostrando primeiro como é feito em Sass e em seguida como seria em CSS puro (ou como o próprio Sass iria compilar para CSS).
 
 ## Variáveis
 
@@ -128,7 +128,7 @@ Então podemos escrever:
         background-color: #F2F2F2;
         color: #404040; }
 ```
-> Esse foi um exemplo simples para demonstrar o poder do Sass, podendo transformar um código complexo para um de fácil entendimento, para uma futura manutenção
+> Esse foi um exemplo simples para demonstrar o poder do Sass, podendo transformar um código complexo para um de fácil entendimento, para uma futura manutenção.
 
 ### Poderá usar Media query ou qualquer propriedade CSS normalmente, por exemplo:
 
@@ -190,7 +190,7 @@ Então podemos escrever:
 ## Parciais
 Você pode criar arquivos Sass parciais que contêm pequenos trechos de CSS  que podem ser incluídos em outros arquivos Sass. Esta é uma ótima maneira de modularizar seu CSS e ajudar a manter as coisas mais fáceis de manter. Um parcial é um arquivo Sass nomeado com um sublinhado à esquerda. Você pode chamá-lo de algo como **_arquivo.scss** (É obrigatório o uso do _ ). O sublinhado permite que o Sass saiba que o arquivo é apenas um arquivo parcial e que não deve ser gerado em um arquivo CSS . Parciais de Sass são usados ​​com a @use regra.
 
-### Podemos importar esse arquivos parciais através da seguinte sintaxe:
+### Podemos importar esses arquivos parciais através da seguinte sintaxe:
 ```
 @import "diretorio/_arquivo.scss";
 ```
@@ -264,7 +264,7 @@ aside[role="complementary"] {
   width: 31.25%;
 }
 ```
-Criamos uma grade fluida muito simples, com base em 960px. As operações no Sass nos permitem fazer algo como pegar valores de pixel e convertê-los em porcentagens sem muito trabalho. Com muito mais precisão do que ir na tentativa e erro com CSS puro.  
+Criamos uma grade fluida muito simples, com base em 960px. As operações no Sass nos permitem fazer algo como pegar valores de pixel e convertê-los em porcentagens sem muito trabalho. Com muito mais precisão do que ir à tentativa e erro com CSS puro.  
 
 ### Ou fazer algo mais simples como:  
 ```
@@ -282,7 +282,7 @@ button {
 }
 ```
 ## Condicionais
-E por último, vamos falar das condicionais. Porém não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar @if, @for, @each, @while para quem já estudou o básico de qualquer linguagem de programção como Javascript[(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
+E por último, vamos falar das condicionais. Porém, não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar @if, @for, @each, @while para quem já estudou o básico de qualquer linguagem de programação como Javascript[(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
 
 #### Para não deixar você sem nada, aqui vai um exemplo da usabilidade de um If em Sass:
 ```
@@ -307,8 +307,8 @@ header {
 ## Conclusão
 Entendemos agora o que são e para que servem os pré-processadores. Mas quando utilizar?
 
-Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável, porém quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
+Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável, porém, quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
 
 O uso de pré-processadores como o Sass, é uma realidade no mercado, podendo ser facilmente encontrado em projetos open source, seja de front-end ou de back-end, e é comumente exigido como requisito para oportunidades de emprego.
 
-Achou algo de errado? algo que possa melhorar? fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção! 
+Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção! 
