@@ -207,3 +207,106 @@ Algumas coisas em CSS são um pouco tediosas de escrever, especialmente com CSS3
 ```
 Para criar um mixin você usa o **@mixin** e dá um nome a ele. Nós nomeamos nosso mixin **he4rtDev**. 
 Também estamos usando a variável  **$property** entre parênteses para que possamos passar uma transformação do que quisermos. Depois de criar seu mixin, você pode usá-lo como uma  declaração CSS começando com **@include** seguido pelo nome do seu mixin.
+
+## Extend/Herança
+Este é um dos recursos mais úteis do Sass. Usar **@extend** permite compartilhar um conjunto de propriedades CSS de um seletor para outro.
+
+Em nosso exemplo, vamos criar um Sass simples de mensagens para erros, avisos e sucessos.
+```
+.message {
+     font-size: 20px;
+     border: 1px solid black;
+}
+
+.warning {
+     @extend .message;
+     color: yellow;
+}
+
+.error {
+     @extend .message;
+     color: red;
+}
+```
+> Observe que um vai obter as características do outro sem precisar reinscrever o código.
+## Operadores
+Fazer matemática em seu CSS é muito útil. Sass tem um punhado de operadores matemáticos padrão, como +, -, *, /, e %. Em nosso exemplo, vamos fazer algumas contas simples para calcular as larguras de um aside & article .
+
+#### Sass:
+```
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+```
+#### CSS:
+```
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+```
+Criamos uma grade fluida muito simples, com base em 960px. As operações no Sass nos permitem fazer algo como pegar valores de pixel e convertê-los em porcentagens sem muito trabalho. Com muito mais precisão do que ir na tentativa e erro com CSS puro.  
+
+### Ou fazer algo mais simples como:  
+```
+$base-size: 20px;
+$base-color: red;
+
+p{
+     font-size: $base-size / 2;
+     color: $base-color - 10;
+}
+
+button {
+     font-size: $base-size * 2;
+     background-color: $base-color + 200;
+}
+```
+## Condicionais
+E por último, vamos falar das condicionais. Porém não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar @if, @for, @each, @while para quem já estudou o básico de qualquer linguagem de programção como Javascript[(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
+
+#### Para não deixar você sem nada, aqui vai um exemplo da usabilidade de um If em Sass:
+```
+@mixin text-style($size) {
+    font-size: $size;
+
+    @if $size > 20px {
+         color: blue;
+    } @elseif $size = 20px {
+         color: red;
+    } @else {
+         color:green;
+    }
+
+}
+
+header {
+    @include text-style(21px);
+}
+```
+
+## Conclusão
+Entendemos agora o que são e para que servem os pré-processadores. Mas quando utilizar?
+
+Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável, porém quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
+
+O uso de pré-processadores como o Sass, é uma realidade no mercado, podendo ser facilmente encontrado em projetos open source, seja de front-end ou de back-end, e é comumente exigido como requisito para oportunidades de emprego.
