@@ -310,3 +310,5 @@ Entendemos agora o que são e para que servem os pré-processadores. Mas quando 
 Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável, porém quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
 
 O uso de pré-processadores como o Sass, é uma realidade no mercado, podendo ser facilmente encontrado em projetos open source, seja de front-end ou de back-end, e é comumente exigido como requisito para oportunidades de emprego.
+
+Achou algo de errado? algo que possa melhorar? fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção! 
