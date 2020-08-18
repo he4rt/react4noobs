@@ -10,7 +10,7 @@ Basicamente é como se você programasse em uma linguagem de programação compi
 
 ---
 
-## Qual os mais utilizados?
+## Quais os mais utilizados?
 
 São muitos nomes no mercado, porém, os mais poderosos e badalados são [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/).
 
