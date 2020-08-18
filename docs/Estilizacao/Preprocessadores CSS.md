@@ -39,7 +39,7 @@ npm install -g sass
 Ou se você prefere Yarn:
 
 ```
-yarn add lib.sass
+yarn add node-sass
 ```
 
 > No entanto, observe que isso instalará a implementação JavaScript pura do Sass
