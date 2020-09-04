@@ -20,8 +20,6 @@ Com o auxilio do npx do npm iremos executar o seguinte comando para criar a apli
 
 Aguarde alguns minutos para que o npm baixe as dependências.
 
-[![asciicast](https://asciinema.org/a/Fdow6obPI1WVkxKoBlITBxVMh.svg)](https://asciinema.org/a/Fdow6obPI1WVkxKoBlITBxVMh)
-
 O create react app irá gerar todo o projeto em modo padrão, não é necessário configurar **ferramentas** como Babel ou Webpack, eles estarão pré-configurados por debaixo dos panos.
 
 Ao abrir seu package-lock.json você encontrará três scripts:
@@ -34,11 +32,11 @@ O **start** iniciará a aplicação de acordo com os componentes desenvolvidos n
 
 E uma tela no navegador irá se abrir:
 
-<img align="center" src="/assets/npm-start-react.png" alt="" width="50%">
+<img align="center" src="/assets/npm-start-react.jpeg" alt="" width="50%">
 
 Quando você alterar qualquer arquivo e salvar, eles serão recompilados e a janela do navegador será atualizada, caso algum erro ocorra, ele aparecerá em vermelho no console.
 
-<img align="center" src="/assets/error-npm.png" alt="" width="50%">
+<img align="center" src="/assets/error-npm.jpg" alt="" width="50%">
 
 O **build** é utilizado para enviar a aplicação para "produção".
 
