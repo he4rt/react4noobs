@@ -36,7 +36,7 @@ E uma tela no navegador irá se abrir:
 
 <img align="center" src="/assets/npm-start-react.png" alt="" width="50%">
 
-Quando você alterar qualquer arquivo e salvar, eles são recompilados e a janela do navegador será atualizada, caso algum erro ocorra, ele aparecerá em vermelho no console.
+Quando você alterar qualquer arquivo e salvar, eles serão recompilados e a janela do navegador será atualizada, caso algum erro ocorra, ele aparecerá em vermelho no console.
 
 <img align="center" src="/assets/error-npm.png" alt="" width="50%">
 
