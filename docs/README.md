@@ -8,17 +8,17 @@
 
 - Conhecimento em HTML, CSS
 - Conhecimento em Javascript
-- Instalação do [NodeJS](https://nodejs.org/en/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
+- Instalação do [NodeJS](https://nodejs.org/pt-br/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
 
 ## **Conteúdos**
 
 ### Iniciando com React
 
-1. [Introdução](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/1-Introducao.md)
-2. [O que é React?](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/2-O%20que%20e%20React.md)
-3. [Componentização](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/3-Componentizacao.md)
-4. [JSX](https://github.com/AnnaCampelo/react4noobs/blob/master/docs/Iniciando%20com%20React/4-JSX.md)
-5. [React Hooks]()
+1. [Introdução](./Iniciando%20com%20React/1-Introducao.md)
+2. [O que é React?](./Iniciando%20com%20React/2-O%20que%20e%20React.md)
+3. [Componentização](./Iniciando%20com%20React/3-Componentizacao.md)
+4. [JSX e Babel](./Iniciando%20com%20React/4-JSX%20e%20Babel.md)
+5. [React Hooks](./Iniciando%20com%20React/5-React%20Hooks.md)
 
 ### Ferramentas de build
 <!-- Comentar sobre npm e clientes alternativos como o yarn ou pnpm -->
@@ -27,7 +27,7 @@
 
 ### Estilização
 
-1. [Preprocessadores CSS]()
+1. [Preprocessadores CSS](./Estilizacao/Preprocessadores%20CSS.md)
 2. [Frameworks CSS]()
 3. [CSS in JS]()
 4. [Arquiteturas CSS]()
@@ -48,7 +48,7 @@
 ### Cliente REST
 
 1. [fetch]()
-2. [axios]()
+2. [axios](./Cliente%20REST/2-Axios.md)
 
 
 ### Cliente GraphQL
@@ -59,7 +59,7 @@
 ### Bibliotecas de utilidade
 
 1. [Lodash]()
-2. [Moment]()
+2. [Moment](./Bibliotecas%20de%20utilidade/2-Moment.md)
 3. [classnames]()
 
 ### Testes
