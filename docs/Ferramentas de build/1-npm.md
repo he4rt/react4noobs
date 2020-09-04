@@ -2,9 +2,9 @@
 
 O npm é um gerenciador de pacotes, com ele é possível criar bibliotecas js e disponibiliza-las para a comunidade, além de poder incluir outras bibliotecas externas na sua aplicação.
 
-Não iremos nos aprofundar muito no npm nessa sessão, apenas explicar o básico de como instalar o React com a utilização do mesmo.
+Não iremos nos aprofundar muito no npm nesta seção, apenas explicar o básico sobre como instalar o React com a utilização do mesmo.
 
-Se quiser um estudo profundo sobre, cheque a sessão npm no [node4noobs](https://github.com/anabastos/node4noobs/blob/master/contents/1-primeiros-passos/npm.md).
+Se quiser um estudo profundo sobre npm, cheque a seção npm no [node4noobs](https://github.com/anabastos/node4noobs/blob/master/contents/1-primeiros-passos/npm.md).
 
 # Create-react-app
 
@@ -12,21 +12,17 @@ O Create React App é uma ferramenta para criar projetos em React com o intuito 
 
 ## Instalação
 
-```cmd
-    npm install -g create-react-app
-```
-
-Agora para criar sua aplicação, iremos digitar duas coisas na linha de comando, uma sendo o create-react-app e o nome do projeto.
+Com o auxilio do npx do npm iremos executar o seguinte comando para criar a aplicação.
 
 ```cmd
-    create-react-app react4noobs
+    npx create-react-app react4noobs
 ```
 
 Aguarde alguns minutos para que o npm baixe as dependências.
 
-*insira aqui um gif da criação*
+[![asciicast](https://asciinema.org/a/Fdow6obPI1WVkxKoBlITBxVMh.svg)](https://asciinema.org/a/Fdow6obPI1WVkxKoBlITBxVMh)
 
-O create react app irá gerar todo o projeto em modo padrão, não é necessário configurar ferramentas como Babel ou Webpack, eles estarão pré-configurados por debaixo dos panos.
+O create react app irá gerar todo o projeto em modo padrão, não é necessário configurar **ferramentas** como Babel ou Webpack, eles estarão pré-configurados por debaixo dos panos.
 
 Ao abrir seu package-lock.json você encontrará três scripts:
 
@@ -38,8 +34,16 @@ O **start** iniciará a aplicação de acordo com os componentes desenvolvidos n
 
 E uma tela no navegador irá se abrir:
 
-*insira aqui uma imagem do localhost*
+<img align="center" src="/assets/npm-start-react.png" alt="" width="50%">
 
 Quando você alterar qualquer arquivo e salvar, eles são recompilados e a janela do navegador será atualizada, caso algum erro ocorra, ele aparecerá em vermelho no console.
 
-*insira imagem de erro aqui*
+<img align="center" src="/assets/error-npm.png" alt="" width="50%">
+
+O **build** é utilizado para enviar a aplicação para "produção".
+
+Como isso acontece? Ao executa-lo o babel transpila a aplicação automaticamente e todo o app será mandado para uma pasta */build* fora da */src* em arquivos estáticos, e então seu arquivo estará pronto para ser colocado em produção.
+
+O **eject** é interessante, inicialmente o create-react-app empacota e esconde os módulos do npm que ele está usando por debaixo dos panos, para que o *package.json* seja mais limpo e simples. Porém se você quiser começar a adicionar configurações mais complexas e instalar outros módulos, seus módulos atuais precisam saber quais são os módulos existentes. Então ao executar o **eject** ele não esconderá mais esses módulos, e eles estarão disponíveis no seu *package.json*.
+
+Por fim, não é sempre necessário utilizar o create-react-app para criar o seu projeto, você também pode criar o seu projeto na mão, do zero. Porém como o curso tem o foco para inciantes, isso seria um assunto para conversarmos no futuro.
