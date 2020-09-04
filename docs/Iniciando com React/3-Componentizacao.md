@@ -2,13 +2,13 @@
 
 ## O que é a componentização?
 
-A componentização dentro do React é um conceito bastante utilizado. Um dos objetivos para a utilização é aumentar o máximo do reuso em uma aplicação.
+A componentização dentro do React é um conceito bastante utilizado. Um dos seus principais objetivos é maximizar o reuso em uma aplicação.
 
 O **conceito de componentização** é uma das principais diferenças do React e de outras bibliotecas baseadas em componentes diante de bibliotecas como jQuery e Angular 1.
 
-> Componentes são conjuntos isolados de lógica (javascript), visualização (JSX/HTML) e possível estilização (CSS).
+> Componentes são conjuntos isolados de lógica (javascript), visualização (JSX/HTML) e estilização (CSS).
 
-A componentização funciona da seguinte forma, dividimos nossa interface/aplicação em pequenas partes(componentes) que sozinhas conseguem ter funcionalidades específicas.
+A componentização funciona da seguinte forma, dividimos nossa interface/aplicação em pequenas partes (componentes) que sozinhas conseguem ter funcionalidades específicas.
 
 Na imagem abaixo cada área separada com uma cor diferente é um componente, podemos ter componentes dentro de outros componentes. Aliás, nossa aplicação em si é um componente.
 
@@ -18,7 +18,7 @@ Na imagem abaixo cada área separada com uma cor diferente é um componente, pod
 
 ### Exemplo 1 - Simples
 
-Para que não fiquemos só na parte teórica, podemos exemplicar um componente simples em React. Um componente chamado `Button` que pode ser reutilizado na sua aplicação.
+Para que não fiquemos só na parte teórica, podemos exemplificar um componente simples em React. Um componente chamado `Button` que pode ser reutilizado na sua aplicação.
 
 ```js
 import React from "react";
@@ -28,7 +28,7 @@ export default function Button() {
 }
 ```
 
-Você deve ter percebido que o componente pode ser simplesmente uma função. Então, o componente acima é um botão que mostra um _alert_ para o usuário quando é clicado.
+Você deve ter percebido que o componente pode ser simplesmente uma função. O componente acima é um botão que mostra um _alert_ para o usuário quando é clicado.
 
 ### Exemplo 2 - Avançado
 
