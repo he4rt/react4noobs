@@ -43,7 +43,7 @@
 
 ### Roteamento
 
-1. [react-router]()<img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [react-router](./Roteamento/1-React-Router.md)
 
 ### Cliente REST
 
