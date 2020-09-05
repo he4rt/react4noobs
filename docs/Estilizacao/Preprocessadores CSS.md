@@ -52,7 +52,7 @@ brew install sass / sass / sass
 
 ### ⚠ Observação:
 
-Agora todos os seus arquivos CSS devem usar a extensão .scss, Por exemplo, ao invés de usar "App.css" use "App.scss".
+Agora todos os seus arquivos CSS devem usar a extensão `.scss`, Por exemplo, ao invés de usar "*App.css*" use "*App.scss*".
 
 ## O básico de Sass:
 
@@ -85,9 +85,9 @@ body {
 
 > Quando o Sass é processado, ele leva as variáveis que definiu ($font-stack e $primary-color) para arquivos CSS com os nossos valores de variáveis colocados no CSS. Isso pode ser extremamente poderoso ao trabalhar com cores e mantê-las consistentes em todo o site.
 
-## Nesting(Escopos)
+## Nesting (Escopos)
 
-Lembra do aninhamento em HTML? Algo que fazemos o tempo todo quando colocamos um < p > em um < div > e um < span > no < p > como este?
+Lembra do aninhamento em HTML? Algo que fazemos o tempo todo quando colocamos um `<p>` em um `<div>` e um `<span>` no `<p>` como este?
 
 ```
 <body>
@@ -313,7 +313,7 @@ button {
 
 ## Condicionais
 
-E por último, vamos falar das condicionais. Porém, não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar @if, @for, @each, @while para quem já estudou o básico de qualquer linguagem de programação como Javascript[(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
+E por último, vamos falar das condicionais. Porém, não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar `@if`, `@for`, `@each`, `@while` para quem já estudou o básico de qualquer linguagem de programação como Javascript [(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
 
 #### Para não deixar você sem nada, aqui vai um exemplo da usabilidade de um If em Sass:
 
