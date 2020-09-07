@@ -1,16 +1,31 @@
-<h1 align="center">
-  React4noobs
-<img align="center" src="/assets/logo.png" alt="" width="30%">
-<h4 align="center"><strong>Status:</strong> Esse Curso ainda está em desenvolvimento.</h4>
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="./assets/global/header-4noobs.svg">
+  </a>
+</p>
 
-<p align="center"><a href='https://github.com/he4rt/react4noobs/tree/master/docs'>Explore a documentação »</a></p>
+<p align="center">
+  <h2 align="center">React4Noobs</h2>
 
-
+  <h1 align="center">
+  <img src="./assets/logo.png" alt="Imagem do Reactjs" width="220">
 </h1>
+  
+  <p align="center">
+    <br />
+    <a href="./docs/README.md">Explore a documentação »</a>
+    <br />
+    <br />
+    <a href="https://github.com/he4rt/react4noobs/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/he4rt/react4noobs/issues">Request Feature</a>
+  </p>
+</p>
 
 ## Sobre o Projeto
-
-Escrito e desenvolvido pelos membros da **He4rt Developers** com o intuito de introduzir iniciantes ao **ReactJS** com um conteúdo de simples entendimento.
+<p align="left">
+    Escrito e desenvolvido pelos membros da <bold>He4rt Developers</bold> com o intuito de introduzir iniciantes ao <bold>ReactJS</bold> com um conteúdo de simples entendimento.
+</p>
 
 ## Conhecimento Necessário para contribuir
 
@@ -28,7 +43,10 @@ Os programas a seguir são necessários para a utilização e modificação do p
 
 ## Instalação
 
-Faça um clone do repositório
+Faça um clone do repositório utilizando:
+```sh
+git clone https://github.com/he4rt/react4noobs
+```
 
 ## Como Contribuir
 
@@ -41,6 +59,10 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 5. Abra um Pull Request e vem pro abraço!
 
 **Extra:** Nós utilizamos o Github projects para organização de tarefas, ele é público e você pode acessá-lo [aqui](https://github.com/he4rt/react4noobs/projects/1)
+
+## Autores
+
+- **Anna Campelo ( Anne )** - _Developer & Member of He4rt Developers_  - [Twitter](https://twitter.com/Annerland)
 
 ## Colaboradores
 
@@ -60,3 +82,9 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
 </table>
 
 <p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="./assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
