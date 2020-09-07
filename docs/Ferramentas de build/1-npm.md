@@ -4,24 +4,6 @@
   </a>
 </p>
 
-<p align="center">
-  <h2 align="center">React4Noobs</h2>
-
-  <h1 align="center">
-  <img src="../../assets/logo.png" alt="Imagem do Reactjs" width="220">
-</h1>
-  
-  <p align="center">
-    <br />
-    <a href="../README.md">Explore a documentação »</a>
-    <br />
-    <br />
-    <a href="https://github.com/he4rt/react4noobs/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/he4rt/react4noobs/issues">Request Feature</a>
-  </p>
-</p>
-
 # NPM
 
 O npm é um gerenciador de pacotes, com ele é possível criar bibliotecas js e disponibiliza-las para a comunidade, além de poder incluir outras bibliotecas externas na sua aplicação.
