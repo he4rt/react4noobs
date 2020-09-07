@@ -1,3 +1,27 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/header-4noobs.svg">
+  </a>
+</p>
+
+<p align="center">
+  <h2 align="center">React4Noobs</h2>
+
+  <h1 align="center">
+  <img src="../../assets/logo.png" alt="Imagem do Reactjs" width="220">
+</h1>
+  
+  <p align="center">
+    <br />
+    <a href="../README.md">Explore a documentação »</a>
+    <br />
+    <br />
+    <a href="https://github.com/he4rt/react4noobs/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/he4rt/react4noobs/issues">Request Feature</a>
+  </p>
+</p>
+
 # Moment.js
 
 <p align="center">
@@ -121,3 +145,11 @@ novoMarco.format('MMMM') // 'März', conforme o 'de'
 marco.locale('pt-br')
 marco.format('MMMM') // 'Marzo'
 ```
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>

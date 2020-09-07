@@ -1,3 +1,27 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="./assets/global/header-4noobs.svg">
+  </a>
+</p>
+
+<p align="center">
+  <h2 align="center">React4Noobs</h2>
+
+  <h1 align="center">
+  <img src="../assets/logo.png" alt="Imagem do Reactjs" width="220">
+</h1>
+  
+  <p align="center">
+    <br />
+    <a href="./README.md">Explore a documentação »</a>
+    <br />
+    <br />
+    <a href="https://github.com/he4rt/react4noobs/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/he4rt/react4noobs/issues">Request Feature</a>
+  </p>
+</p>
+
 # JSX
 
 O JSX é uma extensão de sintaxe para Javascript, basicamente é uma sintaxe semelhante ao XML, onde você consegue compreender de uma melhor forma como será montado o seu componente UI.
@@ -25,3 +49,12 @@ Atualmente nem todos os navegadores entendem o Javascript moderno, mas com o Bab
 <img align="center" src="/assets/tirinha-babel.jpg" width="100%"> 
 
 [Ir para Próxima Seção](./5-React%20Hooks.md)
+
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>

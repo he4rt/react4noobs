@@ -1,3 +1,27 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/header-4noobs.svg">
+  </a>
+</p>
+
+<p align="center">
+  <h2 align="center">React4Noobs</h2>
+
+  <h1 align="center">
+  <img src="../../assets/logo.png" alt="Imagem do Reactjs" width="220">
+</h1>
+  
+  <p align="center">
+    <br />
+    <a href="../README.md">Explore a documentação »</a>
+    <br />
+    <br />
+    <a href="https://github.com/he4rt/react4noobs/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/he4rt/react4noobs/issues">Request Feature</a>
+  </p>
+</p>
+
 # NPM
 
 O npm é um gerenciador de pacotes, com ele é possível criar bibliotecas js e disponibiliza-las para a comunidade, além de poder incluir outras bibliotecas externas na sua aplicação.
@@ -45,3 +69,11 @@ Como isso acontece? Ao executa-lo o babel transpila a aplicação automaticament
 O **eject** é interessante, inicialmente o create-react-app empacota e esconde os módulos do npm que ele está usando por debaixo dos panos, para que o *package.json* seja mais limpo e simples. Porém se você quiser começar a adicionar configurações mais complexas e instalar outros módulos, seus módulos atuais precisam saber quais são os módulos existentes. Então ao executar o **eject** ele não esconderá mais esses módulos, e eles estarão disponíveis no seu *package.json*.
 
 Por fim, não é sempre necessário utilizar o create-react-app para criar o seu projeto, você também pode criar o seu projeto na mão, do zero. Porém como o curso tem o foco para inciantes, isso seria um assunto para conversarmos no futuro.
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
