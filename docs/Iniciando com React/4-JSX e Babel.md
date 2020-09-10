@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="./assets/global/header-4noobs.svg">
+    <img src="../../assets/global/header-4noobs.svg">
   </a>
 </p>
 
