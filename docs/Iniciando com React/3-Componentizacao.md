@@ -18,7 +18,7 @@ A componentização funciona da seguinte forma, dividimos nossa interface/aplica
 
 Na imagem abaixo cada área separada com uma cor diferente é um componente, podemos ter componentes dentro de outros componentes. Aliás, nossa aplicação em si é um componente.
 
-![Dividndo interface em compnentes](https://camo.githubusercontent.com/c6c0539167806d8acd08abdfedd99cef216988f1/68747470733a2f2f69322e77702e636f6d2f7777772e71636f64652e696e2f77702d636f6e74656e742f75706c6f6164732f323031382f30372f72656163742d636f6d706f6e656e742d747265652e706e673f726573697a653d313032342532433537382673736c3d31)
+![Dividindo interface em compnentes](https://camo.githubusercontent.com/c6c0539167806d8acd08abdfedd99cef216988f1/68747470733a2f2f69322e77702e636f6d2f7777772e71636f64652e696e2f77702d636f6e74656e742f75706c6f6164732f323031382f30372f72656163742d636f6d706f6e656e742d747265652e706e673f726573697a653d313032342532433537382673736c3d31)
 *Fonte: [QCode](https://www.qcode.in/learn-react-by-creating-a-comment-app/)*
 
 ## Exemplos
