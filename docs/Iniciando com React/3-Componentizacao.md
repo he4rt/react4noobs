@@ -18,7 +18,8 @@ A componentização funciona da seguinte forma, dividimos nossa interface/aplica
 
 Na imagem abaixo cada área separada com uma cor diferente é um componente, podemos ter componentes dentro de outros componentes. Aliás, nossa aplicação em si é um componente.
 
-<img name = "Dividindo-interface-em-componentes" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/150d7991-e7ed-427e-98cc-0fc4a5fa8d64/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200610%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200610T083421Z&X-Amz-Expires=86400&X-Amz-Signature=9fc9d8075760178bb1f3a57178317d05f9c2e884afe740013dba5b41f68a8ce8&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22" alt="Dividindo interface em componentes" />
+![Dividindo interface em componentes](https://camo.githubusercontent.com/c6c0539167806d8acd08abdfedd99cef216988f1/68747470733a2f2f69322e77702e636f6d2f7777772e71636f64652e696e2f77702d636f6e74656e742f75706c6f6164732f323031382f30372f72656163742d636f6d706f6e656e742d747265652e706e673f726573697a653d313032342532433537382673736c3d31)
+*Fonte: [QCode](https://www.qcode.in/learn-react-by-creating-a-comment-app/)*
 
 ## Exemplos
 
