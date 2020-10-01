@@ -41,7 +41,7 @@
 
 ### Verificadores de tipos
 
-1. [Typescript]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Typescript](https://github.com/Carolis/typescript4noobs)
 
 ### Roteamento
 
