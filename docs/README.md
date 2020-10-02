@@ -41,7 +41,7 @@
 
 ### Verificadores de tipos
 
-1. [Typescript](https://github.com/Carolis/typescript4noobs)
+1. [Typescript](./Verificadores%20de%20Tipo/Typescript.md)
 
 ### Roteamento
 
