@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/header-4noobs.svg">
+  </a>
+</p>
+
 # O que é o React Router?
 
 O React Router é uma biblioteca essencial em nossas aplicações devido à capacidade de criar e gerenciar as rotas da aplicação de maneira marcante e simples.
@@ -79,3 +85,11 @@ export default App;
 ```
 
 E pronto a partir de agora nossas paginas são dinâmicas dependendo da URL.
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
