@@ -17,7 +17,7 @@ Então chega de teoria e bora ver na prática como isso é aplicado no nosso cot
 Primeiramente, imagine um arquivo chamado index.js é ele que sera nosso principal arquivo de nossa aplicação,e pensando bem deixar todo o código em um unico arquivo pode se tornar problemático no futuro. Por isso iremos dividir em um componente chamado **Title** em outra pasta veja a abaixo o como nosso código ficara:
 
 - **app.js**
-'''js
+```js
 
 import React from 'react'
 
@@ -29,11 +29,11 @@ Hello World!
 
 )
 }
-'''
+```
 
 - **components/title.js**
 
-'''js
+```js
 import React from 'react'
 
 export default function Title() {
@@ -45,7 +45,7 @@ Sou o Component Title
 )
 }
 
-'''
+```
 
 A partir dessa simples separação pode utilizar o title.js em nosso index apenas com uma simples linha. Veja o código abaixo:
 
