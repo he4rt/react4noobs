@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="./.github/images/header_4noobs.svg">
+    <img src="../../assets/global/header-4noobs.svg">
   </a>
 </p>
 
@@ -133,8 +133,10 @@ export default class App extends Component<AppProps, AppState> {
 }
 ```
 
+<p align="center">Made with :purple_heart:</p>
+
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="./.github/images/footer_4noobs.svg" width="380">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
   </a>
 </p>
