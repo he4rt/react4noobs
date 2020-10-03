@@ -58,7 +58,7 @@ brew install sass / sass / sass
 
 ### ⚠ Observação:
 
-Agora todos os seus arquivos CSS devem usar a extensão `.scss`, Por exemplo, ao invés de usar "*App.css*" use "*App.scss*".
+Agora todos os seus arquivos CSS devem usar a extensão `.scss`, Por exemplo, ao invés de usar "_App.css_" use "_App.scss_".
 
 ## O básico de Sass:
 
@@ -314,6 +314,22 @@ p{
 button {
      font-size: $base-size * 2;
      background-color: $base-color + 200;
+}
+```
+
+## Funções
+
+As funções são um dos recursos mais interessantes e complexos dentro do sass, é possível automatizar muitos processos com o objetivo de repetir cada vez **menos código**. Funcionam de uma maneira bem parecida com as do JavaScript, recebendo **parâmetros** e **retornando** um valor.
+
+Um pequeno exemplo de como automatizar a criação de um gradiente:
+
+```
+@function gradient($color_a, $color_b){
+  @return linear-gradient(135deg, $color_a, $colorb);
+}
+
+div {
+  background: gradient(#7159c1, #9365C9)
 }
 ```
 
