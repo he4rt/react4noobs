@@ -66,8 +66,8 @@
 
 ### Testes
 
-1. [Testes de Integração]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-2. [Testes de Unidade]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Testes de Unidade]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [Testes de Integração](./Testes/2-testes-de-integracao.md)
 3. [Testes E2E]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### i18n
