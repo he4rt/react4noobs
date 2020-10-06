@@ -12,15 +12,15 @@
 
 ## O que é teste de integração?
 
-Testes de integração são aqueles que testam os modulos da aplicação de forma conjunta. Eles garantem que modulos menores interajam entre si corretamente. Ao contrário dos teste unitários, os testes de integração evita usar dados _mockados_ garantindo o comportamento real de módulos menores.
+Testes de integração são aqueles que testam os módulos da aplicação de forma conjunta. Eles garantem que módulos menores interajam entre si corretamente. Ao contrário dos testes unitários, os testes de integração evitam utilizar dados _mockados_ garantindo o comportamento real de módulos menores.
 
 ## Escreva testes. Não muitos, mas a maioria de integração
 
 Essa é uma frase que foi _tweetada_ por [Guillermo Rauch](https://twitter.com/rauchg/status/807626710350839808) criador do [Vercel](https://vercel.com/) e [Socket.io](https://socket.io/).
 
-Ele quer dizer que a grande maioria dos projetos devem ter testes automatizados, eles garantem que o produto faz o que tem que fazer, e nós dá confiança de que está fazendo da forma correta.
+Ele quer dizer que a grande maioria dos projetos devem ter testes automatizados, eles garantem que o produto faz o que tem que fazer, e nos dá confiança de que está fazendo da forma correta.
 
-Quanto a quantidade, escreva a quantidade necessária para que suas funcionalidades principais estejam cobertas, de forma que seu usuário não tenha problemas ao usar algo existente quando algo novo for lançado.
+Em relação a quantidade, escreva o necessário para que suas funcionalidades principais estejam cobertas e o usuário não tenha problemas em usá-las quando algo novo for lançado.
 
 Sobre a maioria dos seus testes, eles devem ser de integração. **Kent C. Dodds** fala sobre o real retorno dos esforços com sua teoria do [Troféu de teste](https://twitter.com/kentcdodds/status/960723172591992832). Essa teoria diz que os testes de integração criam o equilíbrio real entre confiança e esforço.
 
@@ -36,7 +36,7 @@ Imagine a seguinte jornada:
 
 > Eu como usuário desejo ver um alerta ao clicar em um botão escrito "Exibir alerta"
 
-Pensando nos testes unitários, poderiamos testar se o botão realmente está utilizando a função passada e no caso do nosso alerta, porderiamos verificar se ele realmente está visivel de acordo com uma variável de controle de exibição.
+Pensando nos testes unitários, poderíamos testar se o botão está invocando a função passada e poderíamos verificar se o alerta está visivel baseado em uma variável de controle de exibição.
 
 ```js
 // Button.spec.js
@@ -74,7 +74,7 @@ describe("Meu Alerta", () => {
 
 Os testes a cima são executados com sucesso, eles recebem os dados que precisam para simular seu funcionamento.
 
-Agora vamos criar a integração entre esses componentes e o teste que grante que quando o botão for clicado, o alerta será exibido.
+Agora vamos criar a integração entre esses componentes e o teste que garante que quando o botão for clicado, o alerta será exibido.
 
 ```js
 // App,js
@@ -105,7 +105,7 @@ Note que desta vez não renderizamos cada componente isolado, mas sim o componen
 
 Com isso, nós procuramos dentro do DOM a existência de um botão com o texto _Exibir alerta_ e clicamos nele, como consequência desta ação, esperamos ver um alerta com o texto _Aqui está seu alerta_.
 
-Esse é um exemplo bem simples, mas mostra como nosso teste garante o comportamento de um alerta e um botão quando eles estão juntos, dois modulos pequenos que criam um contexto quando juntam suas forças!
+Esse é um exemplo bem simples, mas mostra como nosso teste garante o comportamento de um alerta e um botão quando eles estão juntos, dois módulos pequenos que criam um contexto quando juntam suas forças!
 
 <p align="center">Made with :purple_heart:</p>
 
