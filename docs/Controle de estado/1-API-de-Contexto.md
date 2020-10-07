@@ -133,6 +133,24 @@ function App() {
 }
 ```
 
+## Usando useContext
+
+Na implementação anterior, usamos o `ContextoCorUsuario.Consumer` para obter a cor vinda do contexto. Nós podemos simplificar a escrita desse componente usando o `useContext`.
+
+```jsx
+function ListaColorida({ items }) {
+  const color = useContext(ContextoCorUsuario)
+
+  return <ul>
+    {
+      items.map((item) => <li key={item} style={{ color }}>{item}</li>)
+    }
+  </ul>
+}
+```
+
+Na prática, o comportamento do componente permanece igual. A vantagem é que seu código fica mais limpo e a leitura do JSX fica mais clara.
+
 ## Agora que você já sabe
 
 A Context API é simples e poderosa, e você pode usá-la em várias circunstâncias (como internacionalização, temas, localização do usuário, controle de estado global). Mas é importante avaliar se o seu componente deveria absorver a responsabilidade de obter suas propriedades.
@@ -140,7 +158,6 @@ A Context API é simples e poderosa, e você pode usá-la em várias circunstân
 Você aprendeu na sua jornada de React até aqui que as props dão poder para que seus componentes sejam reutilizáveis. Isso continua valendo, e muito.
 
 Seus componentes mais reutilizáveis devem continuar recebendo os dados via props. Você pode consumir dados do Contexto em componentes menos especializados e mais focados. A beleza do React está no poder de combinar várias técnicas para que seus dados fluam como você preferir com o melhor design de código possível. Conhecer cada técnica e quando usá-la vai te ajudar a construir aplicações robustas e consistentes.
-
 
 Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção!
 
