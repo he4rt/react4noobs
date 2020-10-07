@@ -151,6 +151,34 @@ function ListaColorida({ items }) {
 
 Na prática, o comportamento do componente permanece igual. A vantagem é que seu código fica mais limpo e a leitura do JSX fica mais clara.
 
+## Considerações adicionais
+
+Você pode construír quantos contextos forem necessários. Você pode criar um contexto diferente para cada tipo de dado, colocar os provedores hierarquizados no topo da árvore e cada componente apenas com os contextos relevantes para a própria montagem.
+
+```jsx
+function App() {
+  return <ContextoCorUsuario.Provider value={userColor}>
+    <ContextoLocalizacaoUsuario.Provider value={userGPS}>
+      <ContextoInternacionalizacao.Provider value={translations}>
+        ...
+      </ContextoInternacionalizacao.Provider>
+    </ContextoLocalizacaoUsuario.Provider>
+  </ContextoCorUsuario.Provider>
+}
+```
+
+```jsx
+function BarraDeNavegacao() {
+  const localizacao = useContext(ContextoLocalizacaoUsuario)
+  const corUsuario = useContext(ContextoCorUsuario)
+
+  return <ul>
+    <li>{localizacao.latitude} {localizacao.longitude}</li>
+    <li style={{ color: corUsuario }}>{corUsuario}</li>
+  </ul>
+}
+```
+
 ## Agora que você já sabe
 
 A Context API é simples e poderosa, e você pode usá-la em várias circunstâncias (como internacionalização, temas, localização do usuário, controle de estado global). Mas é importante avaliar se o seu componente deveria absorver a responsabilidade de obter suas propriedades.
