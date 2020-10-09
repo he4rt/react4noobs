@@ -14,7 +14,7 @@ Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o fu
 # O que é o Typescript?
 
 Typescript é considerado um **superset** da linguagem Javascript, dito isso, se você já sabe Javascript é muito fácil de começar a usá-lo já sabendo um pouco.
-Ele tem como  principal funcionalidade a capacidade de adicionar **tipagens estáticas** ao código.
+Ele tem como principal funcionalidade a capacidade de adicionar **tipagens estáticas** ao código.
 Um dos pontos positivos que vale a pena ser citado é a possibilidade de termos arquivos Typescript convivendo no mesmo projeto com arquivos Javascript já que no final das contas o Typescript é compilado para Javascript, ou seja, é uma ferramenta de **desenvolvimento**. Isso também permite que você adicione Typescript em qualquer momento do seu projeto, conforme necessidade e gosto pessoal.
 
 ### Por que usar Typescript?
@@ -43,7 +43,7 @@ Outra grande vantagem de usar o Typescript é o aumento da inteligência dentro 
 
 PS: antes de seguir com a instalação do typescript é importante ter o **node** previamente instalado.
 
-`yarn create react-app my-app --template typescript` ou `npx create-react-app my-app --template typescript` 
+`yarn create react-app my-app --template typescript` ou `npx create-react-app my-app --template typescript`
 
 Após isso, toda a estrutura de arquivos virá inicializada em torno de um ambiente preparado para o Typescript.
 
@@ -51,7 +51,7 @@ Ainda vale lembrar que você não precisa necessariamente usar um template atrav
 
 # Tipos
 
-Tipar variáveis é bem simples, como demonstrado no exemplo abaixo basta que você adicione `:tipo` depois de uma variável.
+Tipar variáveis é bem simples, como demonstrado no exemplo abaixo. Basta que você adicione `:tipo` depois de declarar uma variável.
 
 Exemplos:
 
@@ -65,25 +65,25 @@ isTrue = true
 
 O Typescript desfruta de alguns tipos primitivos mais comuns, sendo eles:
 
-`:number` 
+`:number`
 
-`:string` 
+`:string`
 
-`:boolean` 
+`:boolean`
 
-`:bigInt` 
+`:bigInt`
 
-`:symbol` 
+`:symbol`
 
-`:null` 
+`:null`
 
-`:undefined` 
+`:undefined`
 
 Você pode conferir ainda mais tipos e conferir exemplos para cada um deles consultando o repositório [Typescript4noobs](https://github.com/Carolis/typescript4noobs).
 
 Abaixo seguem alguns exemplos de como ficaria a estrutura de um componente React num ambiente que faz uso de Typescript.
 
-Componente **funcional** com Typescript: 
+Componente **funcional** com Typescript:
 
 ```ts
 import React, { FunctionComponent, useState } from 'react'
