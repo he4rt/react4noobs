@@ -6,31 +6,31 @@
 
 # O que é WebPack?
 
-O Webpack é um empacotador de módulos para projetos web que utilizam html,css e javascript ,sendo uma das principais ferramenta usada no core do React.
+O Webpack é um empacotador de módulos para projetos web que utilizam html, css, javascript e imagens, sendo uma das principais ferramentas utilizadas no core do React.
 
-Primeiramente podemos dizer que a função do Webpack é variada com muitas possibilidades que permitem facilitar o nosso ambiente de desenvolvimento. Um pequeno exemplo disso é uma função inclusa que permite converter códigos escritos em Typescript para nosso js puro. Pois, nos navegadores mais antigos não conseguem realizar a leitura do javascript mais moderno.
+Primeiramente podemos dizer que a função do Webpack é variada entre muitas possibilidades que permitem facilitar o nosso ambiente de desenvolvimento. Um pequeno exemplo disso é uma função inclusa que permite converter códigos escritos em Typescript para nosso js puro. Pois, navegadores mais antigos não conseguem realizar a leitura do javascript moderno.
 
-Outra de sua principal função é capacidade de ler arquivos separados de nossa aplicação, mas como assim? Imagine que você precise separar seu config.js para outro outro arquivo fora da index.js.
+Outra de sua principal função é capacidade de ler arquivos separados de nossa aplicação. Imagine que você precise separar seu config.js para outro arquivo fora da index.js.
 
-Bem como podemos ver o Webpack é uma ótima ferramenta e totalmente completa por permitir enumeras funções desenvolvimento onde o próprio desenvolvedor define suas próprias regras e plugins que usara em seu projeto.
+Bem, como podemos ver o Webpack é uma ótima ferramenta e totalmente completa por permitir enumeras funções de desenvolvimento onde o próprio desenvolvedor define suas próprias regras e plugins que usará em seu projeto.
 
-# Quem é Babel?
+# O que é Babel?
 
-Bem vamos falar um pouco de seu companheiro o **Babel JS**, como dito anteriormente o webpack pode transformar o Typescript em javascript, entretanto o webpack não faz isso sozinho ele precisa de uma ajuda do babel que faz todo o processo de transformação do codigo, enquanto o webpack faz a leitura e renderiza na pagina.
+Bem, vamos falar um pouco de seu companheiro o **Babel JS**, como dito anteriormente o Webpack pode transformar o Typescript em Javascript, entretanto o Webpack não faz isso sozinho ele precisa da ajuda do Babel, que faz todo o processo de transformação do código, enquanto o Webpack faz a leitura e renderiza na pagina.
 
-Caso você ainda tenha uma curiosidade recomendo dar uma olhada na documentação oficial basta [clicar aqui](https://babeljs.io/docs/en/)
+Caso você tenha curiosidade recomendo dar uma olhada na documentação oficial, basta [clicar aqui](https://babeljs.io/docs/en/)
 
 # Como utilizar o Webpack no React?
 
-De maneira simples já usamos ele, pois eles esta na base de como o react funciona. Sendo assim não é necessário configurações adicionais para fazemos tudo é feito e configurado automaticamente para podemos usar.
+De maneira simples, já estamos usando ele. Ao criar uma aplicação com o create-react-app, o webpack já é instalado e configurado. Sendo assim, não são necessárias configurações adicionais. Tudo é feito e configurado automaticamente.
 
 # Bora praticar como usar o Webpack?
 
 Então, chega de teoria e bora ver na prática como isso será aplicado no ecossistema do React.
 
-Bem para entender o conceito de webpack e react iremos criar um Hello World.
+Bem, para entender o conceito de Webpack e React iremos criar um Hello World.
 
-Primeiramente iremos criar uma nova pasta para o nosso projeto, onde iremos iniciar já o nosso 'npm init', e logo apos isso iremos instalar as bibliotecas que vamos usar nesse tutorial.
+Primeiramente iremos criar uma nova pasta para o nosso projeto, onde iremos iniciar já o nosso 'npm init', e logo após iremos instalar as bibliotecas que vamos usar nesse tutorial.
 
 ```
 npm install --save react react-dom
@@ -38,7 +38,7 @@ npm install --save react react-dom
 npm install --save-dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015
 ```
 
-Agora podemos criar nosso index.html, o nosso arquivo principal de onde a aplicação importara todo o Javascript
+Agora podemos criar nosso index.html, o arquivo principal que importará todo o Javascript e carregará a aplicação:
 
 ```HTML
 <!DOCTYPE html>
@@ -54,7 +54,7 @@ Agora podemos criar nosso index.html, o nosso arquivo principal de onde a aplica
 </html>
 ```
 
-Veja que temos uma parte que importa o arquivo 'bundle.js' ele que sera todo o nosso javascript da nossa aplicação;
+Veja que temos uma parte que importa o arquivo 'bundle.js' ele será todo o javascript da nossa aplicação;
 
 Para que esse arquivo seja criado, precisaremos do Webpack. Portanto, vamos criar o arquivo webpack.config.js, que será o arquivo de configuração do Webpack:
 
@@ -67,11 +67,12 @@ filename: 'bundle.js',
 };
 ```
 
-Feito já temos as configurações mínimas para uma aplicação com Webpack sendo necessário um arquivo de entrada( entry ) e um de saída( output).
+Feito já temos as configurações mínimas para uma aplicação com Webpack sendo necessário um arquivo de entrada (entry) e um de saída (output).
 
-No caso nosso app.js sera o responsável pelo nosso javascript e por todo o resto ligado a nossa aplicação. Já o bundle.js sera gerado automaticamente.
+No caso nosso app.js sera o responsável pelo nosso javascript e por todo o resto ligado a nossa aplicação. Já o bundle.js será gerado automaticamente.
 
-Apos todo esses passos podemos alterar o 'package.json' para que possamos rodar o webpack e gerar o build:
+
+Após esses passos, podemos alterar o 'package.json' para que possamos rodar o webpack e gerar o build:
 
 ```json
 {
@@ -99,7 +100,7 @@ Apos todo esses passos podemos alterar o 'package.json' para que possamos rodar 
 
 ```
 
-Nossa alteração foi o script start assim podermos rodar nossa aplicação com o comando:
+Nossa alteração foi adicionar o script `start`. Com ele, podemos rodar nossa aplicação com o comando:
 
 ```
 npm start
@@ -115,7 +116,8 @@ ReactDOM.render(<h1>Hello World</h1>, document.getElementById('app'));
 
 ```
 
-Porem, apesar desse código ser muito simples, possui duas limitações que nossos browsers não conseguem interpretar:
+Porém, apesar desse código ser muito simples, possui duas limitações que nossos browsers não conseguem interpretar:
+
 
 - Código em React
 - Código em ES2015
@@ -157,7 +159,7 @@ Agora, basta informarmos que vamos usar o Babel como loader principal:
 
 ```loader: 'babel```
 
-E para fechar, vamos setar os dois loaders que precisamos, o babel-preset-es2015, e o babel-preset-react:
+E para fechar, vamos definir os dois loaders que precisamos, o babel-preset-es2015, e o babel-preset-react:
 
 ```
 query: {
@@ -169,7 +171,7 @@ Pronto. Agora basta digitar o comando para rodar o Webpack:
 
 ```npm start```
 
-Feito isso temos um bom exemplo de como o webpack funciona, mas claro podemos melhorar nossa aplicação para isso recomendo olhar o post original desse tutorial [clicando aqui](https://medium.com/tableless/webpack-para-react-o-guia-final-cb8a95b369ed)
+Feito isso, temos um bom exemplo de como o webpack funciona. Caso quiser se aprofundar na ferramenta e melhorar essa aplicação, é recomendado ler o post original desse tutorial [clicando aqui](https://medium.com/tableless/webpack-para-react-o-guia-final-cb8a95b369ed).
 
 Bem tudo isso foi um tutorial para explicar como o webpack funciona, e de certo modo é o que acontece por trás dos panos com o nosso index.html e nosso index.js, veja abaixo como fica os arquivos.
 
@@ -207,9 +209,10 @@ To create a production bundle, use 'npm run build' or 'yarn build'.
 
 ```
 
-Apenas uma pedaço do codigo original do index.html
+Apenas um pedaço do código original do index.html
 
-## Referencias:
+
+##  Referências:
 
 [Webpack para React: o Guia Final](https://medium.com/tableless/webpack-para-react-o-guia-final-cb8a95b369ed)
 
