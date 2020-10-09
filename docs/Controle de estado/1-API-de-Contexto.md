@@ -29,7 +29,7 @@ function App() {
 }
 ```
 
-Você cria um novo componente e precisa usar as cores do usuário. Vamos criar esse componente.
+Você cria um novo componente e precisa usar as cores do usuário. Vamos criar esse componente:
 
 ```jsx
 function ListaColorida({ items, color }) {
@@ -108,7 +108,7 @@ function ListaColorida({ items }) {
 }
 ```
 
-Com isso, os componentes não precisam receber a cor do usuário através dos seus pais. Elem pró-ativamente consomem a cor vinda do Contexto.
+Com isso, os componentes não precisam receber a cor do usuário através dos seus pais. Eles pró-ativamente consomem a cor vinda do contexto.
 
 Nosso App e nosso Dashboard ficam mais simples também:
 
@@ -153,7 +153,7 @@ Na prática, o comportamento do componente permanece igual. A vantagem é que se
 
 ## Considerações adicionais
 
-Você pode construír quantos contextos forem necessários. Você pode criar um contexto diferente para cada tipo de dado, colocar os provedores hierarquizados no topo da árvore e cada componente apenas com os contextos relevantes para a própria montagem.
+Você pode construir quantos contextos forem necessários. Você pode criar um contexto diferente para cada tipo de dado, colocar os provedores hierarquizados no topo da árvore e cada componente apenas com os contextos relevantes para a própria montagem.
 
 ```jsx
 function App() {
