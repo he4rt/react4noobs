@@ -6,7 +6,7 @@
 
 # NPM
 
-O npm é um gerenciador de pacotes, com ele é possível criar bibliotecas js e disponibiliza-las para a comunidade, além de poder incluir outras bibliotecas externas na sua aplicação.
+O npm é um gerenciador de pacotes, com ele é possível criar bibliotecas js e disponibilizá-las para a comunidade, além de poder incluir outras bibliotecas externas na sua aplicação.
 
 Não iremos nos aprofundar muito no npm nesta seção, apenas explicar o básico sobre como instalar o React com a utilização do mesmo.
 
@@ -18,7 +18,7 @@ O Create React App é uma ferramenta para criar projetos em React com o intuito 
 
 ## Instalação
 
-Com o auxilio do npx do npm iremos executar o seguinte comando para criar a aplicação.
+Com o auxílio do npx do npm iremos executar o seguinte comando para criar a aplicação.
 
 ```cmd
     npx create-react-app react4noobs
@@ -40,13 +40,13 @@ E uma tela no navegador irá se abrir:
 
 <img align="center" src="/assets/npm-start-react.jpeg" alt="" width="50%">
 
-Quando você alterar qualquer arquivo e salvar, eles serão recompilados e a janela do navegador será atualizada, caso algum erro ocorra, ele aparecerá em vermelho no console.
+Quando você alterar qualquer arquivo e salvar, eles serão recompilados e a janela do navegador será atualizada. Caso algum erro ocorra, ele aparecerá em vermelho no console.
 
 <img align="center" src="/assets/error-npm.jpg" alt="" width="50%">
 
 O **build** é utilizado para enviar a aplicação para "produção".
 
-Como isso acontece? Ao executa-lo o babel transpila a aplicação automaticamente e todo o app será mandado para uma pasta */build* fora da */src* em arquivos estáticos, e então seu arquivo estará pronto para ser colocado em produção.
+Como isso acontece? Ao executá-lo o babel transpila a aplicação automaticamente e todo o app será mandado para uma pasta */build* fora da */src* em arquivos estáticos, e então seu arquivo estará pronto para ser colocado em produção.
 
 O **eject** é interessante, inicialmente o create-react-app empacota e esconde os módulos do npm que ele está usando por debaixo dos panos, para que o *package.json* seja mais limpo e simples. Porém se você quiser começar a adicionar configurações mais complexas e instalar outros módulos, seus módulos atuais precisam saber quais são os módulos existentes. Então ao executar o **eject** ele não esconderá mais esses módulos, e eles estarão disponíveis no seu *package.json*.
 
