@@ -4,25 +4,25 @@
   </a>
 </p>
 
-# PreProcessadores CSS
+# Pré-processadores CSS
 
-## O que é um pré processador
+## O que é um pré-processador
 
-Basicamente é como se você programasse em uma linguagem de programação compilada. Você escreve na sintaxe definida (Less/Sass/etc), o pré processador transforma para CSS e então você acrescenta o arquivo CSS a sua página normalmente.
+Basicamente é como se você programasse em uma linguagem de programação compilada. Você escreve na sintaxe definida (Less/Sass/etc), o pré-processador transforma para CSS e então você acrescenta o arquivo CSS a sua página normalmente.
 
 ### ⚠ Aviso:
 
-> Algo importante a frisar é que usar esses Pré processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS, caso você ainda não se sinta confortável com essa tecnologia [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
+> Algo importante a frisar é que usar esses pré-processadores é bem simples independente da sintaxe... Porém, é muitíssimo importante que você já tenha uma boa base de CSS. Caso você ainda não se sinta confortável com essa tecnologia, [pode clicar aqui para aprender mais no Css4noobs](https://github.com/mathh95/css4noobs).
 
 ---
 
 ## Quais os mais utilizados?
 
-São muitos nomes no mercado, porém, os mais poderosos e badalados são [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/).
+São muitos nomes no mercado. Porém, os mais poderosos e badalados são [Less](https://lesscss.org/), [Sass](https://sass-lang.com/), [Stylus](https://learnboost.github.io/stylus/).
 
-## Afinal, Qual devo usar?
+## Afinal, qual devo usar?
 
-Recomendamos que você acesse o site de cada um dos pré processadores, veja o que mais te interessa ou agrada conforme sua experiência e o que te atenderia caso queira usar determinado Framework. Por exemplo: quer usar o Compass, aprenda Sass.
+Recomendamos que você acesse o site de cada um dos pré-processadores, veja o que mais te interessa ou agrada conforme sua experiência e o que te atenderia caso queira usar determinado Framework. Por exemplo: quer usar o Compass, aprenda Sass.
 
 > Na próxima seção vamos tratar de Framework CSS, aguardo você.
 
@@ -58,7 +58,7 @@ brew install sass / sass / sass
 
 ### ⚠ Observação:
 
-Agora todos os seus arquivos CSS devem usar a extensão `.scss`, Por exemplo, ao invés de usar "*App.css*" use "*App.scss*".
+Agora todos os seus arquivos CSS devem usar a extensão `.scss`, Por exemplo, ao invés de usar "_App.css_" use "_App.scss_".
 
 ## O básico de Sass:
 
@@ -209,7 +209,7 @@ Então podemos escrever:
 
 ## Parciais
 
-Você pode criar arquivos Sass parciais que contêm pequenos trechos de CSS que podem ser incluídos em outros arquivos Sass. Esta é uma ótima maneira de modularizar seu CSS e ajudar a manter as coisas mais fáceis de manter. Um parcial é um arquivo Sass nomeado com um sublinhado à esquerda. Você pode chamá-lo de algo como **\_arquivo.scss** (É obrigatório o uso do \_ ). O sublinhado permite que o Sass saiba que o arquivo é apenas um arquivo parcial e que não deve ser gerado em um arquivo CSS . Parciais de Sass são usados ​​com a @use regra.
+Você pode criar arquivos Sass parciais que contenham pequenos trechos de CSS que podem ser incluídos em outros arquivos Sass. Esta é uma ótima maneira de modularizar seu CSS e ajudar a manter as coisas mais fáceis de manter. Um parcial é um arquivo Sass nomeado com um sublinhado à esquerda. Você pode chamá-lo de algo como **\_arquivo.scss** (É obrigatório o uso do \_ ). O sublinhado permite que o Sass saiba que o arquivo é apenas um arquivo parcial e que não deve ser gerado em um arquivo CSS . Parciais de Sass são usados ​​com a @use regra.
 
 ### Podemos importar esses arquivos parciais através da seguinte sintaxe:
 
@@ -256,11 +256,11 @@ Em nosso exemplo, vamos criar um Sass simples de mensagens para erros, avisos e 
 }
 ```
 
-> Observe que um vai obter as características do outro sem precisar reinscrever o código.
+> As classes `error` e `warning` vão obter as características de `message` sem você precisar reescrever o código.
 
 ## Operadores
 
-Fazer matemática em seu CSS é muito útil. Sass tem um punhado de operadores matemáticos padrão, como +, -, \*, /, e %. Em nosso exemplo, vamos fazer algumas contas simples para calcular as larguras de um aside & article .
+Fazer matemática em seu CSS é muito útil. Sass tem um punhado de operadores matemáticos padrão, como +, -, \*, /, e %. Em nosso exemplo, vamos fazer algumas contas simples para calcular as larguras de um aside e de um article.
 
 #### Sass:
 
@@ -317,6 +317,22 @@ button {
 }
 ```
 
+## Funções
+
+As funções são um dos recursos mais interessantes e complexos dentro do sass, é possível automatizar muitos processos com o objetivo de repetir cada vez **menos código**. Funcionam de uma maneira bem parecida com as do JavaScript, recebendo **parâmetros** e **retornando** um valor.
+
+Um pequeno exemplo de como automatizar a criação de um gradiente:
+
+```
+@function gradient($color_a, $color_b){
+  @return linear-gradient(135deg, $color_a, $colorb);
+}
+
+div {
+  background: gradient(#7159c1, #9365C9)
+}
+```
+
 ## Condicionais
 
 E por último, vamos falar das condicionais. Porém, não vamos entrar muito nesse tema por se tratar de algo mais complexo, para acabar com sua curiosidade poderá usar `@if`, `@for`, `@each`, `@while` para quem já estudou o básico de qualquer linguagem de programação como Javascript [(clique aqui para aprender Javascript)](https://github.com/ThiagoDellaNoce/javascript4noobs) já deve ter ouvido falar.
@@ -346,9 +362,9 @@ header {
 
 Entendemos agora o que são e para que servem os pré-processadores. Mas quando utilizar?
 
-Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável, porém, quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
+Depende do tamanho do projeto, se você irá desenvolver apenas uma página simples e pequena, talvez não seja viável. Porém, quando se trata de sistemas ou até mesmo projetos grandes, ou principalmente se você quer facilitar a manutenção desse código no futuro, vale muito a pena utilizar um pré-processador como o Sass.
 
-O uso de pré-processadores como o Sass, é uma realidade no mercado, podendo ser facilmente encontrado em projetos open source, seja de front-end ou de back-end, e é comumente exigido como requisito para oportunidades de emprego.
+O uso de pré-processadores como o Sass, é uma realidade no mercado. É facilmente encontrado em projetos open-source, seja de front-end ou de back-end, e é comumente exigido como requisito para oportunidades de emprego.
 
 Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção!
 

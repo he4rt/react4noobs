@@ -16,19 +16,19 @@ Moment (Ou [Moment.js](https://momentjs.com/)) é uma biblioteca leve e super in
 
 ### Instalando o Moment
 
-Para instalar o Moment é necessário de qualquer um dos comandos abaixo
+É possível instalar o Moment usando um dos comandos abaixo:
 
 ```
 npm install moment --save   # npm
 yarn add moment             # Yarn
 
-// Os acima são os principais, mas também está disponível em outros gerenciadores de pacote
+// Os acima são os principais, mas outros gerenciadores de pacote também podem ser utilizados.
 Install-Package Moment.js   # NuGet
 spm install moment --save   # spm
 meteor add momentjs:moment  # meteor
 ```
 
-Para mais informações, consulte a documentação do {Moment}(https://momentjs.com/docs/).
+Para mais informações, consulte a documentação do [Moment](https://momentjs.com/docs/).
 
 ## Iniciando com Moment
 
@@ -78,9 +78,9 @@ Podemos alterar o locale com o uso da função `locale()`, passando como parâme
 moment.locale('pt-br'); // Locale alterado para Português - Brasil
 ```
 
-### Funções de utilidade 
+### Funções de utilidade
 
-Conforme apresentado anteriormente, o moment tem diversas funções utilitárias para manipulação de datas
+Conforme apresentado anteriormente, o moment tem diversas funções utilitárias para manipulação de datas:
 
 ```js
 // Datas "desde agora" (tempo relativo)
@@ -101,7 +101,7 @@ moment().add(3, 'days').calendar();       // terça-feira às 15:24
 moment().add(10, 'days').calendar();      // 18/08/2020
 ```
 
-O moment também disponibilizaa diversas opções para formatação de datas em strings, muito utilizado para apresentação de dados.
+O moment também disponibiliza diversas opções para formatação de datas em texto, muito utilizadas para apresentação de dados.
 
 ```js
 moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 8º 2020, 3:27:04 pm
@@ -111,21 +111,21 @@ moment().format("YYYY [exemplo] YYYY");     // 2020 exemplo 2020
 moment().format();                          // 2020-08-08T15:27:16-03:00
 ```
 
-Esta função `format` toma como base o locale fornecido, portanto, você pode utilizar como o código abaixo, para caso sejam necessárias línguas diferentes.
+Esta função `format` toma como base o locale fornecido. Portanto, caso seja necessário trabalhar com idiomas diferentes, você pode chamar a função `locale` como no código abaixo:
 
 ```js
 var marco = moment('2020-03')
-marco.format('MMMM') // Março
+marco.format('MMMM') // 'March' (inglês como o locale padrão)
 
-moment.locale('de')  // Toma 'de' como base de locale
+moment.locale('de')  // Muda a base de locale para alemão (de)
 marco.format('MMMM') // 'March', pois a instância foi criada antes do locale ser definido.
 
 var novoMarco = moment('2020-03')
-novoMarco.format('MMMM') // 'März', conforme o 'de'
+novoMarco.format('MMMM') // 'März', conforme a base de locale (que mudamos para alemão)
 
-// O mesmo não acontece caso você altere o locale do momento que já foi definido
+// Você pode alterar objetos já definidos chamando a função locale dentro deles.
 marco.locale('pt-br')
-marco.format('MMMM') // 'Marzo'
+marco.format('MMMM') // 'Março'
 ```
 
 <p align="center">Made with :purple_heart:</p>

@@ -36,12 +36,12 @@
 
 ### Controle de estado
 
-1. [API de Contexto]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [API de Contexto](./Controle de estado/1-API-de-Contexto.md)
 2. [Redux]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Verificadores de tipos
 
-1. [Typescript]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Typescript](./Verificadores%20de%20Tipo/Typescript.md)
 
 ### Roteamento
 
@@ -66,8 +66,8 @@
 
 ### Testes
 
-1. [Testes de Integração]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-2. [Testes de Unidade]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Testes de Unidade]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [Testes de Integração](./Testes/2-testes-de-integracao.md)
 3. [Testes E2E]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### i18n
