@@ -4,6 +4,12 @@
 </a>
 </p>
 
+<p align="center">
+    <img src="../../assets/webpack-babel.jpeg">
+</p>
+
+
+
 # O que é WebPack?
 
 O Webpack é um empacotador de módulos para projetos web que utilizam html, css, javascript e imagens, sendo uma das principais ferramentas utilizadas no core do React.
@@ -132,7 +138,7 @@ Por isso precisamos voltar em nosso arquivo de configuração do Webpack para us
 
 ```js
 module.exports = {
-    
+
     entry: "./app.js",
     output: {
         filename: "bundle.js"
