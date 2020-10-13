@@ -48,8 +48,11 @@ Agora podemos criar nosso index.html, o arquivo principal que importará todo o 
 <title>Webpack React Example</title>
 </head>
 <body>
+
 <div id="app"></div>
+
 <script src="bundle.js"></script>
+
 </body>
 </html>
 ```
@@ -59,11 +62,14 @@ Veja que temos uma parte que importa o arquivo 'bundle.js' ele será todo o java
 Para que esse arquivo seja criado, precisaremos do Webpack. Portanto, vamos criar o arquivo webpack.config.js, que será o arquivo de configuração do Webpack:
 
 ```js
+
 module.exports = {
+
 entry: './app.js',
 output: {
 filename: 'bundle.js',
-},
+
+  },
 };
 ```
 
@@ -126,22 +132,22 @@ Por isso precisamos voltar em nosso arquivo de configuração do Webpack para us
 
 ```js
 module.exports = {
-entry: "./app.js",
-output: {
-filename: "bundle.js"
-},
-module: {
-loaders: [
-{
-test: /\.js$/,
-exclude: /node_modules/,
-loader: 'babel',
-query: {
-presets: ['react', 'es2015']
-}
-}
-]
-}
+    entry: "./app.js",
+    output: {
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+    {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+            presets: ['react', 'es2015']
+        }
+       }
+      ]
+     }
 }
 
 ```
