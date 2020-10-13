@@ -132,6 +132,7 @@ Por isso precisamos voltar em nosso arquivo de configuração do Webpack para us
 
 ```js
 module.exports = {
+    
     entry: "./app.js",
     output: {
         filename: "bundle.js"
