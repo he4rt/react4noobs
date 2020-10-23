@@ -41,9 +41,9 @@ O objetivo do CSS-in-JS, no geral, é abstrair a complexidade de lidar com uma i
 
 
 #### E onde entra o JS?
-Para tirar um bom proveito desse paradigma, é importante conhecer os [tipos de dados em JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures). 
+Para tirar um bom proveito desse paradigma, é importante conhecer os [tipos de dados em JS](https://github.com/ThiagoDellaNoce/javascript4noobs/blob/master/4_Basico/3_Tipos-de-dados.md). 
 
-Também, para ir além, é bom conhecer os operadores [matemáticos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators), [lógicos](/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional), [spread](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [destructuring](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribuicao_via_desestruturacao), e [módulos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/M%C3%B3dulos).
+Também, para ir além, é bom conhecer os operadores [matemáticos](https://github.com/ThiagoDellaNoce/javascript4noobs/blob/master/4_Basico/5_Operadores-Aritmeticos.md), [lógicos](https://github.com/ThiagoDellaNoce/javascript4noobs/blob/master/4_Basico/6_Operadores-Logicos.md), [condicionais](https://github.com/ThiagoDellaNoce/javascript4noobs/blob/master/4_Basico/7_Condicionais.md), [spread](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [destructuring](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribuicao_via_desestruturacao), [módulos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/M%C3%B3dulos) e [etc](https://github.com/ThiagoDellaNoce/javascript4noobs/tree/master/4_Basico)
 
 > ⚠️ **Mas não te assusta!** Essas coisas vêm com a prática. Elas são do JavaScript, então, é natural que *possam* ser utilizadas em uma biblioteca CSS-in-JS, mas não quer dizer que é *obrigatório* usá-las.
 
@@ -328,7 +328,7 @@ Ainda, é possível substituir o elemento gerado. Por exemplo, se quiséssemos q
 
 ### Sintaxe
 
-O `styled-components` usa um [pré-processador](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor) chamado [stylis](https://github.com/thysultan/stylis.js), que suporta a sintaxe do SCSS.
+O `styled-components` usa um [pré-processador](./Preprocessadores%20CSS.md) chamado [stylis](https://github.com/thysultan/stylis.js), que suporta a sintaxe do SCSS.
 
 ```jsx
 const Thing = styled.div.attrs((/* props */) => ({ tabIndex: 0 }))`
