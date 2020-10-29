@@ -8,7 +8,6 @@
 
 Axios é uma biblioteca criada com o intuito de realizar conexões HTTP de maneira dinâmica.
 
-
 ## Como instalar o Axios
 
 Para instalar, digite um dos comandos abaixo:
@@ -40,7 +39,6 @@ Exemplos:
 
 Tambem existem outros métodos que não são usados tanto em uma API. Caso queira dar uma conferida numa lista completa, [clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods).
 
-
 Alem dos métodos apresentados, temos os status da API. Eles servem para informar para o desenvolvedor o que aconteceu com sua requisição.
 
 Por exemplo:  
@@ -71,7 +69,6 @@ Feito isso, podemos ir para o arquivo que queremos que tenha uma interação ent
 
 ```js
 import React, { useState } from 'react';
-
 
 import api from 'api';
 
@@ -113,7 +110,6 @@ export default function Register() {
 }
 ```
 De maneira completamente simples utilizamos os hooks para receber os dados requisitados pelo formulário. Após isso, chamamos o método responsável por se conectar a API e executar a ação `POST`. Com isso, um novo usuário é registrado!
-
 
 [Ir para Próxima Seção]()
 

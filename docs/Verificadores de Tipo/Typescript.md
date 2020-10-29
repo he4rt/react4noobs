@@ -10,7 +10,6 @@ Esta documentação tem como intenção ser o seu pontapé inicial para começar
 
 Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o funcionamento do Typescript em si através de vários exemplos sinta-se livre para visitar o [Typescript4noobs!](https://github.com/Carolis/typescript4noobs)
 
-
 # O que é o Typescript?
 
 Typescript é considerado um **superset** da linguagem Javascript, dito isso, se você já sabe Javascript é muito fácil de começar a usá-lo já sabendo um pouco.
