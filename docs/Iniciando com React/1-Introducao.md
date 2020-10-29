@@ -8,8 +8,7 @@
 
 Seja bem-vindo! :purple_heart:
 
-O principal objetivo é introduzir todo o conteúdo básico de React para iniciantes
-Antes de começar é necessário conhecer os conceitos básicos de HTML, CSS e **principalmente** Javascript.
+O principal objetivo é introduzir todo o conteúdo básico de React para iniciantes. Antes de começar é necessário conhecer os conceitos básicos de HTML, CSS e **principalmente** Javascript.
 
 Você pode consultar esses outros repositórios do 4noobs para aprender esses conteúdos:
 
