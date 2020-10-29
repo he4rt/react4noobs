@@ -9,9 +9,9 @@
 > 🔥 **Tá com pressa?** pega o resumo:
 > 1. [O que é](#o-que-é-css-in-js)
 > 2. [Vantagens](#quais-vantagens-as-bibliotecas-de-css-in-js-fornecem)
-> 3. [Bibliotecas](#quais-as-principais-bibiliotecas)
-> 3.1 💅 [Styled Components](#-styled-components)
-> 3.2 📦 [CSS Modules](#-css-modules)
+> 3. [Bibliotecas](#quais-as-principais-bibiliotecas)  
+> 3.1 💅 [Styled Components](#-styled-components)  
+> 3.2 📦 [CSS Modules](#-css-modules)  
 > 3.3 👩‍🎤 [Emotion](#-emotion)
 > 4. [Na prática com Styled Components](#na-prática-com-styled-components)
 > 5. [Conclusão](#conclusão)
