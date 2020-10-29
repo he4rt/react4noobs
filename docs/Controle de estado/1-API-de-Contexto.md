@@ -10,13 +10,13 @@ Quando estamos trabalhando em um projeto React, aprendemos que os dados trafegam
 
 Em algumas situações, replicar essa passagem de props em vários níveis acaba se tornando repetitivo e extremamente verboso.
 
-A API de Contexto (Context API) serve exatamente nesse caso. Ela fornece uma forma de compartilhamento de dados entre todos os componentes dentro de sua árvore, sem que o desenvolvedor precise escrever a passsagem de props entre os níveis.
+A API de Contexto (Context API) serve exatamente nesse caso. Ela fornece uma forma de compartilhamento de dados entre todos os componentes dentro de sua árvore, sem que o desenvolvedor precise escrever a passagem de props entre os níveis.
 
 ## Quando usar?
 
 Você gostaria de personalizar as cores do seu sistema baseado em uma escolha do usuário.
 
-Para isso, você escreve um componente para o usuário escolher a cor e o coloca no sua aplicação.
+Para isso, você escreve um componente para o usuário escolher a cor e o coloca na sua aplicação.
 
 ```jsx
 function App() {
