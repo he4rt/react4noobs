@@ -97,11 +97,11 @@ Lembra do aninhamento em HTML? Algo que fazemos o tempo todo quando colocamos um
 
 ```
 <body>
-      <div>
-          <p>
-              <span></span>
-          </p>
-      <div>
+    <div>
+        <p>
+            <span></span>
+        </p>
+    </div>
 </body>
 ```
 
@@ -113,33 +113,38 @@ Então podemos escrever:
 
 ```
 #sidebar {
-        position: fixed;
-        height: 100%;
+  position: fixed;
+  height: 100%;
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
 
-            li {
-                background-color: #F2F2F2;
-                color: #404040;
-            }
-        }
+    li {
+      background-color: #F2F2F2;
+      color: #404040;
     }
+  }
+}
 ```
 
 #### CSS:
 
 ```
 #sidebar {
-        position: fixed;
-        height: 100%; }
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0; }
-    #sidebar ul li {
-        background-color: #F2F2F2;
-        color: #404040; }
+  position: fixed;
+  height: 100%; 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+#sidebar ul li {
+  background-color: #F2F2F2;
+  color: #404040; 
+}
 ```
 
 > Esse foi um exemplo simples para demonstrar o poder do Sass, podendo transformar um código complexo para um de fácil entendimento, para uma futura manutenção.
@@ -149,33 +154,39 @@ Então podemos escrever:
 #### Sass:
 
 ```
- #sidebar {
-        position: fixed;
-        height: 100%;
+#sidebar {
+  position: fixed;
+  height: 100%;
 
-        @media (max-width:768px) {
-            left: -9999;
-        }
+  @media (max-width:768px) {
+    left: -9999;
+  }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
 ```
 
 #### CSS:
 
 ```
+#sidebar {
+  position: fixed;
+  height: 100%; 
+}
+
+@media (max-width: 768px) {
   #sidebar {
-        position: fixed;
-        height: 100%; }
-    @media (max-width: 768px) {
-        #sidebar {
-            left: -9999; } }
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0; }
+    left: -9999; 
+  } 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
 ```
 
 ### Propriedades CSS:
@@ -183,28 +194,30 @@ Então podemos escrever:
 #### Sass:
 
 ```
- li {
-       background: {
-           image: url("image.png");
-           position: fixed;
-           }
-       margin : {
-           top: 1rem;
-           left: 2rem;
-           right: 1rem;
-           }
-      }
+li {
+  background: {
+    image: url("image.png");
+    position: fixed;
+  }
+  
+  margin : {
+    top: 1rem;
+    left: 2rem;
+    right: 1rem;
+  }
+}
 ```
 
 #### CSS:
 
 ```
-  li {
-        background-image: url("image.png");
-        background-position: fixed;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        margin-right: 1rem; }
+li {
+  background-image: url("image.png");
+  background-position: fixed;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
 ```
 
 ## Parciais
@@ -227,7 +240,10 @@ Algumas coisas em CSS são um pouco tediosas de escrever, especialmente com CSS3
   -ms-transform: $property;
   transform: $property;
 }
-.box { @include he4rtDev(rotate(30deg)); }
+
+.box {
+  @include he4rtDev(rotate(30deg));
+}
 ```
 
 Para criar um mixin você usa o **@mixin** e dá um nome a ele. Nós nomeamos nosso mixin **he4rtDev**.
@@ -241,18 +257,18 @@ Em nosso exemplo, vamos criar um Sass simples de mensagens para erros, avisos e 
 
 ```
 .message {
-     font-size: 20px;
-     border: 1px solid black;
+  font-size: 20px;
+  border: 1px solid black;
 }
 
 .warning {
-     @extend .message;
-     color: yellow;
+  @extend .message;
+  color: yellow;
 }
 
 .error {
-     @extend .message;
-     color: red;
+  @extend .message;
+  color: red;
 }
 ```
 
@@ -306,14 +322,14 @@ Criamos uma grade fluida muito simples, com base em 960px. As operações no Sas
 $base-size: 20px;
 $base-color: red;
 
-p{
-     font-size: $base-size / 2;
-     color: $base-color - 10;
+p {
+  font-size: $base-size / 2;
+  color: $base-color - 10;
 }
 
 button {
-     font-size: $base-size * 2;
-     background-color: $base-color + 200;
+  font-size: $base-size * 2;
+  background-color: $base-color + 200;
 }
 ```
 
@@ -324,7 +340,7 @@ As funções são um dos recursos mais interessantes e complexos dentro do sass,
 Um pequeno exemplo de como automatizar a criação de um gradiente:
 
 ```
-@function gradient($color_a, $color_b){
+@function gradient($color_a, $color_b) {
   @return linear-gradient(135deg, $color_a, $colorb);
 }
 
@@ -341,20 +357,19 @@ E por último, vamos falar das condicionais. Porém, não vamos entrar muito nes
 
 ```
 @mixin text-style($size) {
-    font-size: $size;
+  font-size: $size;
 
-    @if $size > 20px {
-         color: blue;
-    } @elseif $size = 20px {
-         color: red;
-    } @else {
-         color:green;
-    }
-
+  @if $size > 20px {
+    color: blue;
+  } @elseif $size = 20px {
+    color: red;
+  } @else {
+    color:green;
+  }
 }
 
 header {
-    @include text-style(21px);
+  @include text-style(21px);
 }
 ```
 

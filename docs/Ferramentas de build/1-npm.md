@@ -21,7 +21,7 @@ O Create React App é uma ferramenta para criar projetos em React com o intuito 
 Com o auxílio do npx do npm iremos executar o seguinte comando para criar a aplicação.
 
 ```cmd
-    npx create-react-app react4noobs
+npx create-react-app react4noobs
 ```
 
 Aguarde alguns minutos para que o npm baixe as dependências.
