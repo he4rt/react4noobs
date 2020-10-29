@@ -70,7 +70,7 @@ Pense nas variáveis ​​como uma forma de armazenar informações que você d
 
 #### Sass:
 
-```
+```scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -82,7 +82,7 @@ body {
 
 #### CSS:
 
-```
+```css
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -95,7 +95,7 @@ body {
 
 Lembra do aninhamento em HTML? Algo que fazemos o tempo todo quando colocamos um `<p>` em um `<div>` e um `<span>` no `<p>` como este?
 
-```
+```html
 <body>
     <div>
         <p>
@@ -111,7 +111,7 @@ Então podemos escrever:
 
 #### Sass:
 
-```
+```scss
 #sidebar {
   position: fixed;
   height: 100%;
@@ -130,7 +130,7 @@ Então podemos escrever:
 
 #### CSS:
 
-```
+```css
 #sidebar {
   position: fixed;
   height: 100%; 
@@ -153,7 +153,7 @@ Então podemos escrever:
 
 #### Sass:
 
-```
+```scss
 #sidebar {
   position: fixed;
   height: 100%;
@@ -171,7 +171,7 @@ Então podemos escrever:
 
 #### CSS:
 
-```
+```css
 #sidebar {
   position: fixed;
   height: 100%; 
@@ -193,7 +193,7 @@ Então podemos escrever:
 
 #### Sass:
 
-```
+```scss
 li {
   background: {
     image: url("image.png");
@@ -210,7 +210,7 @@ li {
 
 #### CSS:
 
-```
+```css
 li {
   background-image: url("image.png");
   background-position: fixed;
@@ -226,7 +226,7 @@ Você pode criar arquivos Sass parciais que contenham pequenos trechos de CSS qu
 
 ### Podemos importar esses arquivos parciais através da seguinte sintaxe:
 
-```
+```scss
 @import "diretorio/_arquivo.scss";
 ```
 
@@ -234,7 +234,7 @@ Você pode criar arquivos Sass parciais que contenham pequenos trechos de CSS qu
 
 Algumas coisas em CSS são um pouco tediosas de escrever, especialmente com CSS3 e as muitas propriedades que existem. Um mixin permite que você faça grupos de declarações CSS que deseja reutilizar em todo o seu site. Você pode até mesmo passar valores para tornar seu mixin mais flexível. Um bom uso de um mixin é para prefixos de propriedades. Aqui está um exemplo para transform.
 
-```
+```scss
 @mixin he4rtDev($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
@@ -255,7 +255,7 @@ Este é um dos recursos mais úteis do Sass. Usar **@extend** permite compartilh
 
 Em nosso exemplo, vamos criar um Sass simples de mensagens para erros, avisos e sucessos.
 
-```
+```scss
 .message {
   font-size: 20px;
   border: 1px solid black;
@@ -280,7 +280,7 @@ Fazer matemática em seu CSS é muito útil. Sass tem um punhado de operadores m
 
 #### Sass:
 
-```
+```scss
 .container {
   width: 100%;
 }
@@ -298,7 +298,7 @@ aside[role="complementary"] {
 
 #### CSS:
 
-```
+```css
 .container {
   width: 100%;
 }
@@ -318,7 +318,7 @@ Criamos uma grade fluida muito simples, com base em 960px. As operações no Sas
 
 ### Ou fazer algo mais simples como:
 
-```
+```scss
 $base-size: 20px;
 $base-color: red;
 
@@ -339,7 +339,7 @@ As funções são um dos recursos mais interessantes e complexos dentro do sass,
 
 Um pequeno exemplo de como automatizar a criação de um gradiente:
 
-```
+```scss
 @function gradient($color_a, $color_b) {
   @return linear-gradient(135deg, $color_a, $colorb);
 }
@@ -355,7 +355,7 @@ E por último, vamos falar das condicionais. Porém, não vamos entrar muito nes
 
 #### Para não deixar você sem nada, aqui vai um exemplo da usabilidade de um If em Sass:
 
-```
+```scss
 @mixin text-style($size) {
   font-size: $size;
 
