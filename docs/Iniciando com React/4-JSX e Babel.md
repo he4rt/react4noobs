@@ -32,7 +32,6 @@ Atualmente nem todos os navegadores entendem o Javascript moderno, mas com o Bab
 
 [Ir para Próxima Seção](./5-React%20Hooks.md)
 
-
 <p align="center">Made with :purple_heart:</p>
 
 <p align="center">

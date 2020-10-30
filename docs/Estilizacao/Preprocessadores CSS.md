@@ -70,7 +70,7 @@ Pense nas variáveis ​​como uma forma de armazenar informações que você d
 
 #### Sass:
 
-```
+```scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -82,7 +82,7 @@ body {
 
 #### CSS:
 
-```
+```css
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
@@ -95,13 +95,13 @@ body {
 
 Lembra do aninhamento em HTML? Algo que fazemos o tempo todo quando colocamos um `<p>` em um `<div>` e um `<span>` no `<p>` como este?
 
-```
+```html
 <body>
-      <div>
-          <p>
-              <span></span>
-          </p>
-      <div>
+    <div>
+        <p>
+            <span></span>
+        </p>
+    </div>
 </body>
 ```
 
@@ -111,35 +111,40 @@ Então podemos escrever:
 
 #### Sass:
 
-```
+```scss
 #sidebar {
-        position: fixed;
-        height: 100%;
+  position: fixed;
+  height: 100%;
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
 
-            li {
-                background-color: #F2F2F2;
-                color: #404040;
-            }
-        }
+    li {
+      background-color: #F2F2F2;
+      color: #404040;
     }
+  }
+}
 ```
 
 #### CSS:
 
-```
+```css
 #sidebar {
-        position: fixed;
-        height: 100%; }
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0; }
-    #sidebar ul li {
-        background-color: #F2F2F2;
-        color: #404040; }
+  position: fixed;
+  height: 100%; 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+#sidebar ul li {
+  background-color: #F2F2F2;
+  color: #404040; 
+}
 ```
 
 > Esse foi um exemplo simples para demonstrar o poder do Sass, podendo transformar um código complexo para um de fácil entendimento, para uma futura manutenção.
@@ -148,63 +153,71 @@ Então podemos escrever:
 
 #### Sass:
 
-```
- #sidebar {
-        position: fixed;
-        height: 100%;
+```scss
+#sidebar {
+  position: fixed;
+  height: 100%;
 
-        @media (max-width:768px) {
-            left: -9999;
-        }
+  @media (max-width:768px) {
+    left: -9999;
+  }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
 ```
 
 #### CSS:
 
-```
+```css
+#sidebar {
+  position: fixed;
+  height: 100%; 
+}
+
+@media (max-width: 768px) {
   #sidebar {
-        position: fixed;
-        height: 100%; }
-    @media (max-width: 768px) {
-        #sidebar {
-            left: -9999; } }
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0; }
+    left: -9999; 
+  } 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
 ```
 
 ### Propriedades CSS:
 
 #### Sass:
 
-```
- li {
-       background: {
-           image: url("image.png");
-           position: fixed;
-           }
-       margin : {
-           top: 1rem;
-           left: 2rem;
-           right: 1rem;
-           }
-      }
+```scss
+li {
+  background: {
+    image: url("image.png");
+    position: fixed;
+  }
+  
+  margin : {
+    top: 1rem;
+    left: 2rem;
+    right: 1rem;
+  }
+}
 ```
 
 #### CSS:
 
-```
-  li {
-        background-image: url("image.png");
-        background-position: fixed;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        margin-right: 1rem; }
+```css
+li {
+  background-image: url("image.png");
+  background-position: fixed;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
 ```
 
 ## Parciais
@@ -213,7 +226,7 @@ Você pode criar arquivos Sass parciais que contenham pequenos trechos de CSS qu
 
 ### Podemos importar esses arquivos parciais através da seguinte sintaxe:
 
-```
+```scss
 @import "diretorio/_arquivo.scss";
 ```
 
@@ -221,13 +234,16 @@ Você pode criar arquivos Sass parciais que contenham pequenos trechos de CSS qu
 
 Algumas coisas em CSS são um pouco tediosas de escrever, especialmente com CSS3 e as muitas propriedades que existem. Um mixin permite que você faça grupos de declarações CSS que deseja reutilizar em todo o seu site. Você pode até mesmo passar valores para tornar seu mixin mais flexível. Um bom uso de um mixin é para prefixos de propriedades. Aqui está um exemplo para transform.
 
-```
+```scss
 @mixin he4rtDev($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
   transform: $property;
 }
-.box { @include he4rtDev(rotate(30deg)); }
+
+.box {
+  @include he4rtDev(rotate(30deg));
+}
 ```
 
 Para criar um mixin você usa o **@mixin** e dá um nome a ele. Nós nomeamos nosso mixin **he4rtDev**.
@@ -239,20 +255,20 @@ Este é um dos recursos mais úteis do Sass. Usar **@extend** permite compartilh
 
 Em nosso exemplo, vamos criar um Sass simples de mensagens para erros, avisos e sucessos.
 
-```
+```scss
 .message {
-     font-size: 20px;
-     border: 1px solid black;
+  font-size: 20px;
+  border: 1px solid black;
 }
 
 .warning {
-     @extend .message;
-     color: yellow;
+  @extend .message;
+  color: yellow;
 }
 
 .error {
-     @extend .message;
-     color: red;
+  @extend .message;
+  color: red;
 }
 ```
 
@@ -264,7 +280,7 @@ Fazer matemática em seu CSS é muito útil. Sass tem um punhado de operadores m
 
 #### Sass:
 
-```
+```scss
 .container {
   width: 100%;
 }
@@ -282,7 +298,7 @@ aside[role="complementary"] {
 
 #### CSS:
 
-```
+```css
 .container {
   width: 100%;
 }
@@ -302,18 +318,18 @@ Criamos uma grade fluida muito simples, com base em 960px. As operações no Sas
 
 ### Ou fazer algo mais simples como:
 
-```
+```scss
 $base-size: 20px;
 $base-color: red;
 
-p{
-     font-size: $base-size / 2;
-     color: $base-color - 10;
+p {
+  font-size: $base-size / 2;
+  color: $base-color - 10;
 }
 
 button {
-     font-size: $base-size * 2;
-     background-color: $base-color + 200;
+  font-size: $base-size * 2;
+  background-color: $base-color + 200;
 }
 ```
 
@@ -323,8 +339,8 @@ As funções são um dos recursos mais interessantes e complexos dentro do sass,
 
 Um pequeno exemplo de como automatizar a criação de um gradiente:
 
-```
-@function gradient($color_a, $color_b){
+```scss
+@function gradient($color_a, $color_b) {
   @return linear-gradient(135deg, $color_a, $colorb);
 }
 
@@ -339,22 +355,21 @@ E por último, vamos falar das condicionais. Porém, não vamos entrar muito nes
 
 #### Para não deixar você sem nada, aqui vai um exemplo da usabilidade de um If em Sass:
 
-```
+```scss
 @mixin text-style($size) {
-    font-size: $size;
+  font-size: $size;
 
-    @if $size > 20px {
-         color: blue;
-    } @elseif $size = 20px {
-         color: red;
-    } @else {
-         color:green;
-    }
-
+  @if $size > 20px {
+    color: blue;
+  } @elseif $size = 20px {
+    color: red;
+  } @else {
+    color:green;
+  }
 }
 
 header {
-    @include text-style(21px);
+  @include text-style(21px);
 }
 ```
 

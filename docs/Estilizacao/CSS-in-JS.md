@@ -9,14 +9,13 @@
 > 🔥 **Tá com pressa?** pega o resumo:
 > 1. [O que é](#o-que-é-css-in-js)
 > 2. [Vantagens](#quais-vantagens-as-bibliotecas-de-css-in-js-fornecem)
-> 3. [Bibliotecas](#quais-as-principais-bibliotecas)
-> 3.1 💅 [Styled Components](#-styled-components)
-> 3.2 📦 [CSS Modules](#-css-modules)
+> 3. [Bibliotecas](#quais-as-principais-bibliotecas)  
+> 3.1 💅 [Styled Components](#-styled-components)  
+> 3.2 📦 [CSS Modules](#-css-modules)  
 > 3.3 👩‍🎤 [Emotion](#-emotion)
 > 4. [Na prática com Styled Components](#na-prática-com-styled-components)
 > 5. [Conclusão](#conclusão)
 > 9. [Referências](#referências)
-
 
 ## O que é CSS-in-JS?
 É um conceito, uma coleção de ideias para resolver problemas complexos com CSS. Não é uma biblioteca em particular, então cada implementação pode focar em um subconjunto diferente de problemas usando abordagens diferentes. 
@@ -32,13 +31,11 @@ O objetivo do CSS-in-JS, no geral, é abstrair a complexidade de lidar com uma i
 - Aproveitar as vantagens do JS (funções, condicionais, variáveis, estados, ...)
 - Aproveitar as vantagens de qualquer coisa do ecossistema JS
 
-
 #### CSS-in-JS *não* vai te livrar de entender...
 - Como estilos são aplicados no DOM
 - Como funciona herança
 - Como funcionam as propriedades de CSS
 - Como funcionam os layouts em CSS
-
 
 #### E onde entra o JS?
 Para tirar um bom proveito desse paradigma, é importante conhecer os [tipos de dados em JS](https://github.com/ThiagoDellaNoce/javascript4noobs/blob/master/4_Basico/3_Tipos-de-dados.md). 
@@ -83,7 +80,6 @@ Satisfação| Usaria novamente / (Usaria novamente + Não usaria novamente)
 ### 💅 [Styled Components](https://github.com/styled-components/styled-components)
 Utilizando [tagged template literals](https://www.styled-components.com/docs/advanced#tagged-template-literals) e [o poder do CSS](https://www.styled-components.com/docs/api#supported-css), `styled-components` permite escrever código CSS para estilizar os componentes. Também remove o mapeamento entre estilos e componentes, permitindo que se use componentes como construção de estilos de baixo nível de forma fácil.
 
-
 `styled-components` é pensado para aprimorar CSS para estilizar sistemas de componentes React. Ao nos levar em conta um único caso de uso, foi possível otimizar a experiência para devs e também a saída para os usuários finais.
 
 Além da experiência aprimorada para devs, os componentes estilizados fornecem:
@@ -117,11 +113,11 @@ Os dois estilos acima são equivalentes.
 
 Styled Components é também compatível com React Native.
 
-
 ### 📦 [CSS Modules](https://github.com/css-modules/css-modules)
 Um **Módulo CSS** é um arquivo CSS no qual todas as classes e animações são escopadas localmente por padrão. Todas as `url(...)` e os `@import`s são feitos da mesma forma que se requisita um módulo em JS.
 
 CSS Modules compila para um formato intermediário chamado [ICSS](https://github.com/css-modules/icss), mas são escritos na forma padrão.
+
 ```css
 /* style.css */
 .error {
@@ -138,13 +134,13 @@ import styles from "./style.css";
 const btn = <button className={styles.error}>Error Button</button>;
 ```
 
-
 ### 👩‍🎤 [Emotion](https://github.com/emotion-js/emotion)
 Emotion fornece uma composição de estilo poderosa e previsível, além de uma ótima experiência de desenvolvedor com recursos como _source maps_, _labels_ e utilitários de teste. Ambos os estilos de string e objeto são suportados.
 
 O Emotion possui duas formas de uso, uma agnóstica de framework e outra específica para trabalho com React.
 
 #### Forma agnóstica de framework:
+
 ```jsx
 import { css, cx } from 'emotion'
 
@@ -171,6 +167,7 @@ render(
 Essa abordagem possui suporte a ESLint, temas, e outros benefícios, mas exige mais configuração. Além disso, tem também suporte à sintaxe _styled_
 
 ##### clássico
+
 ```jsx
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
@@ -194,7 +191,9 @@ render(
   </div>
 )
 ```
+
 ##### styled
+
 ```jsx
 import styled from '@emotion/styled'
 
@@ -221,11 +220,13 @@ Esse exemplo [está na documentação](https://styled-components.com/docs/basics
 
 ### Instalação
 Com NPM:
+
 ```bash
 npm install --save styled-components
 ```
 
 Com Yarn:
+
 ```bash
 yarn add styled-components
 ```
@@ -270,6 +271,7 @@ Se gera um componente, pode ter props.
 E se tem props, você pode usar.
 
 Esse exemplo abaixo tem um estado `primary` que muda as cores com base na presença (ou ausência) da prop. Para isso, basta usar a famosa [interpolação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings) ;)
+
 ```jsx
 const Button = styled.button`
   background: ${props => props.primary ? "palevioletred" : "white"};
@@ -375,7 +377,6 @@ Para evitar wrappers desnecessários que apenas passam algumas props para o comp
 Dessa forma, você pode, por exemplo, anexar props estáticas a um elemento ou passar uma prop de terceiros como  `activeClassName` para o componente `Link` do `React Router`. 
 Além disso, você também pode anexar props mais dinâmicas a um componente. O objeto `.attrs` também pode receber funções, que recebem as props que o componente recebe. O valor de retorno será mesclado com os props resultantes também.
 
-
 Aqui, renderizamos um componente `input` e anexamos alguns atributos dinâmicos e estáticos a ele:
 
 ```jsx
@@ -437,7 +438,6 @@ render(
 
 > ⚠️ Keyframes não é suportada pelo React Native.
 
-
 ---
 
 ## Referências
@@ -464,10 +464,6 @@ Entendemos agora o que é e para que serve o CSS-in-JS. Também conhecemos um po
 O objetivo do CSS-in-JS, no geral, é simplificar o processo de desenvolver o estilo da aplicação, e mitigar alguns dos problemas comuns como conflito de nomes e especificidade.
 
 Para tirar melhor proveito dessa abordagem, é essencial que se conheça os conceitos básicos de CSS e de JavaScript, beleza?
-
-...
-
-...
 
 Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção!
 

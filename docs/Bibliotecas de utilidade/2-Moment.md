@@ -7,7 +7,7 @@
 # Moment.js
 
 <p align="center">
-    <img src="../../assets/moment-logo.png">
+  <img src="../../assets/moment-logo.png">
 </p>
 
 ## O que é o Moment?

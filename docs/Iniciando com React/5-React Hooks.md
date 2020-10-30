@@ -20,6 +20,7 @@ O *useState* é um dos Hooks utilizados para criar estado dentro de um component
 O *useState* recebe como parâmetro o valor inicial do estado. E retorna um *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado.
 
 ### Exemplo:
+
 ```jsx
 import React, { useState } from 'react';
 
@@ -46,6 +47,7 @@ function Counter () {
 O *useEffect* é um Hook utilizado para realizar efeitos colaterais. Esse Hook recebe respectivamente como parâmetros: uma função de *callback* e um *array* de dependências. Quando uma das variáveis do *array* de dependências muda de valor, a função passada como primeiro parâmetro é executada.
 
 ### Exemplo:
+
 ```jsx
 import React, { useState, useEffect } from 'react'
 
@@ -69,6 +71,7 @@ function Counter() {
 ```
 
 Caso o *array* de dependências seja declarado vazio (`[]`), a função de *callback* vai ser executada apenas no momento em que o componente é montado.
+
 ```jsx
 useEffect(() => {
   // Essa função vai ser executada apenas quando o componente é montado
@@ -76,6 +79,7 @@ useEffect(() => {
 ```
 
 Caso você queira que uma função seja executada quando o componente é desmontado, basta retornar essa função dentro do *callback*.
+
 ```jsx
 useEffect(() => {
   // A função retornada pelo callback vai ser executada apenas quando o componente for desmontado
@@ -84,6 +88,7 @@ useEffect(() => {
 ```
 
 Também é possível fazer com que o *callback* seja executado todas as vezes que o componente renderizar novamente. Para isso, basta não passar nada como segundo parâmetro do *useEffect*. Porém, essa prática não é recomendada por questões de performance.
+
 ```jsx
 useEffect(() => {
   // Essa função vai ser executada toda vez que o componente renderizar

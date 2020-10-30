@@ -27,7 +27,6 @@ Nessa pasta criaremos o nome da nossa page como 'Home' e dentro dela dois arquiv
 ## Estrutura do Home/index.js
 
 ```js
-
 import React from 'react';
 import './style.css';
 
@@ -59,6 +58,7 @@ function Routes() {
 
 export default Routes;
 ```
+
 Abaixo você encontrará a explicação do routes.js
 - BrowserRouter: Responsável por trocar nossa rota dependendo da URL;
 - BrowserRouter: Responsável por observar a URL digitada e passar a informação para o **Route**;
