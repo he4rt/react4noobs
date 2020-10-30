@@ -30,7 +30,8 @@ Antes de colocamos a mão no código devemos saber que uma API HTTP tem regras. 
 `PUT`: Com esse método podemos alterar dados da API. Ele atualiza recursos já existentes ou pode criar um recurso inexistente  
 `PATCH`: Esse método é parecido com o `PUT`. No entanto, ele altera dados específicos
 
-Exemplos:  
+Exemplos:
+
 `GET`: Listar todos os usuários registrados  
 `POST`: Registrar um novo usuário  
 `DELETE`: Apagar um ou mais usuários  

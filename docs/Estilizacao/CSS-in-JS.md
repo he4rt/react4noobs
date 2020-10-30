@@ -17,7 +17,6 @@
 > 5. [Conclusão](#conclusão)
 > 9. [Referências](#referências)
 
-
 ## O que é CSS-in-JS?
 É um conceito, uma coleção de ideias para resolver problemas complexos com CSS. Não é uma biblioteca em particular, então cada implementação pode focar em um subconjunto diferente de problemas usando abordagens diferentes. 
 
@@ -56,11 +55,11 @@ Além disso, outras abstrações comumente implementadas em bibliotecas CSS-in-J
 - Suporte a temas
 - Estilos dinâmicos (com base em `props`, por exemplo)
 - Estilos são "escopados" a um componente específico
-- Otimizações de performance como gerar o _CSS crítico_ sem necessidade de configuração adicionjal
+- Otimizações de performance como gerar o _CSS crítico_ sem necessidade de configuração adicional
 
 --- 
 
-## Quais as principais bibiliotecas?
+## Quais as principais bibliotecas?
 
 A última edição da pesquisa [State of CSS](https://2019.stateofcss.com/) constatou que a biblioteca mais popular é a [Styled Components](https://github.com/styled-components/styled-components), seguida por [CSS Modules](https://github.com/css-modules/css-modules) e [Styled JSX]().
 Já as mais apreciadas são [Emotion](https://github.com/emotion-js/emotion), [CSS Modules](https://github.com/css-modules/css-modules) e [Styled Components](https://github.com/styled-components/styled-components).
@@ -112,7 +111,7 @@ const Button = styled.button({
 
 Os dois estilos acima são equivalentes.
 
-Styled Components é também compativel com React Native.
+Styled Components é também compatível com React Native.
 
 ### 📦 [CSS Modules](https://github.com/css-modules/css-modules)
 Um **Módulo CSS** é um arquivo CSS no qual todas as classes e animações são escopadas localmente por padrão. Todas as `url(...)` e os `@import`s são feitos da mesma forma que se requisita um módulo em JS.
