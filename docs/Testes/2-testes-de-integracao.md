@@ -36,7 +36,7 @@ Imagine a seguinte jornada:
 
 > Eu como usuário desejo ver um alerta ao clicar em um botão escrito "Exibir alerta"
 
-Pensando nos testes unitários, poderíamos testar se o botão está invocando a função passada e poderíamos verificar se o alerta está visivel baseado em uma variável de controle de exibição.
+Pensando nos testes unitários, poderíamos testar se o botão está invocando a função passada e poderíamos verificar se o alerta está visível baseado em uma variável de controle de exibição.
 
 ```js
 // Button.spec.js

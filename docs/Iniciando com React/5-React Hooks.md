@@ -78,7 +78,7 @@ useEffect(() => {
 Caso você queira que uma função seja executada quando o componente é desmontado, basta retornar essa função dentro do *callback*.
 ```jsx
 useEffect(() => {
-  // A função returnada pelo callback vai ser executada apenas quando o componente for desmontado
+  // A função retornada pelo callback vai ser executada apenas quando o componente for desmontado
   return () => { console.log('Componente Desmontado') }
 }, []);
 ```

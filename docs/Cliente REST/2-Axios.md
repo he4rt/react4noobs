@@ -36,7 +36,7 @@ Exemplos:
 `GET`: Listar todos os usuários registrados
 `POST`: Registrar um novo usuário
 `DELETE`: Apagar um ou mais usuários
-`PUT`: Alterar os dados de um usuário, caso não encontre o usuario ele é criado.
+`PUT`: Alterar os dados de um usuário, caso não encontre o usuário ele é criado.
 `PATCH`: Alterar um dado do usuário, como por exemplo a senha
 
 Tambem existem outros métodos que não são usados tanto em uma API. Caso queira dar uma conferida numa lista completa, [clique aqui](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods).
