@@ -41,7 +41,7 @@ Primeiramente iremos criar uma nova pasta para o nosso projeto, onde iremos inic
 ```
 npm install --save react react-dom
 
-npm install --save-dev webpack babel-core babel-loader babel-preset-react babel-preset-es2015
+npm install --save-dev webpack babel-core babel-loader  @babel/preset-env @babel/preset-react
 ```
 
 Agora podemos criar nosso index.html, o arquivo principal que importará todo o Javascript e carregará a aplicação:
@@ -138,26 +138,28 @@ Por isso precisamos voltar em nosso arquivo de configuração do Webpack para us
 
 ```js
 module.exports = {
+  entry: './app.js',
+  output: {
+    filename: 'bundle.js',
+  },
 
-    entry: "./app.js",
-    output: {
-        filename: "bundle.js"
-    },
-    module: {
-        loaders: [
-    {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-            presets: ['react', 'es2015']
-        }
-       }
-      ]
-     }
-}
+  module: {
+    rules: [
+      {
+        test: /.js/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
+};
 
 ```
+
+
+
 Pode ter ficado complicado agora, mas vamos passo a passo.
 
 Primeiro, vamos pegar todos os arquivos que terminem com .js:
@@ -172,11 +174,14 @@ Agora, basta informarmos que vamos usar o Babel como loader principal:
 
 ```loader: 'babel```
 
-E para fechar, vamos definir os dois loaders que precisamos, o babel-preset-es2015, e o babel-preset-react:
+E para fechar criaremos um novo arquivo chamado  `.babelrc` que sera responsavel por  definir os dois loaders que precisamos, o babel-preset-env e o preset-react, e o babel-preset-react:
 
 ```
-query: {
-presets: ['react', 'es2015']
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+    ]
 }
 
 ```
