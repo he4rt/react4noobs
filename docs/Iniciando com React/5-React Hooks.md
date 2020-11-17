@@ -95,6 +95,45 @@ useEffect(() => {
 });
 ```
 
+---
+
+## useRef
+O *useRef* é um Hook utlizado para acessar a referência de um elemento HTML na DOM, se assemelha aos métodos *Finding HTML Elements* do JavaScript nos Browsers.
+Ex.: `document.getElementById()`, `document.getElementsByClassName()` e etc.
+
+O *useRef* recebe como parâmetro um valor inicial e retorna um objeto mutável com uma propriedade `.current` com o valor que é a referência do elemento.
+
+### Exemplo:
+
+```jsx
+import React, { useRef } from 'react';
+
+function ContactForm () {
+  // Criamos uma const que recebe o useRef passando null como parametro
+  // Quando o elemento for renderizado em tela a variavel inputRef será atualizada
+  const inputRef = useRef(null);
+  
+  const handleContinue = () => {
+    // Podemos acessar as informações do elemento
+    // Nesse if verifico se o input possui algum valor, e se não, chamo a função focus
+    if(!inputRef.current.value) {
+      inputRef.current.focus()
+    }
+  }
+  
+  return(
+    <div>
+      {/* Quando esse elemento for renderizado atualizará a variavel com a sua referência */}
+      <input ref={inputRef} placeholder="Digite seu Email"  />
+
+      <button onClick={handleContinue}>
+        Continuar
+      </button>
+    </div>
+  );
+}
+```
+
 <p align="center">Made with :purple_heart:</p>
 
 <p align="center">
