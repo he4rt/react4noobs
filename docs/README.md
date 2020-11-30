@@ -25,7 +25,7 @@
 ### Ferramentas de build
 <!-- Comentar sobre npm e clientes alternativos como o yarn ou pnpm -->
 1. [NPM](./Ferramentas%20de%20build/1-npm.md)
-2. [Webpack]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [Webpack](./Ferramentas%20de%20build/2-Webpack.md) 
 
 ### Estilização
 
@@ -49,7 +49,7 @@
 
 ### Cliente REST
 
-1. [fetch]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [fetch](./Cliente%20REST/1-Fetch.md) 
 2. [axios](./Cliente%20REST/2-Axios.md)
 
 
