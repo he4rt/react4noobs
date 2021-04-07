@@ -23,9 +23,11 @@
 5. [React Hooks](./Iniciando%20com%20React/5-React%20Hooks.md)
 
 ### Ferramentas de build
+
 <!-- Comentar sobre npm e clientes alternativos como o yarn ou pnpm -->
+
 1. [NPM](./Ferramentas%20de%20build/1-npm.md)
-2. [Webpack](./Ferramentas%20de%20build/2-Webpack.md) 
+2. [Webpack](./Ferramentas%20de%20build/2-Webpack.md)
 
 ### Estilização
 
@@ -49,9 +51,8 @@
 
 ### Cliente REST
 
-1. [fetch](./Cliente%20REST/1-Fetch.md) 
+1. [fetch](./Cliente%20REST/1-Fetch.md)
 2. [axios](./Cliente%20REST/2-Axios.md)
-
 
 ### Cliente GraphQL
 
@@ -66,7 +67,7 @@
 
 ### Testes
 
-1. [Testes de Unidade]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Testes de Unidade](./Testes/1-testes-unitarios.md)
 2. [Testes de Integração](./Testes/2-testes-de-integracao.md)
 3. [Testes E2E]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 

@@ -23,6 +23,7 @@
 </p>
 
 ## Sobre o Projeto
+
 <p align="left">
     Escrito e desenvolvido pelos membros da <bold>He4rt Developers</bold> com o intuito de introduzir iniciantes ao <bold>ReactJS</bold> com um conteúdo de simples entendimento.
 </p>
@@ -44,6 +45,7 @@ Os programas a seguir são necessários para a utilização e modificação do p
 ## Instalação
 
 Faça um clone do repositório utilizando:
+
 ```sh
 git clone https://github.com/he4rt/react4noobs
 ```
@@ -53,16 +55,16 @@ git clone https://github.com/he4rt/react4noobs
 Ao contribuir será criado um vínculo com a comunidade open source, na qual todos, incluindo você, utilizam todos os dias para aprender e criar seus projetos. Portanto todas as contribuições nos fazem felizes e aquecem nossos corações roxos :purple_heart:
 
 1. Faça um Fork do projeto
-2. Crie uma branch sempre que houver uma nova feature (```git checkout -b 'feature/loveReact'```)
-3. Faça seu Commit (```git commit -m 'adding some stuff'```)
-4. Faça Push no seu Branch (```git push origin 'feature/loveReact'```)
+2. Crie uma branch sempre que houver uma nova feature (`git checkout -b 'feature/loveReact'`)
+3. Faça seu Commit (`git commit -m 'adding some stuff'`)
+4. Faça Push no seu Branch (`git push origin 'feature/loveReact'`)
 5. Abra um Pull Request e vem pro abraço!
 
 **Extra:** Nós utilizamos o Github projects para organização de tarefas, ele é público e você pode acessá-lo [aqui](https://github.com/he4rt/react4noobs/projects/1)
 
 ## Autores
 
-- **Anna Campelo ( Anne )** - _Developer & Member of He4rt Developers_  - [Twitter](https://twitter.com/Annerland)
+- **Anna Campelo ( Anne )** - _Developer & Member of He4rt Developers_ - [Twitter](https://twitter.com/Annerland)
 
 ## Colaboradores
 
@@ -79,6 +81,8 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
     <td align="center"><a href="https://github.com/AnnaCampelo"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/39065579?s=460&u=dd694563a239724a6cea6fcf3249540c3e1c645b&v=4" width="100px;" alt=""/><br /><sub><b>Anna Campelo</b></sub></a><br />
     <td align="center"><a href="https://github.com/Santiael"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/48307951?s=400&u=94528ed6e7b6d9945ef17e44722e2e27862d7fe6&v=4" width="100px;" alt=""/><br /><sub><b>Rafael Santiago</b></sub></a><br />
   </tr>
+  <tr>
+  <td align="center"><a href="https://github.com/midhatdrops"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67974118?v=4" width="100px;" alt=""/><br /><sub><b>Bruno R.Novais</b></sub></a><br /></tr>
 </table>
 
 <p align="center">Made with :purple_heart:</p>
