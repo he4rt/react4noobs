@@ -12,7 +12,7 @@
 
 ## O que são Testes Unitários ?
 
-Testes unitários podem ser definidos como porções de códigos responsáveis por validar o comportamento de unidades funcionais de código, sendo unidades funcionais qualquer componente que através de sua invocação possa gerar o resultado esperado. Podemos, então, pensar incilamnete em testes unitários no contexto de funções puras, que por sua vez são funções as quais não alteram o estado da nossa aplicação, tais como funções de soma de dois números. Segue um exemplo:
+Testes unitários podem ser definidos como porções de códigos responsáveis por validar o comportamento de unidades funcionais de código, sendo unidades funcionais de qualquer componente que através de sua invocação possa gerar o resultado esperado. Podemos, então, pensar inicialmente em testes unitários no contexto de funções puras, que por sua vez são funções as quais não alteram o estado da nossa aplicação, tal como uma função de soma de dois números. Segue um exemplo:
 
 ```js
 function sum(a, b) {
@@ -20,11 +20,13 @@ function sum(a, b) {
 }
 ```
 
-Porém, podemos expandir o conceito de teste unitários para coisas mais complexas, como por exemplo, no contexto do React, a renderização de um componente e verificar se o mesmo é renderizado, se é renderizado com o comportamento esperado e até mesmo lidando com eventos do próprio componente tais como cliques.
+Porém, podemos expandir o conceito de teste unitários para coisas mais complexas.
+
+Por exemplo, no contexto do React, a renderização de um componente é verificar se o mesmo é renderizado, se é renderizado com o comportamento esperado e até mesmo se está lidando com eventos do próprio componente tais como cliques da maneira correta.
 
 ## A importância e o ciclo do TDD
 
-TDD, ou Test-Driven Development (Desenvolvimento Orientado a Testes) é uma técnica de desenvolvimento de software fundamental para a validação de uma aplicação, muito utilizada pelas empresas e cobrada dos seus desenvolvedores. Essa prática minimiza os erros da aplicação, garantindo que em ambiente de produção ela ocorra da forma esperada.
+TDD, ou Test-Driven Development (Desenvolvimento Orientado a Testes) é uma técnica de desenvolvimento de software fundamental para a validação de uma aplicação, muito utilizada pelas empresas e cobrada dos seus desenvolvedores. Essa prática minimiza os erros da aplicação, tanto na fase de desenvolvimento, quando podemos alterar uma classe sem quebrar o código, quanto para a produção, ao sabermos que todo nosso código está testado e funcionando como esperamos.
 
 O Ciclo de TDD pode ser definido em três etapas: Criação, Falha, Refatoração. No primeiro, criamos o teste do qual queremos validar, em seguida passamos para a segunda etapa, onde forçamos o teste a falhar e assim temos certeza do funcionamento do teste, por fim passamos para a Refatoração, na qual refatoramos o teste, agora otimizando-o e fazendo-o passar.
 
