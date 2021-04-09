@@ -40,13 +40,13 @@ Pensando nos testes unitários, poderíamos testar se o botão está invocando a
 
 ```js
 // Button.spec.js
-describe("Meu botão", () => {
-  test("deve chamar a função onClick", () => {
+describe('Meu botão', () => {
+  test('deve chamar a função onClick', () => {
     const onClickMock = jest.fn();
 
     render(<Button onClick={onClickMock}>Exibir alerta</Button>);
 
-    userEvent.click(screen.getByRole("button", { name: "Exibir alerta" }));
+    userEvent.click(screen.getByRole('button', { name: 'Exibir alerta' }));
 
     expect(onClickMock).toHaveBeenCalled();
   });
@@ -55,18 +55,18 @@ describe("Meu botão", () => {
 
 ```js
 // Alert.spec.js
-describe("Meu Alerta", () => {
-  test("deve exibir o alerta", () => {
+describe('Meu Alerta', () => {
+  test('deve exibir o alerta', () => {
     render(<Alert isOpen>Aqui está seu alerta!</Alert>);
 
-    expect(screen.getByRole("alert")).toBeInDocument();
+    expect(screen.getByRole('alert')).toBeInDocument();
   });
 
-  test("não deve exibir o alerta", () => {
+  test('não deve exibir o alerta', () => {
     render(<Alert isOpen={false}>Aqui está seu alerta!</Alert>);
 
     expect(
-      screen.getByRole("alert", { name: "Aqui está seu alerta!" })
+      screen.getByRole('alert', { name: 'Aqui está seu alerta!' })
     ).not.toBeInDocument();
   });
 });
@@ -88,14 +88,14 @@ const App = () => (
 
 ```js
 // App.spec.js
-describe("Minha página inicial", () => {
+describe('Minha página inicial', () => {
   test('deve exibir o alerta quando clicar no botão "Exibir alerta"', () => {
     render(<App />);
 
-    userEvent.click(screen.getByRole("button", { name: "Exibir alerta" }));
+    userEvent.click(screen.getByRole('button', { name: 'Exibir alerta' }));
 
     expect(
-      screen.getByRole("alert", { name: "Aqui está seu alerta!" })
+      screen.getByRole('alert', { name: 'Aqui está seu alerta!' })
     ).toBeInDocument();
   });
 });
