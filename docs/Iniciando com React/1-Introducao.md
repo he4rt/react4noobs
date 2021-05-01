@@ -12,6 +12,7 @@ O principal objetivo é introduzir todo o conteúdo básico de React para inicia
 
 Você pode consultar esses outros repositórios do 4noobs para aprender esses conteúdos:
 
+- [HTML](https://github.com/sorenhe4rt/HTML4Noobs)
 - [CSS](https://github.com/mathh95/css4noobs)
 - [Javascript](https://github.com/ThiagoDellaNoce/javascript4noobs)
 
