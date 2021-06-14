@@ -18,8 +18,8 @@
 
 1. [Introdução](./Iniciando%20com%20React/1-Introducao.md)
 2. [O que é React?](./Iniciando%20com%20React/2-O%20que%20e%20React.md)
-3. [Componentização](./Iniciando%20com%20React/3-Componentizacao.md)
-4. [JSX e Babel](./Iniciando%20com%20React/4-JSX%20e%20Babel.md)
+3. [JSX e Babel](./Iniciando%20com%20React/3-JSX%20e%20Babel.md)
+4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
 5. [React Hooks](./Iniciando%20com%20React/5-React%20Hooks.md)
 
 ### Ferramentas de build
