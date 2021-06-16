@@ -20,6 +20,8 @@
 2. [O que é React?](./Iniciando%20com%20React/2-O%20que%20e%20React.md)
 3. [JSX e Babel](./Iniciando%20com%20React/3-JSX%20e%20Babel.md)
 4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
+   1. [Formas de declarar](./Iniciando%20com%20React/4.1-FormasDeDeclarar.md)
+   2. [Propriedades](./)
 5. [React Hooks](./Iniciando%20com%20React/5-React%20Hooks.md)
 
 ### Ferramentas de build
