@@ -21,7 +21,7 @@
 3. [JSX e Babel](./Iniciando%20com%20React/3-JSX%20e%20Babel.md)
 4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
    1. [Formas de declarar](./Iniciando%20com%20React/4.1-FormasDeDeclarar.md)
-   2. [Propriedades](./)
+   2. [Propriedades](./Iniciando%20com%20React/4.2-Propriedades.md)
 5. [React Hooks](./Iniciando%20com%20React/5-React%20Hooks.md)
 
 ### Ferramentas de build

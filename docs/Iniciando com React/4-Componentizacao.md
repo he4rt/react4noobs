@@ -104,7 +104,7 @@ Como podem ver, podemos reutilizar quantas vezes quisermos um componente criado 
 
 Podemos concluir desse capítulo que tudo em React é componente, o quanto antes você entender as utilidades deles e como eles 'conversam' entre si (_spoiler_ dos próximos capítulos) mais rápido será seu aprendizado em React.
 
-[Ir para Próxima Seção](./4-JSX%20e%20Babel.md)
+[Ir para Próxima Seção](./4.1-FormasDeDeclarar.md)
 
 <p align="center">Made with :purple_heart:</p>
 
