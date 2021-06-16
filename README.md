@@ -82,7 +82,9 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
     <td align="center"><a href="https://github.com/Santiael"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/48307951?s=400&u=94528ed6e7b6d9945ef17e44722e2e27862d7fe6&v=4" width="100px;" alt=""/><br /><sub><b>Rafael Santiago</b></sub></a><br />
   </tr>
   <tr>
-  <td align="center"><a href="https://github.com/midhatdrops"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67974118?v=4" width="100px;" alt=""/><br /><sub><b>Bruno R.Novais</b></sub></a><br /></tr>
+    <td align="center"><a href="https://github.com/midhatdrops"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67974118?v=4" width="100px;" alt=""/><br /><sub><b>Bruno R.Novais</b></sub></a><br />
+    <td align="center"><a href="https://github.com/jos3ss"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/50359547?v=4" width="100px;" alt=""/><br /><sub><b>José Ulisses</b></sub></a><br />
+  </tr>
 </table>
 
 <p align="center">Made with :purple_heart:</p>
