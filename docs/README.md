@@ -56,8 +56,9 @@
 
 ### Cliente GraphQL
 
-1. [Apollo]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-2. [Relay]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Conceito](./Cliente%20GraphQL/1-Conceito.md)
+2. [Apollo]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+3. [Relay]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Bibliotecas de utilidade
 
