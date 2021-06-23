@@ -32,7 +32,7 @@ Aguarde alguns minutos para que o npm baixe as dependências.
 
 O create react app irá gerar todo o projeto em modo padrão, não é necessário configurar **ferramentas** como Babel ou Webpack, eles estarão pré-configurados por debaixo dos panos.
 
-Ao abrir seu package-lock.json você encontrará três scripts, para :
+Ao abrir seu package.json você encontrará três scripts, são eles:
 
 
 | Comando | Rodando com NPM | Rodando com Yarn |
