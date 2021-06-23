@@ -6,11 +6,11 @@
 
 ## O que é o GraphQL?
 
-[GraphQL](2) é uma linguagem de consulta de dados desenvolvida e usada pelo Facebook desde 2012, ele substitui o [REST](5) como um novo conceito de paradigma de [_API_](6).
+[GraphQL](2) é uma linguagem de consulta de dados desenvolvida e usada pelo Facebook desde 2012, ele substitui o [_REST_](5) como um novo conceito de paradigma de [_API_](6).
 
 ## O conceito do GraphQL
 
-Primeiramente, para a melhor compreensão do [GraphQL](2), já que ele é muito amplo, vou dar alguns exemplos. Em um Instagram, precisamos exibir os dados especifico de um usuário. Nessa página temos, username, posts, bio, stories... Como podemos fazer solução com [REST](5) e [GraphQL](2)?
+Primeiramente, para a melhor compreensão do [GraphQL](2), já que ele é muito amplo, vou dar alguns exemplos. Em um Instagram, precisamos exibir os dados especifico de um usuário. Nessa página temos, username, posts, bio, stories... Como podemos fazer solução com [_REST_](5) e [GraphQL](2)?
 
 ### Rest
 
@@ -77,7 +77,7 @@ De maneira simples, utilizamos os hooks para receber os dados requisitados pelo 
 
 ## Conclusão
 
-_Como utilizo o GraphQL?_ Nas próximas seções veremos como utilizar o [GraphQL](2) mais afundo com algumas bibliotecas dentro do React. Caso já queira ir dando uma olhada no [GraphQL](2), o [GitHub](7) possui um **[playground do GraphQL público](https://docs.github.com/en/graphql/overview/explorer)**!
+_Como utilizo o GraphQL?_ Nas próximas seções veremos como utilizar o [GraphQL](2) mais afundo com algumas bibliotecas dentro do React. Caso já queira ir dando uma olhada no [GraphQL](2), o [_GitHub_](7) possui um **[playground do GitHub público](https://docs.github.com/en/graphql/overview/explorer)**!
 
 [Ir para Próxima Seção]()
 
