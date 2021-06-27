@@ -13,45 +13,32 @@ Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o fu
 
 > Vá ponto a ponto ou vá direto ao que você está buscando! :
 >
-<ol>
-  <li>Conceitos</li>
-    <ol>
-        <li><a href="#">O que é o Next.JS?</a></li>
-        <ol>
-          <li><a href="#">Por quê usar Next.JS?</a></li>
-          <li><a href="#">Somente o NextJS faz SSR?</a></li>
-          <li><a href="#">Se é framework, logo é difícil?</a></li>
-        </ol>
-        <li><a href="#">Modelos de Renderização</a></li>
-        <ol>
-          <li><a href="#">Single Page Application - SPA</a></li>
-          <li><a href="#">Server Side Rendering - SSR</a></li>
-          <li><a href="#">Static Site Generation - SSG</a></li>
-          <li><a href="#">Incremental Static Regeneration - ISR</a></li>
-        </ol>
-    </ol>
-  <li>Projeto</li>
-  <ol>
-      <li><a href="#">Hora do código, vamos a prática!</a></li>
-      <ol>
-        <li><a href="#">Formas de criar um projeto Next.JS</a></li>
-        <li><a href="#">Usando o create-next-app</a></li>
-        <li><a href="#">Limpando estrutura do projeto</a></li>
-        <li><a href="#">Utilizando o File System Routing</a></li>
-        <li><a href="#">Implementando navegação SPA</a></li>
-        <li><a href="#">Criando componentes</a></li>
-        <li><a href="#">Estilização global e adicionando fontes</a></li>
-        <li><a href="#">Renderizando dados com Client-Side Rendering</a></li>
-        <li><a href="#">Recurso de Server-Side rendering</a></li>
-        <li><a href="#">A dádiva do Static Site Generation e Incremental Static Regeneration</a></li>
-      </ol>
-  </ol>
-  <li>Extras</li>
-  <ol>
-      <li><a href="#">Adicionando tipagem estática com Typescript em um projeto Next.JS</a></li>
-  </ol>
-  <li><a href="#">Conclusão</a></li>
-</ol>
+1. Conceitos
+    1. [O que é o Next.JS?](#nextjs-o-que-e)
+    2. [Por quê usar Next.JS?](#nextjs-porque)
+    3. [Somente o NextJS faz SSR?](#nextjs-tem-outros)
+    4. [Se é framework, logo é difícil?](#framework)
+    5. [Modelos de Renderização](#renderizacao)
+        1. [Single Page Application - SPA](#funcionalidades-spa)
+        2. [Server Side Rendering - SSR](#funcionalidades-ssr)
+        3. [Static Site Generation - SSG](#funcionalidades-ssg)
+        4. [Incremental Static Regeneration - ISR](#funcionalidades-ssg-isr)
+2. Projeto
+    1. [Hora do código, vamos a prática com um projeto!](#codigo-next-js)
+    2. [Formas de criar um projeto Next.JS](#create-app)
+    3. [Usando o create-next-app](#create-next-app)
+    4. [Limpando estrutura do projeto](#clean-app)
+    5. [Utilizando o File System Routing](#fsr)
+    6. [Implementando navegação SPA](#spa)
+    7. [Criando componentes](#componentization)
+    8. [Estilização global e adicionando fontes](#styles)
+    9. [Renderizando dados com CSR](#csr)
+    10. [Recurso de SSR](#ssr)
+    11. [A dádiva do SSG](#ssg)
+3. [Extras](#extras)
+    1. [Tipagem estática com Typescript](#integracao-typescript)
+6. [Conclusão](#conclusao)
+7. [Referências](#referências)
 
 <a href="#">Próximo -></a>
 
