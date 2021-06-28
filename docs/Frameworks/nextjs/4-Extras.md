@@ -14,7 +14,7 @@ npx create-next-app --ts
 yarn create next-app --typescript
 ```
 
-Agora para adicionar TypeScript a um projeto Next.JS existente acredito que uma boa forma dde se fazer é instalando o typescript e as tipagens do React como dependência de desenvolvimento:
+Há uma forma diferente para adicionar TypeScript a um projeto Next.JS existente, acredito que uma boa forma de se fazer, seja instalando o typescript e as tipagens do React como dependência de desenvolvimento:
 
 ```
 npm install --dev typescript @types/react
