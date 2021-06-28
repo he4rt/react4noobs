@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../../assets/global/header-4noobs.svg">
+  </a>
+</p>
+
 ## O que é Next.JS?
 
 O Next.JS é um framework popular de desenvolvimento front-end baseado em React e "pronto para produção", que visa acelerar o processo de construção de uma interface.
@@ -113,3 +119,15 @@ Esse modelo Incremental Static Regeneration (ISR - Regeneração Estática Incre
 
 - [Documentação oficial do Next.JS](https://nextjs.org/docs/getting-started)
 - [Documentação oficial do Next.JS traduzida para português pelo integrante Caio da he4rt](https://github.com/caioreix/NextJs4noobs)
+
+<a href="#">Próximo -></a>
+
+----------------
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>

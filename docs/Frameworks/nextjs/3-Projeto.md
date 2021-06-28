@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../../assets/global/header-4noobs.svg">
+  </a>
+</p>
+
 # Hora do código
 
 Agora que entendemos um pouco sobre o que é o Next.JS na aba de conceitos. como para que ele serve, quais são os principais modelos de renderização presentes Next.JS. Finalmente, vamos ver tudo isso na prática e vou cobrir cada conceito em seu momento adequado, começando com como fazer o Setup do projeto.
@@ -956,4 +962,14 @@ Continue compartilhando conhecimento participando da comunidade da he4rt! Saiba 
 
 Caso tenha ficado alguma dúvida em relação ao projeto final, fica de referência a [branch](https://github.com/joaobispo2077/pokedex/tree/contrib/he4rt-react4noobs) do projeto com cada commit em que foi criado.
 
-----------------------------
+<a href="#">Próximo -></a>
+
+----------------
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
