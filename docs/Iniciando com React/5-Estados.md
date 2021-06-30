@@ -8,7 +8,7 @@
 
 Neste capítulo você entenderá o que são **Estados** no React.
 
-## Oque é?
+## O que é?
 
 Estados são dados que podem variar, sendo que essa variação pode ser causada pela ação do usuário em sua aplicação. Normalmente já trabalhamos com isso, sabe quando você faz um contador em javascript e o valor fica toda hora alterando de 0, 1, 2, 3 , 4, etc... Isso são estados. No caso do React os estados também são uma forma de verificação para a renderização, então quando esse valor(estado) é alterado causa uma nova renderização.
 
