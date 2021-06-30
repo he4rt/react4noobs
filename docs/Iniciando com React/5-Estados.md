@@ -6,7 +6,7 @@
 
 # Estados
 
-Neste capítulo vc entenderá o que são **Estados** no React.
+Neste capítulo você entenderá o que são **Estados** no React.
 
 ## Oque é?
 
