@@ -51,9 +51,8 @@ class Counter extends React.Component {
 
 Agora o React trabalha com conceitos de imutabilidade, portantdo você nunca poderá alterar um dado diretamente. Como por exemplo: this.state.counter = 10; Ele não permite isso.
 
-<p>Com o conceito de imutabilidade, sempre iremos definir novos dados ao invez de modificar o dado.
+Com o conceito de imutabilidade, sempre iremos definir novos dados ao invez de modificar o dado.
 Para isso o React usa uma função chamada setState que adiciona um novo valor a variavel.
-</p>
 
 ```js
   // No contrutor de classe, criamos nossos estados através do this.state
