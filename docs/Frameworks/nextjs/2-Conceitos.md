@@ -12,7 +12,7 @@ Atualmente ele é mantido pela Vercel e em seu core há como principal proposta 
 
 ### Por quê utilizá-lo?
 
-- *Setup zero config* -> Quando iniciamos um projeto React.JS ou um projeto front-end qualquer, nós precisamos configurar um esquema de roteamento para navegação entre páginas, normalmente no contexto do React.JS utiliza-se [react-router-dom](inserir-link-roteamento-react4noobs), configurar o webpack, se for prefirível, configurar o Typescript e o Babel e entre outras muitas opções dependendo do web app que vcoê está produzindo. Mas, no Next.JS, como a parte da configuração é abstraída, o desenvolvedor pode focar inteiramente no desenvolvimento de novas funcionalidades.
+- *Setup zero config* -> Quando iniciamos um projeto React.JS ou um projeto front-end qualquer, nós precisamos configurar um esquema de roteamento para navegação entre páginas, normalmente no contexto do React.JS utiliza-se [react-router-dom](https://github.com/he4rt/react4noobs/blob/master/docs/Roteamento/1-React-Router.md), configurar o webpack, se for prefirível, configurar o Typescript e o Babel e entre outras muitas opções dependendo do web app que vcoê está produzindo. Mas, no Next.JS, como a parte da configuração é abstraída, o desenvolvedor pode focar inteiramente no desenvolvimento de novas funcionalidades.
 
 - *Diversos modelos de renderização* -> Permite um fluxo de trabalho produtivo e de zero configuração para utilização de diversos modelos de renderização como o Cliente-side rendering, Server-side rendering, Static Site Generation e Incremental Static Regeneration, que serão explicados ao longo desse artigo.
 
@@ -44,7 +44,7 @@ Muito do que popularizou o Next.JS foi a possibilidade de você adotar diferente
 
 ### Single Page Application e Client Side Rendering
 
-Hoje, a maior parte das web apps que são desenvolvidas estão no formato Single Page Application (SPA, ou Aplicação de uma Única Página). Provalvemente, você já conhece e implementa esse formato em [React.JS](inserir-link-roteamento-react4noobs), mas afinal, o que é isso?
+Hoje, a maior parte das web apps que são desenvolvidas estão no formato Single Page Application (SPA, ou Aplicação de uma Única Página). Provalvemente, você já conhece e implementa esse formato em [React.JS](https://github.com/he4rt/react4noobs/blob/master/docs/Iniciando%20com%20React/1-Introducao.md), mas afinal, o que é isso?
 
 O mais relevante da SPA é o seu comportamento, do qual ao navegagar **não há recarregamento do site** que proporciona uma sensação de feedback instantâneo da página para o usuário.
 
