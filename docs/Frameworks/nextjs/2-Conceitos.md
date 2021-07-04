@@ -5,16 +5,16 @@
 </p>
 
 1. Conceitos
-    1. [O que é o Next.JS?](#nextjs-o-que-e)
-    2. [Por quê usar Next.JS?](#nextjs-porque)
-    3. [Somente o NextJS faz SSR?](#nextjs-tem-outros)
-    4. [Se é framework, logo é difícil?](#framework)
-    5. [Modelos de Renderização](#renderizacao)
-        1. [Single Page Application - SPA](#funcionalidades-spa)
-        2. [Server Side Rendering - SSR](#funcionalidades-ssr)
-        3. [Static Site Generation - SSG](#funcionalidades-ssg)
-        4. [Incremental Static Regeneration - ISR](#funcionalidades-ssg-isr)
-    6. [Referências](#referencias)
+    1. [O que é o Next.JS?](#o-que-é-nextjs)
+    2. [Por quê usar Next.JS?](#por-quê-utilizá-lo)
+    3. [Somente o NextJS faz SSR?](#somente-o-nextjs-faz-ssr)
+    4. [Se é framework, logo é difícil?](#frameworks-são-complexos-em-sua-construção-mas-e-em-seu-uso)
+    5. [Modelos de Renderização](#funcionalidades-relacionadas-a-renderização)
+        1. [Single Page Application - SPA](#single-page-application-e-client-side-rendering)
+        2. [Server Side Rendering - SSR](#server-side-rendering)
+        3. [Static Site Generation - SSG](#static-site-generation)
+        4. [Incremental Static Regeneration - ISR](#incremental-static-regeneration)
+    6. [Referências](#referências-utilizadas)
 
 ## O que é Next.JS?
 
