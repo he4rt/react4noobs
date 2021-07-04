@@ -4,6 +4,20 @@
   </a>
 </p>
 
+1. Projeto
+    1. [Hora do código, vamos a prática com um projeto!](#codigo-next-js)
+    2. [Formas de criar um projeto Next.JS](#create-app)
+    3. [Usando o create-next-app](#create-next-app)
+    4. [Limpando estrutura do projeto](#clean-app)
+    5. [Utilizando o File System Routing](#fsr)
+    6. [Implementando navegação SPA](#spa)
+    7. [Criando componentes](#componentization)
+    8. [Estilização global e adicionando fontes](#styles)
+    9. [Renderizando dados com CSR](#csr)
+    10. [Recurso de SSR](#ssr)
+    11. [A dádiva do SSG](#ssg)
+    12. [Conclusão](#conclusao)
+
 # Hora do código
 
 Agora que entendemos um pouco sobre o que é o Next.JS na aba de conceitos. como para que ele serve, quais são os principais modelos de renderização presentes Next.JS. Finalmente, vamos ver tudo isso na prática e vou cobrir cada conceito em seu momento adequado, começando com como fazer o Setup do projeto.

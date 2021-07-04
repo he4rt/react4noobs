@@ -4,6 +4,9 @@
   </a>
 </p>
 
+1. [Extras](#extras)
+    1. [Tipagem estática com Typescript](#integracao-typescript)
+
 ## Tipagem estática com Next.JS
 
 Para começar um projet Next.JS com TypeScript basta utilizar um dos seguintes comandos:
