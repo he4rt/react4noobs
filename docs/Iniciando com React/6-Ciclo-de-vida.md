@@ -16,7 +16,7 @@ O objetivo desse ciclo é gerenciar os recursos da aplicação, ou seja, tudo qu
 
 Ainda não entendeu? Vamos para um exemplo:
 
-Tu tem dois componentes em tela, porém após alguma ação do usuário um dos componentes desaparece da tela. Nesse momento o React "destroi"/apaga ele da DOM para guardar recursos e garantindo que todo o resto continue funcionando.
+Você tem dois componentes em tela, porém após alguma ação do usuário um dos componentes desaparece da tela. Nesse momento o React "destroi"/apaga ele da DOM para guardar recursos e garantindo que todo o resto continue funcionando.
 
 Enfim, vamos ao que interessa!
 
@@ -26,7 +26,7 @@ O React permite que manipulemos o ciclo de vida e podemos dividir o mesmo em 3 m
 - Atualização (Quando altera um dado em tela)
 - Desmontagem (Quando desaparece da tela)
 
-![lifecycle image](https://www.notion.so/Ciclo-de-Vida-9cfadd42ca05429a94795803c5ccd216#a68de13b879648e884c0c92ff8b3cf5d)
+![lifecycle image](../../assets/lifecycle.png)
 
 ## Montagem
 
@@ -38,7 +38,7 @@ Temos três funções nesta etapa:
 
   > O equivalente dele no React Hooks é ouseLayoutEffect.
   > Exemplo:
-  > Para todos os exemplos utilizaremos uma biblioteca chamada Axios para lidar com asrequisições, ela possui algumas vantagens em relação a fetch api nativa do JS mas você pode utilizar o que tu bem entender.
+  > Para todos os exemplos utilizaremos uma biblioteca chamada Axios para lidar com asrequisições, ela possui algumas vantagens em relação a fetch api nativa do JS mas você pode utilizar o que você bem entender.
 
 ```jsx
 import React from "react";
@@ -144,7 +144,7 @@ Temos três funções nesta etapa:
 
   <br/>
 
-- **shouldComponentUpdate** → Essa função será chamada sempre que um estado ou propriedade for chamada. Nela tu pode decidir se o componente irá renderizar novamente ounão, por padrão ele re-renderiza.
+- **shouldComponentUpdate** → Essa função será chamada sempre que um estado ou propriedade for chamada. Nela você pode decidir se o componente irá renderizar novamente ou não, por padrão ele re-renderiza.
   Esse método existe apenas para questão de performance, confiar nele para evitar re-renderização pois pode ocasionar bugs indesejados.
 
 ```jsx
@@ -188,7 +188,7 @@ Ok, mas o que está acontecendo? Bom, estamosdizendo que quando ocorrer uma atua
 
 <br/>
 
-- **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount, basicamente ele que tu irá utilizar para checar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
+- **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount, basicamente ele que você irá utilizar para checar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
 
 > Seu equivalente no React Hooks é ouseEffect
 
@@ -240,7 +240,7 @@ Aqui sempre que o name for alterado,faremos uma requisição nova na api para pe
 
 Esta é a ultima etapa, é quando ocomponente não é mais necessário em telae portando deve ser removido. Aqui temosapenas uma função, ela é chamada de**componentWillUnmount.**
 
-- **componentWillUnmount** → Essa função ocorre sempre que um componente é removido de tela para garantir que elenão permaneça na DOM. É uma parte importante porém tu só mexe em casos muito específicos, por exemplo: Limpar algum dado durante a desmontagem que tu definiu durante a montagem(**componentDidMount**).
+- **componentWillUnmount** → Essa função ocorre sempre que um componente é removido de tela para garantir que elenão permaneça na DOM. É uma parte importante porém tu só mexe em casos muito específicos, por exemplo: Limpar algum dado durante a desmontagem que você definiu durante a montagem(**componentDidMount**).
 
 ## Conclusão
 
