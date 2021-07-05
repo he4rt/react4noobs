@@ -38,7 +38,7 @@ Temos três funções nesta etapa:
 
   > O equivalente dele no React Hooks é ouseLayoutEffect.
   > Exemplo:
-  > Para todos os exemplos utilizaremos umabiblioteca chamada Axios para lidar com asrequisições, ela possui algumas vantagens emrelação a fetch api nativa do JS mas vocêpode utilizar o que tu bem entender.
+  > Para todos os exemplos utilizaremos uma biblioteca chamada Axios para lidar com asrequisições, ela possui algumas vantagens em relação a fetch api nativa do JS mas você pode utilizar o que tu bem entender.
 
 ```jsx
 import React from "react";
@@ -79,12 +79,12 @@ class CardPerson extends React.Component {
 }
 ```
 
-Durante a construção do componente em tela,ele irá executar uma função que irá pegardados de alguma api nossa, para então pegaresses dados e coloca-los nos estados.
+Durante a construção do componente em tela,ele irá executar uma função que irá pegar dados de alguma api nossa, para então pegar esses dados e coloca-los nos estados.
 Vamos supor que nossa api retornou os dados:{name: "Heart", birthday:"13/13/2090"}.
-_SE_ nossa requisição obter sucesso, apósrenderizar aparecerá em tela: Heart e 13/132020
-_SE NÃO_ não irá aparecer nada pois iniciamoso estado como strings vazias.
+_SE_ nossa requisição obter sucesso, após renderizar aparecerá em tela: Heart e 13/132020
+_SE NÃO_ não irá aparecer nada pois iniciamos o estado como strings vazias.
 ATENÇÃO!
-Essa é uma parte do ciclo quase nãoutilizada, pois existem diversos problemas.Atualmente no React é recomendando o usar ocomponentDidMount.
+Essa é uma parte do ciclo quase não utilizada, pois existem diversos problemas. Atualmente no React é recomendando o usar ocomponentDidMount.
 
 <br/>
 
@@ -139,7 +139,7 @@ A diferença pode parecer que é apenas o nome mas tudo muda completamente. Agor
 
 ## Atualização
 
-Esta etapa está relacionada a qualquer atualização ou mudança de dados em tela. Sejaquando uma propriedade ou até mesmo um estado seja alterado.
+Esta etapa está relacionada a qualquer atualização ou mudança de dados em tela. Seja quando uma propriedade ou até mesmo um estado seja alterado.
 Temos três funções nesta etapa:
 
   <br/>
@@ -178,17 +178,17 @@ class CardPerson extends React.Component {
 }
 ```
 
-Ok, mas o que está acontecendo? Bom,estamosdizendo que quando ocorrer umaatualizaçãode dados, se o nome for igualao estado atual, ele não re-renderiz(false). Se não,ele renderiza novamente.
+Ok, mas o que está acontecendo? Bom, estamosdizendo que quando ocorrer uma atualizaçãode dados, se o nome for igual ao estado atual, ele não re-renderiz(false). Se não,ele renderiza novamente.
 
-**Devo alertar novamente que essa funçãoéutilizada em casos muito raros e nãoérecomendado ficar mexendo nela sem um motivo concreto.**
-
-<br/>
-
-- **componentWillUpdate** → Essa função éexecutada no momento da atualização de dado(props ou estados) e assim como a anteriordefine se deve renderizar novamente ou não.Atualmente é um método marcado como inseguropela própria documentação do React erecomenda-se que seja substituído pelocomponentDidUpdate que falaremos a seguir.
+**Devo alertar novamente que essa função é utilizada em casos muito raros e não é recomendado ficar mexendo nela sem um motivo concreto.**
 
 <br/>
 
-- **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount,basicamente ele que tu irá utilizar parachecar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componenteprecisa fazer uma requisição para uma APIsempre que um dado muda.
+- **componentWillUpdate** → Essa função é executada no momento da atualização de dado(props ou estados) e assim como a anterior define se deve renderizar novamente ou não. Atualmente é um método marcado como inseguro pela própria documentação do React erecomenda-se que seja substituído pelo componentDidUpdate que falaremos a seguir.
+
+<br/>
+
+- **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount, basicamente ele que tu irá utilizar para checar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
 
 > Seu equivalente no React Hooks é ouseEffect
 
@@ -234,19 +234,19 @@ class CardPerson extends React.Component {
 }
 ```
 
-Aqui sempre que o name for alterado,faremos uma requisição nova na api parapegar os novos dados.
+Aqui sempre que o name for alterado,faremos uma requisição nova na api para pegar os novos dados.
 
 ## Desmontagem
 
 Esta é a ultima etapa, é quando ocomponente não é mais necessário em telae portando deve ser removido. Aqui temosapenas uma função, ela é chamada de**componentWillUnmount.**
 
-- **componentWillUnmount** → Essa funçãoocorre sempre que um componente éremovido de tela para garantir que elenão permaneça na DOM. É uma parteimportante porém tu só mexe em casosmuito específicos, por exemplo: Limparalgum dado durante a desmontagem que tudefiniu durante a montage(**componentDidMount**).
+- **componentWillUnmount** → Essa função ocorre sempre que um componente é removido de tela para garantir que elenão permaneça na DOM. É uma parte importante porém tu só mexe em casos muito específicos, por exemplo: Limpar algum dado durante a desmontagem que tu definiu durante a montagem(**componentDidMount**).
 
 ## Conclusão
 
-Podemos concluir que o ciclo de vida doscomponentes no React é algo muito bemtrabalhado e interessante. Podemos nãoapenas entender mas também manipula-lospara realizar diversas ações.
-Bom, até então em todos os exemplosutilizamos a abordagem mais clássica doReact que são os componente de classe.Porém é algo não muito utilizado nos diasde hoje, com a vinda dos _React Hooks_ setornou muito melhor desenvolverutilizando componentes de função.
-Nos próximos tópicos você aprenderá sobreoque são hooks, como utilizar e seusequivalentes em relação ao ciclo de vida!
+Podemos concluir que o ciclo de vida dos componentes no React é algo muito bem trabalhado e interessante. Podemos não apenas entender mas também manipula-lospara realizar diversas ações.
+Bom, até então em todos os exemplos utilizamos a abordagem mais clássica do React que são os componente de classe. Porém é algo não muito utilizado nos dias de hoje, com a vinda dos _React Hooks_ se tornou muito melhor desenvolver utilizando componentes de função.
+Nos próximos tópicos você aprenderá sobre oque são hooks, como utilizar e seus equivalentes em relação ao ciclo de vida!
 
 [Ir para Próxima Seção](./7-React%20Hooks.md)
 
