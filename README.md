@@ -84,6 +84,7 @@ Ao contribuir será criado um vínculo com a comunidade open source, na qual tod
   <tr>
     <td align="center"><a href="https://github.com/midhatdrops"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67974118?v=4" width="100px;" alt=""/><br /><sub><b>Bruno R.Novais</b></sub></a><br />
     <td align="center"><a href="https://github.com/jos3ss"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/50359547?v=4" width="100px;" alt=""/><br /><sub><b>José Ulisses</b></sub></a><br />
+    <td align="center"><a href="https://github.com/Bluniz"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/55213609?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Rosa</b></sub></a><br />
   </tr>
 </table>
 

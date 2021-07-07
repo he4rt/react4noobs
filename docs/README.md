@@ -22,8 +22,9 @@
 4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
    1. [Formas de declarar](./Iniciando%20com%20React/4.1-FormasDeDeclarar.md)
    2. [Propriedades](./Iniciando%20com%20React/4.2-Propriedades.md)
-5. [Estados](./Iniciando%20com%20React/6-Estados.md)
-6. [React Hooks](./Iniciando%20com%20React/6-React%20Hooks.md)
+5. [Estados](./Iniciando%20com%20React/5-Estados.md)
+6. [Ciclo de Vida](./6-Ciclo-de-vida.md)
+7. [React Hooks](./Iniciando%20com%20React/7-React%20Hooks.md)
 
 ### Ferramentas de build
 
