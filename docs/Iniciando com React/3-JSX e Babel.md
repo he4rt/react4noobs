@@ -30,7 +30,7 @@ Atualmente nem todos os navegadores entendem o Javascript moderno, mas com o Bab
 
 <img align="center" src="/assets/tirinha-babel.jpg" width="100%"> 
 
-[Ir para Próxima Seção](./5-React%20Hooks.md)
+[Ir para Próxima Seção](./4-Componentizacao.md)
 
 <p align="center">Made with :purple_heart:</p>
 

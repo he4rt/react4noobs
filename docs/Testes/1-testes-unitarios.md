@@ -129,6 +129,8 @@ Mais funcionalidades da React Library Testing podem ser vistas através desse [l
 
 O mundo dos testes é bem amplo e necesário, portanto compensa muito gastarmos um tempo amais estudante este assunto.
 
+[Ir para Próxima Seção](../Testes/2-testes-de-integracao.md)
+
 <p align="center">Made with :purple_heart:</p>
 
 <p align="center">

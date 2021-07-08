@@ -61,7 +61,7 @@ Por fim, não é sempre necessário utilizar o create-react-app para criar o seu
 
 ---
 
-Vamos olhar agora um pouco sobre  [dependências](./1.1.1-O-que-são-dependências.md).
+Vamos olhar agora um pouco sobre  [dependências](./1.1-O-que-são-dependências.md).
 
 <p align="center">Made with :purple_heart:</p>
 

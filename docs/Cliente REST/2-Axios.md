@@ -112,7 +112,7 @@ export default function Register() {
 ```
 De maneira completamente simples utilizamos os hooks para receber os dados requisitados pelo formulário. Após isso, chamamos o método responsável por se conectar a API e executar a ação `POST`. Com isso, um novo usuário é registrado!
 
-[Ir para Próxima Seção]()
+[Ir para Próxima Seção](../Cliente%20GraphQL/1-Conceito.md)
 
 <p align="center">Made with :purple_heart:</p>
 

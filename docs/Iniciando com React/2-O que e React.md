@@ -16,7 +16,7 @@ Você pode consultar a documentação em PORTUGUÊS, traduzida pela comunidade, 
 
 Parece complicado, né? Mas não se assuste! Iremos entrar em detalhes em breve.
 
-[Ir para Próxima Seção](./3-Componentizacao.md)
+[Ir para Próxima Seção](./3-JSX%20e%20Babel.md)
 
 <p align="center">Made with :purple_heart:</p>
 
