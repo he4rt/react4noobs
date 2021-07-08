@@ -79,7 +79,7 @@ De maneira simples, utilizamos os hooks para receber os dados requisitados pelo 
 
 _Como utilizo o GraphQL?_ Nas próximas seções veremos como utilizar o [GraphQL](2) mais afundo com algumas bibliotecas dentro do React. Caso já queira ir dando uma olhada no [GraphQL](2), o [_GitHub_](7) possui um **[playground do GitHub público](https://docs.github.com/en/graphql/overview/explorer)**!
 
-[Ir para Próxima Seção]()
+[Ir para Próxima Seção](../Bibliotecas%20de%20utilidade/2-Moment.md)
 
 <p align="center">Made with 💜</p>
 
