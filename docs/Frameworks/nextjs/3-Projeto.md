@@ -5,18 +5,18 @@
 </p>
 
 1. Projeto
-    1. [Hora do código, vamos a prática com um projeto!](#codigo-next-js)
-    2. [Formas de criar um projeto Next.JS](#create-app)
-    3. [Usando o create-next-app](#create-next-app)
-    4. [Limpando estrutura do projeto](#clean-app)
-    5. [Utilizando o File System Routing](#fsr)
-    6. [Implementando navegação SPA](#spa)
-    7. [Criando componentes](#componentization)
-    8. [Estilização global e adicionando fontes](#styles)
-    9. [Renderizando dados com CSR](#csr)
-    10. [Recurso de SSR](#ssr)
-    11. [A dádiva do SSG](#ssg)
-    12. [Conclusão](#conclusao)
+    1. [Hora do código, vamos a prática com um projeto!](#hora-do-código)
+    2. [Formas de criar um projeto Next.JS](#formas-de-criar-um-projeto-nextjs)
+    3. [Usando o create-next-app](#criando-um-projeto-e-inicializando-app)
+    4. [Limpando estrutura do projeto](#limpando-estrutura-de-arquivos)
+    5. [Utilizando o File System Routing](#entendendo-o-básico-e-utilizando-o-file-system-router)
+    6. [Implementando navegação SPA](#navegando-entre-páginas)
+    7. [Criando componentes](#vamos-criar-um-componente)
+    8. [Estilização global e adicionando fontes](#carregando-estilos-e-fontes-em-um-app-nextjs)
+    9. [Renderizando dados com CSR](#renderização-na-prática-com-client-side-rendering)
+    10. [Recurso de SSR](#melhorando-o-seo-com-o-poderoso-server-side-rendering-ssr)
+    11. [A dádiva do SSG](#implementando-a-geração-de-páginas-estáticas-ssg)
+    12. [Conclusão](#conclusão)
 
 # Hora do código
 
@@ -976,7 +976,7 @@ Continue compartilhando conhecimento participando da comunidade da he4rt! Saiba 
 
 Caso tenha ficado alguma dúvida em relação ao projeto final, fica de referência a [branch](https://github.com/joaobispo2077/pokedex/tree/contrib/he4rt-react4noobs) do projeto com cada commit em que foi criado.
 
-<a href="#">Próximo -></a>
+[Próximo ->](./4-Extras.md)
 
 ----------------
 
