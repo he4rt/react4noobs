@@ -4,8 +4,8 @@
   </a>
 </p>
 
-1. [Extras](#extras)
-    1. [Tipagem estática com Typescript](#integracao-typescript)
+1. Extras
+    1. [Tipagem estática com Typescript](#tipagem-estática-com-nextjs)
 
 ## Tipagem estática com Next.JS
 
