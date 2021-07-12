@@ -20,7 +20,7 @@
 
 O Next.JS é um framework popular de desenvolvimento front-end baseado em React e "pronto para produção", que visa acelerar o processo de construção de uma interface.
 
-Atualmente ele é mantido pela Vercel e em seu core há como principal proposta elevar a produtividade de um desenvolvedor com setup de zero configuração e implementações simplificadas de internacionalização, endpoints, suporte ao roteamento, Typescript, renderização ao lado do servidor, hybrid static e entre outras que podem melhorar a experiência de desenvolvimento como utilizar uma única tecnologia para desenvolver um web app completo.
+Atualmente, ele é mantido pela Vercel e em seu core há como principal proposta elevar a produtividade de um desenvolvedor com setup de zero configuração e implementações simplificadas de internacionalização, endpoints, suporte ao roteamento, Typescript, renderização ao lado do servidor, hybrid static e entre outras que podem melhorar a experiência de desenvolvimento como utilizar uma única tecnologia para desenvolver um web app completo.
 
 ### Por quê utilizá-lo?
 
@@ -36,7 +36,7 @@ Atualmente ele é mantido pela Vercel e em seu core há como principal proposta 
 
 ### Somente o Next.JS faz SSR?
 
-Não, existem diversas ferramentas como frameworks e bibliotecas como o Angular, o Nuxt.JS (baseado em Vue.JS), Gatsby (também é baseado em React.JS como o Next.JS) e muitas outras tecnologias que te permitem implementar esse modelo de renderização.
+Não, existem diversas ferramentas de bibliotecas a frameworks como o Angular, o Nuxt.JS (baseado em Vue.JS), Gatsby (também é baseado em React.JS como o Next.JS) e muitas outras tecnologias que te permitem implementar esse modelo de renderização.
 
 ### Frameworks são complexos em sua construção, mas e em seu uso?
 
