@@ -13,7 +13,7 @@ Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o fu
 
 > Vá ponto a ponto ou vá direto ao que você está buscando! :
 
-1. [Conceitos](https://github.com/he4rt/react4noobs/blob/master/docs/Frameworks/nextjs/2-Conceitos.md)
+1. [Conceitos](./2-Conceitos.md)
     1. O que é o Next.JS?
     2. Por quê usar Next.JS?
     3. Somente o NextJS faz SSR?
@@ -24,7 +24,7 @@ Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o fu
         3. Static Site Generation - SSG
         4. Incremental Static Regeneration - ISR
     6. Referências
-2. [Projeto](https://github.com/he4rt/react4noobs/blob/master/docs/Frameworks/nextjs/3-Projeto.md)
+2. [Projeto](./3-Projeto.md)
     1. Hora do código, vamos a prática com um projeto!
     2. Formas de criar um projeto Next.JS
     3. Usando o create-next-app
@@ -37,7 +37,7 @@ Se você quiser se aprofundar ainda mais sobre cada um desses temas e sobre o fu
     10. Recurso de SSR
     11. A dádiva do SSG
     12. Conclusão
-3. [Extras](https://github.com/he4rt/react4noobs/blob/master/docs/Frameworks/nextjs/4-Extras.md)
+3. [Extras](./4-Extras.md)
     1. Tipagem estática com Typescript
 
 <p align="right">
