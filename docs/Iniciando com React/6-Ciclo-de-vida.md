@@ -188,7 +188,7 @@ Ok, mas o que está acontecendo? Bom, estamos dizendo que quando ocorrer uma atu
 
 <br/>
 
-- **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount, basicamente ele que você irá utilizar para checar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
+- **componentDidUpdate** → Esse metodo é chamado logo após do componentDidMount, basicamente ele que você irá utilizar para checar se ocorreu alguma atualização de dados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
 
 > Seu equivalente no React Hooks é o useEffect
 
