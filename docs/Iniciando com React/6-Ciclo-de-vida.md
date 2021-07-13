@@ -208,7 +208,7 @@ class CardPerson extends React.Component {
     try {
       // Fazemos uma requisição para alguma api
       const response = await axios.get("URL DE ALGUMA API");
-      // Após pegar os dados setamos ele no estado
+      // Após pegar os dados setamos eles no estado
       this.setState({
         name: response.data.name,
         birthday: response.data.birthday,
