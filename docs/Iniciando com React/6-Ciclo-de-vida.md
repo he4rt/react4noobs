@@ -145,7 +145,7 @@ Temos três funções nesta etapa:
   <br/>
 
 - **shouldComponentUpdate** → Essa função será chamada sempre que um estado ou propriedade for chamada. Nela você pode decidir se o componente irá renderizar novamente ou não, por padrão ele re-renderiza.
-  Esse método existe apenas para questão de performance, confiar nele para evitar re-renderização pois pode ocasionar bugs indesejados.
+  Esse método existe apenas para questão de performance, confiar nele para evitar re-renderização pode ocasionar bugs indesejados.
 
 ```jsx
 import React from "react";
