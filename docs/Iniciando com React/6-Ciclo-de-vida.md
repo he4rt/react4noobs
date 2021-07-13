@@ -110,7 +110,7 @@ class CardPerson extends React.Component {
   // Funcão para pegar os dados
   async loadData() {
     try {
-      // Fazemos uma requisição para algumaapi
+      // Fazemos uma requisição para alguma api
       const response = await axios.get("URLDE ALGUMA API");
       // Após pegar os dados setamos eles no estado
       this.setState({
