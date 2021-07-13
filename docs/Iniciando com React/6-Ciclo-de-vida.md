@@ -178,7 +178,7 @@ class CardPerson extends React.Component {
 }
 ```
 
-Ok, mas o que está acontecendo? Bom, estamosdizendo que quando ocorrer uma atualizaçãode dados, se o nome for igual ao estado atual, ele não re-renderiz(false). Se não,ele renderiza novamente.
+Ok, mas o que está acontecendo? Bom, estamos dizendo que quando ocorrer uma atualização de dados, o componente deve atualizar somente quando o novo nome for diferente do que está no estado atual
 
 **Devo alertar novamente que essa função é utilizada em casos muito raros e não é recomendado ficar mexendo nela sem um motivo concreto.**
 
