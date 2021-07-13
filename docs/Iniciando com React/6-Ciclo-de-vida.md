@@ -160,7 +160,7 @@ class CardPerson extends React.Component {
     };
   }
   // Essa função recebe as próximas props e state
-  shouldComponentUpdate(nextPropsnextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     if (nextProps.name === this.statename) {
       return false;
     } else {
