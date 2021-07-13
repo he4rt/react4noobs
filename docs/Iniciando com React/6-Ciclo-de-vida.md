@@ -190,7 +190,7 @@ Ok, mas o que está acontecendo? Bom, estamosdizendo que quando ocorrer uma atua
 
 - **componentDidUpdate** → Esse metodo échamado logo após do componentDidMount, basicamente ele que você irá utilizar para checar se ocorreu alguma atualização dedados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
 
-> Seu equivalente no React Hooks é ouseEffect
+> Seu equivalente no React Hooks é o useEffect
 
 ```jsx
 import React from "react";
