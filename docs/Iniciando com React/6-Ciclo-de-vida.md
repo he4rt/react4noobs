@@ -240,7 +240,7 @@ Aqui sempre que o name for alterado,faremos uma requisição nova na api para pe
 
 Esta é a ultima etapa, é quando o componente não é mais necessário em tela e portanto deve ser removido. Aqui temos apenas a função **componentWillUnmount.**
 
-- **componentWillUnmount** → Essa função ocorre sempre que um componente é removido de tela para garantir que elenão permaneça na DOM. É uma parte importante porém tu só mexe em casos muito específicos, por exemplo: Limpar algum dado durante a desmontagem que você definiu durante a montagem(**componentDidMount**).
+- **componentWillUnmount** → Essa função ocorre sempre que um componente é removido de tela para garantir que ele não permaneça na DOM. É uma parte importante porém tu só mexe em casos muito específicos, por exemplo: Limpar algum dado durante a desmontagem que você definiu durante a montagem(**componentDidMount**).
 
 ## Conclusão
 
