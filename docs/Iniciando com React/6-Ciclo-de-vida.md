@@ -159,7 +159,7 @@ class CardPerson extends React.Component {
       birthday: props.birthday,
     };
   }
-  // Essa função recebe as proximas propsestate
+  // Essa função recebe as próximas props e state
   shouldComponentUpdate(nextPropsnextState) {
     if (nextProps.name === this.statename) {
       return false;
