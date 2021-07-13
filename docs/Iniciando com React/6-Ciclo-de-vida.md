@@ -184,7 +184,7 @@ Ok, mas o que está acontecendo? Bom, estamos dizendo que quando ocorrer uma atu
 
 <br/>
 
-- **componentWillUpdate** → Essa função é executada no momento da atualização de dado(props ou estados) e assim como a anterior define se deve renderizar novamente ou não. Atualmente é um método marcado como inseguro pela própria documentação do React erecomenda-se que seja substituído pelo componentDidUpdate que falaremos a seguir.
+- **componentWillUpdate** → Essa função é executada no momento da atualização de dados (props ou estados) e assim como a anterior define se o componente deve renderizar novamente ou não. Atualmente é um método marcado como inseguro pela própria documentação do React e recomenda-se que seja substituído pelo componentDidUpdate que falaremos a seguir.
 
 <br/>
 
