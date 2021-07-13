@@ -244,7 +244,7 @@ Esta é a ultima etapa, é quando o componente não é mais necessário em tela 
 
 ## Conclusão
 
-Podemos concluir que o ciclo de vida dos componentes no React é algo muito bem trabalhado e interessante. Podemos não apenas entender mas também manipula-lospara realizar diversas ações.
+Concluímos que o ciclo de vida dos componentes no React é algo muito bem trabalhado e interessante. Podemos não apenas entender mas também manipula-los para realizar diversas ações.
 Bom, até então em todos os exemplos utilizamos a abordagem mais clássica do React que são os componente de classe. Porém é algo não muito utilizado nos dias de hoje, com a vinda dos _React Hooks_ se tornou muito melhor desenvolver utilizando componentes de função.
 Nos próximos tópicos você aprenderá sobre oque são hooks, como utilizar e seus equivalentes em relação ao ciclo de vida!
 
