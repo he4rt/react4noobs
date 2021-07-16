@@ -36,7 +36,7 @@ Temos três funções nesta etapa:
 
 - **componentWillMount** → Essa etapa é executada antes mesmo da montagem do componente, aqui colocamos ações das quais queremos que execute no inicio do nosso componente. Como por exemplo chamadas na API, tratamento de dados recebidos e por ai vai.
 
-  > O equivalente dele no React Hooks é ouseLayoutEffect.
+  > No React Hooks é ouseLayoutEffect.
   > Exemplo:
   > Para todos os exemplos utilizaremos uma biblioteca chamada Axios para lidar com asrequisições, ela possui algumas vantagens em relação a fetch api nativa do JS mas você pode utilizar o que você bem entender.
 
@@ -90,7 +90,7 @@ Essa é uma parte do ciclo quase não utilizada, pois existem diversos problemas
 
 - **componentDidMount →** Basicamente ocorre após a montagem do componente na DOM, ou seja após o método **render.** Nessa etapa colocamos ações das quais queremos que execute no inicio do nosso componente. Como por exemplo chamadas na API, tratamento de dados recebidos e por ai vai.
 
-> Seu equivalente no React Hooks é o useEffect.
+> No React Hooks é o useEffect.
 
 ```jsx
 import React from "react";
@@ -185,7 +185,7 @@ Ok, mas o que está acontecendo? Bom, estamos dizendo que quando ocorrer uma atu
 
 - **componentDidUpdate** → Esse metodo é chamado logo após do componentDidMount, basicamente ele que você irá utilizar para checar se ocorreu alguma atualização de dados. Um bom exemplo é quando seu componente precisa fazer uma requisição para uma API sempre que um dado muda.
 
-> Seu equivalente no React Hooks é o useEffect
+> No React Hooks é o useEffect
 
 ```jsx
 import React from "react";
