@@ -189,6 +189,8 @@ Seus componentes mais reutilizáveis devem continuar recebendo os dados via prop
 
 Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção!
 
+[Ir para Próxima Seção](../Verificadores%20de%20Tipo/Typescript.md)
+
 <p align="center">Made with :purple_heart:</p>
 
 <p align="center">
