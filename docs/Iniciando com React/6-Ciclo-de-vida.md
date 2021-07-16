@@ -79,10 +79,6 @@ class CardPerson extends React.Component {
 }
 ```
 
-Durante a construção do componente em tela,ele irá executar uma função que irá pegar dados de alguma api nossa, para então pegar esses dados e coloca-los nos estados.
-Vamos supor que nossa api retornou os dados:{name: "Heart", birthday:"13/13/2090"}.
-_SE_ nossa requisição obter sucesso, após renderizar aparecerá em tela: Heart e 13/132020
-_SE NÃO_ não irá aparecer nada pois iniciamos o estado como strings vazias.
 ATENÇÃO!
 Essa é uma parte do ciclo quase não utilizada, pois existem diversos problemas. Atualmente no React é recomendando o usar ocomponentDidMount.
 
@@ -135,6 +131,9 @@ class CardPerson extends React.Component {
 }
 ```
 
+Após a renderização do componente em tela, ele irá executar uma função que irá pegar dados de alguma api nossa, para então pegar esses dados e coloca-los nos estados.
+Vamos supor que fazemos uma chamada a api que retorna os dados:{name: "Heart", birthday:"13/13/2090"}. Essa chamada só irá ocorrer depois que o componente estiver em tela, após ser concluida ela irá atualizar os estados e consequentemente alterar os dados em tela para: Heart e 13/132020.
+
 A diferença pode parecer que é apenas o nome mas tudo muda completamente. Agora só estamos fazendo a requisição após o componente estar na DOM e não antes.
 
 ## Atualização
@@ -161,7 +160,7 @@ class CardPerson extends React.Component {
   }
   // Essa função recebe as próximas props e state
   shouldComponentUpdate(nextProps, nextState) {
-  return nextProps.name !== this.state.name
+    return nextProps.name !== this.state.name;
   }
   render() {
     return (
