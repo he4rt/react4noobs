@@ -6,7 +6,7 @@
 
 # O que é o GraphQL?
 
-[GraphQL](2) é um padrão de API conceitualizada e usada pelo time de engenharia do Facebook desde 2012 e mantinda por uma grande comunidade que inclui [empresas](8) e [membros ativos](9), o intiuito do graphql não é substituir o [_REST_](5) como um novo conceito de paradigma de [_API_](6), mas sim entender a análise de dados de uma perspectiva diferente, é possível utilizar REST e Graphql ao mesmo tempo, tudo depende das necessidades do software a ser desenvolvido.
+[GraphQL](2) é um padrão de API conceitualizada e usada pelo time de engenharia do Facebook desde 2012 e da por uma grande comunidade que inclui [empresas](8) e [membros ativos](9), o intuito do graphql não é substituir o [_REST_](5) como um novo conceito de paradigma de [_API_](6), mas sim entender a análise de dados de uma perspectiva diferente, é possível utilizar REST e Graphql ao mesmo tempo, tudo depende das necessidades do software a ser desenvolvido.
 
 # O conceito do GraphQL
 
@@ -29,7 +29,7 @@ Por que foi criado?
 
 - Qual o problema que o facebook queria resolver?
 
-  O problema do facebook era que ele precisava de uma API que fosse simples e fácil de entender, para isso ele quer que o seu sistema de dados fosse simples e fácil de entender e que ao mesmo tempo pudesse ser usado por muitos.
+  O problema do facebook era a necessidade em ter uma API e um sistema de dados que fossem faceis de entender e que pudessem ser usados por muitos ao mesmo tempo.
 
   Era necessario entender por exemplo, pessoas que gostam da cor preta, também gostam de heavy metal?
 
