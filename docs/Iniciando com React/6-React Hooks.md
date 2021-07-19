@@ -134,7 +134,8 @@ function ContactForm () {
 }
 ```
 
-[Ir para Próxima Seção](../Ferramentas%20de%20build/1-npm-yarn.md)
+[Ir para Próxima Seção](./7-Manipulando%20Eventos.md)
+
 
 <p align="center">Made with :purple_heart:</p>
 

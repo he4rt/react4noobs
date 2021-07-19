@@ -24,6 +24,7 @@
    2. [Propriedades](./Iniciando%20com%20React/4.2-Propriedades.md)
 5. [Estados](./Iniciando%20com%20React/6-Estados.md)
 6. [React Hooks](./Iniciando%20com%20React/6-React%20Hooks.md)
+7. [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
 
 ### Ferramentas de build
 
