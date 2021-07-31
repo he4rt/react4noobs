@@ -52,17 +52,17 @@ Normalmente, costuma ser em torno disso a proposta de frameworks opinados, visam
 
 ## Funcionalidades relacionadas a renderização
 
-Muito do que popularizou o Next.JS foi a possibilidade de você adotar diferentes modelos de renderização numa mesma ferramenta com uma facilidade delicinha, tentarei fazer uma síntese desses modelos. Todos são funcionalidades que pretendo demonstrar na prática com Next.JS no decorrer desse texto, mas não se limite a esse artigo para entendê-los.
+Muito do que popularizou o Next.JS foi a possibilidade de você adotar diferentes modelos de renderização numa mesma ferramenta com facilidade quase que intuititva. Todas são funcionalidades que pretendemos demonstrar na prática com Next.JS no decorrer desse texto, mas não se limite a esse artigo para entendê-los.
 
 ### Single Page Application e Client Side Rendering
 
 Hoje, a maior parte das web apps que são desenvolvidas estão no formato Single Page Application (SPA, ou Aplicação de uma Única Página). Provalvemente, você já conhece e implementa esse formato em [React.JS](https://github.com/he4rt/react4noobs/blob/master/docs/Iniciando%20com%20React/1-Introducao.md), mas afinal, o que é isso?
 
-O mais relevante da SPA é o seu comportamento, do qual ao navegagar **não há recarregamento do site** que proporciona uma sensação de feedback instantâneo da página para o usuário.
+O mais relevante da SPA é o seu comportamento, no qual durante a navegação **não há recarregamento do site**, que proporciona uma sensação de feedback agradável/instantâneo da página para o usuário.
 
-O modelo de SPA surgiu como uma solução de melhoria da usabilidade e dinamismo de alguns nichos de formatos de aplicações, como dashboards. Pois, nesse modelo costuma ser feito o CSR (Client Side Rendering), isto é, quando o usuário acessa um domínio, ele recebe em seu navegador uma única página que tem seu Javascript baixado pelo navegador (provido por um CDN - Content Delivery Network, um servidor de arquivos estáticos), e **é gerada pela execução do navegador** a aplicação Javascript contida nessa página que controla todas as interações, de forma a carregar dinâmicamente os pedaços dos conteúdos que são acessados conforme o usuário interage com tal app sem recarregar a página.
+O modelo de SPA surgiu como uma solução de melhoria da usabilidade e dinamismo de alguns nichos de formatos de aplicações, como dashboards. Pois, nesse modelo costuma ser feito o CSR (Client Side Rendering), isto é, quando o usuário acessa um domínio, ele recebe em seu navegador uma única página que tem seu Javascript baixado pelo navegador (muitas vezes provido por um CDN - Content Delivery Network, um servidor de arquivos estáticos), e **é gerada pela execução do navegador** a aplicação Javascript contida nessa página que controla todas as interações, de forma a carregar dinâmicamente os pedaços dos conteúdos sem recarregar a página que são acessados conforme o usuário interage com a app.
 
-Um dos principais tradeoffs desse modelo que utiliza CSR é uma depreciação no SEO (Search Engine Optimization, Otimização para Mecanismos de Busca), i.e. práticas que tem como objetivo alcançar bons rankings em mecanismos de buscas para obter maior tráfego. O SEO acaba sendo menos eficiente com CSR por causa que alguns robôs de indexação de conteúdo nos mecanismo de busca, como crawlers, não conseguem indexar tão bem por dificuldades relacionadas a baixar o Javascript.
+Um dos principais tradeoffs desse modelo que utiliza CSR é uma depreciação no SEO (Search Engine Optimization, Otimização para Mecanismos de Busca), i.e. práticas que tem como objetivo alcançar bons rankings em mecanismos de buscas para obter maior tráfego. O SEO acaba sendo menos eficiente com CSR por causa que alguns robôs de indexação de conteúdo nos mecanismo de busca, como crawlers, não conseguem indexar tão bem por dificuldades relacionadas a baixar o Javascript da página.
 
 Tal como no React, pode ser feito com o uso de useState, useEffect e uma função assíncrona, como no seguinte componente funcional:
 
