@@ -24,15 +24,15 @@ Atualmente, ele é mantido pela Vercel e em seu core há como principal proposta
 
 ### Por quê utilizá-lo?
 
-- *Setup zero config* -> Quando iniciamos um projeto React.JS ou um projeto front-end qualquer, nós precisamos configurar um esquema de roteamento para navegação entre páginas, normalmente no contexto do React.JS utiliza-se [react-router-dom](https://github.com/he4rt/react4noobs/blob/master/docs/Roteamento/1-React-Router.md), configurar o webpack, se for prefirível, configurar o Typescript e o Babel e entre outras muitas opções dependendo do web app que vcoê está produzindo. Mas, no Next.JS, como a parte da configuração é abstraída, o desenvolvedor pode focar inteiramente no desenvolvimento de novas funcionalidades.
+- *Setup zero config* -> Quando iniciamos um projeto React.JS ou um projeto front-end qualquer, nós precisamos configurar um esquema de roteamento para navegação entre páginas, normalmente no contexto do React.JS utiliza-se o [react-router-dom](https://github.com/he4rt/react4noobs/blob/master/docs/Roteamento/1-React-Router.md), configurar o webpack, se for prefirível, configurar o Typescript e o Babel e entre outras muitas opções dependendo do web app que você está produzindo. Mas, no Next.JS, como a parte da configuração é abstraída, o desenvolvedor pode focar inteiramente no desenvolvimento de novas funcionalidades.
 
-- *Diversos modelos de renderização* -> Permite um fluxo de trabalho produtivo e de zero configuração para utilização de diversos modelos de renderização como o Cliente-side rendering, Server-side rendering, Static Site Generation e Incremental Static Regeneration, que serão explicados ao longo desse artigo.
+- *Diversos modelos de renderização* -> Permite um fluxo de trabalho produtivo para utilização de diversos modelos de renderização como o Cliente-side rendering, Server-side rendering, Static Site Generation e Incremental Static Regeneration.
 
 - *File System Routing* -> A estrutura de pastas e arquivos da sua aplicação definirá as rotas dela.
 
 - *API endpoints* -> Uma estrutura de desenvolvimento Serverless intuitiva.
 
-- *Suporte ao Typescript* -> Permite que você adicione facilmente tipagem estática ao seu código.
+- *Suporte ao Typescript* -> Permite que você adicione facilmente tipagem estática ao seu código Javascript.
 
 ### Somente o Next.JS faz SSR?
 
@@ -42,13 +42,13 @@ Não, existem diversas ferramentas de bibliotecas a frameworks como o Angular, o
 
 A dificuldade que você enfrentará nas tecnologias que for aprender será sempre relativa ao seu tempo de experiência em determinado ecossistema, a sua facilidade de aprender coisas novas e dentre outros fatores, mas normalmente, corre um equívoco sobre frameworks serem majoritariamente mais difíceis.
 
-Isso não se demonstra necessariamente sempre uma verdade, pois no mundo da programação usamos muito a palavra **abstração**, que consiste em você isolar num conceito um elemento à exclusão dos demais. Na prática, isso significa omitir/encapsular alguns conceitos.
+Isso não se demonstra necessariamente sempre uma verdade, pois no mundo da programação é recorrente uma ideia chaamda **abstração**, que consiste em você isolar num conceito um elemento à exclusão dos demais. Na prática, isso significa omitir/encapsular alguns conceitos.
 
 Nesse contexto, todas configurações complexas ou não, trabalhosas ou não que você teria que fazer sem a utilização de um framework, são omitidos com a utilização de um e você acaba não tendo que se preocupar com essas questões.
 
 Normalmente, costuma ser em torno disso a proposta de frameworks opinados, visam automatizar rotinas juntamente de aglutinar boas críticas da experiência de outros desenvolvedores para que possamos entregar um produto de melhor qualidade com maior produtividade.
 
-> ⚠️ **Ainda sim, recomendo que evite pular etapas!** Faça como quiser, mas se você quer dominar Next.JS e sequer conhece React.JS ou até mesmo Javascript, entenda que você vai ter inúmeras dificuldades de lidar de uma vez só, a dificuldade de aprender uma linguagem de programação, entender o funcionamento da biblioteca React.JS e compreender as possiblidades que o framework Next.JS te oferece. Isso pode desanimar e atrapalhar sua trilha. Embora algumas coisas levem tempo, é importante não dar um passo maior que a perna querendo economizar tempo pois assim vai acabar gastando mais.
+> ⚠️ **Ainda sim, recomendo que evite pular etapas!** Faça como quiser, mas se você quer dominar Next.JS e sequer conhece React.JS ou até mesmo Javascript, entenda que você vai ter inúmeras dificuldades de lidar de uma vez só, a dificuldade de aprender uma linguagem de programação, entender o funcionamento da biblioteca React.JS e compreender as possiblidades que o framework Next.JS te oferece. Isso pode desanimar e atrapalhar sua trilha. Embora algumas coisas levem tempo, é importante não dar um passo maior que a perna querendo economizar tempo.
 
 ## Funcionalidades relacionadas a renderização
 
