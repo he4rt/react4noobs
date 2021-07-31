@@ -73,17 +73,14 @@ export default function AnyComponent() {
   const handleGetAnythings = async () => {
     const response = await fetch('https://anyapi');
     const data = await response.json();
-     setAnythings(data);
+    setAnythings(data);
   };
 
   useEffect(() => {
     handleGetAnythings();
   }, []);
 
-return (
-    <div>
-      {anythings && (<div>anythings</div>)}
-    </div>
+  return <div>{anythings && <div>anythings</div>}</div>;
 }
 ```
 
@@ -95,9 +92,9 @@ O formato Server Side Rendering (SSR - Renderização no lado do servidor), cons
 
 Nesse modelo, ao usuário acessar um domínio, é disparada uma requisição para um servidor e o dados da página **em tempo de execução** são gerados no lado do server-side, que envia o HTML completo e pronto com todos dados de navegação necessários para o client-side. E por fim, o navegador só tem o trabalho de baixar e exibir essa página.
 
-No uso do Next.JS, com o uso do `getServerSideProps` (que demonstraremos na prática com um projeto), é possível implementar facilmente essa renderização no lado do servidor. Assim, elevando SEO, performance e segurança da sua aplicação.
+No Next.JS, com o uso do `getServerSideProps` (que demonstraremos na prática com um projeto), é possível implementar facilmente essa renderização no lado do servidor. Assim, podendo elevar o SEO, performance e segurança da sua aplicação.
 
-Nessa função recebemos o contexto, que é um objeto contedo uma chave de parâmetros chamada params (podemos injetar algum id nesses params), também contém outras chaves relacionadas a configuração de preview (preview, previewData) e internacionalização (locale, locales, defaultLocale). E podemos retornar props para o componente do arquivo no qual ela foi declarada, uma opção de revalidate e outra de notFound.
+Nessa função recebemos o contexto, que é um objeto contedo uma chave de parâmetros chamada params (podemos injetar algum id nesses params), também contém outras chaves relacionadas a configuração de preview (preview, previewData) e internacionalização (locale, locales, defaultLocale), notFound, revalidate e entre outras. Desse objeto, uma das chaves interessante para exemplificar é que podemos retornar props para o componente do arquivo no qual ela foi declarada.
 
 ```javascript
 
@@ -111,7 +108,31 @@ export async function getStaticProps(context) {
 }
 ```
 
-<!-- -criar ilustração para demonstrar o fluxo do SSR -->
+Com isso, podemos remodelar o exemplo anterior e invés de fazer o data fetching (busca de dados) no client-side,
+fazemos o fetch no servidor e nosso componente receberá essas propriedades resultatantes da busca de dados.
+
+```javascript
+export default function AnyComponent({ title, data = null }) {
+  return (
+    <>
+      <title>{title}</title>
+      {data && <div>data</div>}
+    </>
+  );
+}
+
+export async function getStaticProps(context) {
+  const response = await fetch('https://anyapi');
+  const data = await response.json();
+
+  return {
+    props: {
+      title: 'react4noobs',
+      data,
+    },
+  };
+}
+```
 
 ### Static Site Generation
 
