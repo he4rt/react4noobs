@@ -128,6 +128,7 @@ function inputChangeComponent(){
     <>
       <input type="text" name="text" value={text} onChange={handleChange}>
       </input>
+    </>
   )
 }
 ```
