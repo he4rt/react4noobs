@@ -148,7 +148,7 @@ function Form() {
 
   return (
     // Com uso das arrow functions, fazemos uma função anônima tendo como parametro o event e em sequida chamamos nosso handleSubmit passando tanto o event quanto o id.
-    // Lembre-se que a ordemn nesse caso fica a sua escolha, se eu definisse na função que iria receber primeiro o id e o segundo seria o event daria o mesmo resultado.
+    // Lembre-se que a ordem nesse caso fica a sua escolha, se eu definisse na função que iria receber primeiro o id e o segundo seria o event daria o mesmo resultado.
     <form onSubmit={(event) => handleSubmit(event, id)}>
       <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
       <button type="submit">Enviar </button>
