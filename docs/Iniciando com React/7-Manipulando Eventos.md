@@ -69,13 +69,13 @@ Ex:
 
 ```jsx
 function Form() {
-  function handleSubmit(event, id) {
+  function handleSubmit(event) {
     event.preventDefault();
     console.log("funfo", id);
   }
 
   return (
-    <form onSubmit={(event) => handleSubmit(event, id)}>
+    <form onSubmit={(event) => handleSubmit(event)}>
       <input type="text" name="nome" id="nome" placeholder="Digite seu nome" />
       <button type="submit">Enviar </button>
     </form>
@@ -137,6 +137,10 @@ Vamos utilizar o exemplo do form que fizemos lá em cima.
 
 ```jsx
 function Form() {
+  // Essa forma de fazer com o ID é meramente para mostrar a possibilidade.
+  // Lembre-se que a depender do contexto, pode ser resolvido de muitas outras formas.
+  const id = 847875211221;
+
   function handleSubmit(event, id) {
     event.preventDefault();
     console.log("funfo", id);
