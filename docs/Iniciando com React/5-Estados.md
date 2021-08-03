@@ -96,7 +96,7 @@ O conceito de estado e seu uso no React é bem simples porém conforme a aplica�
 
 Nos próximos capítulos vocês aprenderão sobre **Ciclo de vida de um componente** e **Hooks**.
 
-[Ir para Próxima Seção](./6-React%20Hooks.md)
+[Ir para Próxima Seção](./6-Ciclo-de-vida.md)
 
 <p align="center">Made with :purple_heart:</p>
 
