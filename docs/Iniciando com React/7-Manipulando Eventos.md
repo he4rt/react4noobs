@@ -71,7 +71,7 @@ Ex:
 function Form() {
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("funfo", id);
+    console.log("funfo");
   }
 
   return (
