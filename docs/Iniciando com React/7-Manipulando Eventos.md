@@ -113,23 +113,27 @@ btnSave.click = handleClick;
 Enfim, por que isso foi explicado? Lembra que o React não permite que utilizemos os mesmos nomes do HTML padrão? Apenas por camel case(ex: onchange = onChange). Porém o comportamento é o mesmo, todo onChange irá passar como `primeiro parametro` das funções o `event`.
 
 ```js
-import {useState} from 'react'
+import { useState } from "react";
 
-function inputChangeComponent(){
-  const [text, setText] = useState('');
+function inputChangeComponent() {
+  const [text, setText] = useState("");
 
   // Recebemos o evento
   // Vale lembrar que após o primeiro parametro, podemos simplesmente por qualquer parametro que quisermos.
-  function handleChange(event){
-    setText(event.target.value)
+  function handleChange(event) {
+    setText(event.target.value);
   }
 
-  return(
+  return (
     <>
-      <input type="text" name="text" value={text} onChange={handleChange}>
-      </input>
+      <input
+        type="text"
+        name="text"
+        value={text}
+        onChange={handleChange}
+      ></input>
     </>
-  )
+  );
 }
 ```
 
@@ -138,8 +142,6 @@ Vamos utilizar o exemplo do form que fizemos lá em cima.
 
 ```jsx
 function Form() {
-  // Essa forma de fazer com o ID é meramente para mostrar a possibilidade.
-  // Lembre-se que a depender do contexto, pode ser resolvido de muitas outras formas.
   const id = 847875211221;
 
   function handleSubmit(event, id) {
