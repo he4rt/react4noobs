@@ -19,6 +19,10 @@ O *useState* é um dos Hooks utilizados para criar estado dentro de um component
 
 O *useState* recebe como parâmetro o valor inicial do estado. E retorna um *array* onde o primeiro valor é o estado atual, e o segundo valor é uma função usada para alterar o valor do estado.
 
+Esta função para alterar o estado pode receber apenas o novo estado ou uma função que recebe o estado anterior e retorna o novo estado. 
+
+Este segundo comportamento é particularmente útil quando se faz mais de uma alteração de estado de uma vez pois como o componente é renderizado novamente assim que a primeira alteração de estado acontece as outras alterações acabam não acontecendo corretamente.
+
 ### Exemplo:
 
 ```jsx
@@ -33,7 +37,7 @@ function Counter () {
     <div>
       <h1>{clicks}</h1>
       {/* A função 'setClicks' é usada para mudar valor de 'clicks' */}
-      <button onClick={() => setClicks(clicks + 1)}>
+      <button onClick={() => setClicks((clicks) => clicks + 1)}>
         Clique Aqui!
       </button>
     </div>
