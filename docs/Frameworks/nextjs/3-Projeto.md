@@ -26,36 +26,39 @@ Caso tenha dúvidas sobre sua implementação e queira comparar com o projeto or
 
 ## Formas de criar um projeto Next.JS
 
-- Utilizando create-next-app semelhante ao create-react-app
-
-```
-npx create-next-app nome-do-seu-app
-# or
-yarn create next-app nome-do-seu-app
-```
-
-Após isso, entre no diretório do seu App com `cd nome-do-seu-app`.
-
-- Manual
-  - 1º Instale os pacotes necessários:
+- 1. Utilizando create-next-app semelhante ao create-react-app no terminal.
 
   ```
-  npm install next react react-dom
-  # or
-  yarn add next react react-dom
-  ```  
+  npx create-next-app nome-do-seu-app
+  # ou
+  yarn create next-app nome-do-seu-app
+  ```
 
-  - 2º  Prepare os scripts necessários no arquivo `package.json`:
+  Após isso, entre no diretório do seu App com `cd nome-do-seu-app`.
+
+- 2. Outra maneira é fazer manualmente instalando os pacotes necessários.
+
+  - 1º Instale os pacotes necessários:
+
+      ```
+      npm install next react react-dom
+      # or
+      yarn add next react react-dom
+      ```  
+
+  - 2º  Prepare os scripts necessários no arquivo `package.json`, adicionando o trecho __scripts__:
 
     ```json
+    {
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+      }
+    }
 
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  }
+    ```
 
-  ```  
   - 3º Crie um arquivo dentro da pasta pages com uma função que retorne JSX.
 
 ----------------------------
@@ -69,6 +72,7 @@ Após o comando `yarn create next-app` ou `npx create-next-app` finalizarem a su
 Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com a seguinte:
 
 ```
+
 ├───.git
 │   │
 │   └───(configurações do versionamento do projeto)
@@ -82,7 +86,7 @@ Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com
 │
 ├───pages
 │   │   index.js
-│   │   _app.js
+│   │_app.js
 │   │
 │   └───api
 │           hello.js
@@ -102,7 +106,6 @@ Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com
 ├───README.md
 │
 └───yarn.lock
-
 
 ```
 
