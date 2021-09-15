@@ -243,7 +243,7 @@ Concluímos que o ciclo de vida dos componentes no React é algo muito bem traba
 Bom, até então em todos os exemplos utilizamos a abordagem mais clássica do React que são os componente de classe. Porém é algo não muito utilizado nos dias de hoje, com a vinda dos _React Hooks_ se tornou muito melhor desenvolver utilizando componentes de função.
 Nos próximos tópicos você aprenderá sobre oque são hooks, como utilizar e seus equivalentes em relação ao ciclo de vida!
 
-[Ir para Próxima Seção](./7-React%20Hooks.md)
+[Ir para Próxima Seção](./7-Manipulando%20Eventos.md)
 
 <p align="center">Made with :purple_heart:</p>
 

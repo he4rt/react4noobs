@@ -22,9 +22,10 @@
 4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
    1. [Formas de declarar](./Iniciando%20com%20React/4.1-FormasDeDeclarar.md)
    2. [Propriedades](./Iniciando%20com%20React/4.2-Propriedades.md)
-5. [Estados](./Iniciando%20com%20React/5-Estados.md)
+5. [Estados](./Iniciando%20com%20React/6-Estados.md)
 6. [Ciclo de Vida](./6-Ciclo-de-vida.md)
-7. [React Hooks](./Iniciando%20com%20React/7-React%20Hooks.md)
+7. [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
+8. [React Hooks](./Iniciando%20com%20React/7-React%20Hooks.md)
 
 ### Ferramentas de build
 
@@ -64,7 +65,7 @@
 ### Cliente GraphQL
 
 1. [Conceito](./Cliente%20GraphQL/1-Conceito.md)
-    1. [Desmistificando o retorno 200](./Cliente%20GraphQL/1.1-Desmistificando-200.md)
+   1. [Desmistificando o retorno 200](./Cliente%20GraphQL/1.1-Desmistificando-200.md)
 2. [Apollo]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 3. [Relay]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
