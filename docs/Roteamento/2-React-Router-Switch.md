@@ -6,11 +6,11 @@
 
 # Outras Rotas
 
-Além da rota padrão (o "/") podemos ter outras rotas como  "/posts", para isso precisaremos utiliza outro componente do React Router, o Switch.
+Além da rota padrão (o "/") podemos ter outras rotas como  "/posts", para isso precisaremos utilizar outro componente do React Router, o Switch.
 
 ## Como funciona o Switch
 
-O Switch irá pegar renderizar a primeira rota o seu path (caminho) que corresponder a URL. Observando o arquivo 'router.js' construido no capitulo anterior sem o switch temos apenas uma rota e no caso a nossa rota padrão:
+O Switch irá pegar e renderizar a primeira rota o seu path (caminho) que corresponder a URL. Observando que o arquivo 'router.js', construido no capítulo anterior, sem o switch temos apenas uma rota e no caso a nossa rota padrão:
 
 ```js
 import React from 'react';
@@ -52,7 +52,7 @@ export default Routes;
 
 ## Construindo a rota About
 
-Dentro da pasta **src/Routes** do projeto vamos criar uma nova pasta, agora com nome 'About' e dentro dela um arquivo**index.js**. O nosso **index.js** ficará assim:
+Dentro da pasta **src/Routes** do projeto vamos criar uma nova pasta, agora com nome 'About' e dentro dela um arquivo **index.js**. O nosso **index.js** ficará assim:
 
 ```js
 import React from 'react';
@@ -81,7 +81,7 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={Home} />
+        <Route path="/about" exact component={About} />
       </Switch>
     </BrowserRouter>
   );
