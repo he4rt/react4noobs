@@ -149,7 +149,7 @@ Ao utilizar esse comando, se a porta 3000 do seu dispositivo estiver disponível
 
 ## Limpando estrutura de arquivos
 
-Agora que temos nosso app rodando, vamos apagar tudo que não utilizaremos. Primeiramente, vou remover os seguintes **arquivos**:
+Agora que temos nosso app rodando, vamos apagar tudo que não utilizaremos. Primeiramente, vou remover os seguintes **arquivos** (no caso, removi a pasta também):
 
 ```
 ├───public
@@ -169,7 +169,7 @@ Entrando em `./pages/index.js`, encontraremos um arquivo que exporta uma funçã
 import styles from '../styles/Home.module.css'
 ```
 
-Também removerei todo o conteúdo do retorno dessa função Home para um Fragmento contendo o componente Head com o title do app tendo como "irmão" uma tag main e uma tag footer referenciando o criador do projeto, ficando o seguinte o resultado no arquivo `./pages/index.js`:
+Também removerei todo o conteúdo do retorno dessa função Home para um Fragmento contendo o componente Head com a title contendo o título do app e tendo como tag "irmã" uma tag main e uma tag footer referenciando o criador do projeto, ficando o seguinte o resultado no arquivo `./pages/index.js`:
 
 ```jsx
 import Head from 'next/head'
@@ -190,7 +190,7 @@ export default function Home() {
 }
 ```
 
-Vai notar que o projeto ainda vai falhar na compilação do código, pois precisamos remover mais uma referência que ainda não removemos. Então entraremos em `./pages/_app.js` e removeremos a importação do arquivo que não existe mais, ficando com o seguinte resultado nesse `_app.js`:
+Vai notar que o projeto ainda vai falhar na compilação do código, pois precisamos remover mais uma referência que ainda não removemos. Então, entraremos em `./pages/_app.js` e removeremos a importação do arquivo que não existe mais, ficando com o seguinte resultado nesse `_app.js`:
 
 ```
 function MyApp({ Component, pageProps }) {
