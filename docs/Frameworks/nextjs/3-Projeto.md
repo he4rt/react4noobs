@@ -149,7 +149,7 @@ Ao utilizar esse comando, se a porta 3000 do seu dispositivo estiver disponível
 
 ## Limpando estrutura de arquivos
 
-Agora que temos nosso app rodando, vamos apagar tudo que não utilizaremos. Primeiramente, vou remover os seguintes **arquivos** (no caso, removi a pasta também):
+Agora que temos nosso app rodando, vamos apagar tudo que não utilizaremos. Primeiramente, vou remover os seguintes **arquivos** (no caso, removi apenas os arquivos e não as pastas):
 
 ```
 ├───public
@@ -212,7 +212,7 @@ Lembro que da primeira vez que ouvi "file-system router", eu imaginei que teria 
 
 No Next.JS, esse File-system router já vem configurado e basta você utilizá-lo. E para usá-lo, basta criar um arquivo que retorna JSX dentro da pasta `./pages`.
 
-Você também pode criar uma pasta com um arquivo index.js e isso se tornará uma rota também. Irei adicionar dentro da pasta pages, uma pasta chamada pokemon,s e dentro dessa pasta pokemons, um arquivo index.js (`./pages/pokemon/index.js`) com o seguinte JSX:
+Você também pode criar uma pasta com um arquivo index.js e isso se tornará uma rota também. Irei adicionar dentro da pasta pages uma pasta chamada pokemons e dentro dessa pasta pokemons, um arquivo index.js (sendo esse o caminho: `./pages/pokemon/index.js`) com o seguinte JSX:
 
 ```jsx
 import Head from 'next/head'
@@ -237,7 +237,7 @@ export default function Pokemons() {
 }
 ```
 
-Com essa página pronta, basta acessar no seu navegador o endereço `http://localhost:3000/pokemons`, assumindo que a sua porta 3000 não esteja sendo usada, se estiver, o Next.JS usará outra porta que encontrar livre e informará ela via terminal, que vai encontrar o seguinte conteúdo:
+Com essa página pronta, basta acessar no seu navegador o endereço `http://localhost:3000/pokemons`, assumindo que a sua porta 3000 não esteja sendo usada, se estiver, o Next.JS usará outra porta que encontrar livre e informará ela via terminal, e ao abrir a página você vai encontrar o seguinte conteúdo:
 
 ```
 Lista de pokémons
