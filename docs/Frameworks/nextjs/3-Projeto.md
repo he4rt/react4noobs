@@ -26,7 +26,9 @@ Caso tenha dúvidas sobre sua implementação e queira comparar com o projeto or
 
 ## Formas de criar um projeto Next.JS
 
-- 1. Utilizando create-next-app semelhante ao create-react-app no terminal.
+### 1 - Usando o create-next-app
+
+ Utilizando create-next-app semelhante ao create-react-app no terminal.
 
   ```
   npx create-next-app nome-do-seu-app
@@ -36,9 +38,11 @@ Caso tenha dúvidas sobre sua implementação e queira comparar com o projeto or
 
   Após isso, entre no diretório do seu App com `cd nome-do-seu-app`.
 
-- 2. Outra maneira é fazer manualmente instalando os pacotes necessários.
+### 2 - Manualmente
 
-  - 1º Instale os pacotes necessários:
+Outra maneira é fazer manualmente instalando os pacotes necessários.
+
+- 1º Instale os pacotes necessários:
 
       ```
       npm install next react react-dom
@@ -46,7 +50,7 @@ Caso tenha dúvidas sobre sua implementação e queira comparar com o projeto or
       yarn add next react react-dom
       ```  
 
-  - 2º  Prepare os scripts necessários no arquivo `package.json`, adicionando o trecho __scripts__:
+- 2º  Prepare os scripts úteis no arquivo `package.json`, adicionando o trecho __scripts__:
 
     ```json
     {
@@ -59,7 +63,7 @@ Caso tenha dúvidas sobre sua implementação e queira comparar com o projeto or
 
     ```
 
-  - 3º Crie um arquivo dentro da pasta pages com uma função que retorne JSX.
+- 3º Crie um arquivo dentro da pasta pages com uma função que retorne JSX e esteja como exportação default.
 
 ----------------------------
 
