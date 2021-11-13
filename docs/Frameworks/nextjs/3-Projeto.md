@@ -71,7 +71,7 @@ Outra maneira é fazer manualmente instalando os pacotes necessários.
 
 Com o intuito de explorar os modelos de renderização e outras funcionalidades do Next.JS eu arbitrariamente vou rodar: `yarn create next-app pokedex` e vou abrir o projeto no editor de código que eu uso.
 
-Após o comando `yarn create next-app` ou `npx create-next-app` finalizarem a sua execução,teremos nossa pasta de projeto `pokedex` criada, entrarei nela via terminal com o comando `cd pokedex`.
+Após o comando `yarn create next-app` ou `npx create-next-app` finalizarem a sua execução, teremos nossa pasta de projeto `pokedex` criada, entrarei nela via terminal com o comando `cd pokedex`.
 
 Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com a seguinte:
 
@@ -86,7 +86,7 @@ Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com
 │
 ├───node_modules
 │   │
-│   └───(várias dependências)
+│   └───(dependências do projeto)
 │
 ├───pages
 │   │   index.js
@@ -113,9 +113,9 @@ Então, você verá que terá uma estrutura de pastas e arquivos semelhantes com
 
 ```
 
-Salvo execeção de que se você utilizou o comando `npx create-next-app pokedex`, invés de um `yarn.lock`, você possuirá um `package-lock.json`, ambos para o registro/histórico dos pacotes.
+Salvo execeção de que se você utilizou o comando `npx create-next-app pokedex`, invés de um `yarn.lock`, você possuirá o arquivo `package-lock.json`, ambos servem para o registro/histórico dos pacotes.
 
-Podemos perceber que de pastas temos uma chamda styles para guardarmos o CSS dos projetos temos um README.md com instruções de manuseio do projeto em inglês, também .gitignore com template pronto para ignorar arquivos e pastas que não serão interessantes versionar.
+Podemos perceber que de pastas temos uma chamda styles para guardarmos o CSS do projeto, temos um README.md com instruções de manuseio do projeto em inglês, e também gitignore com template pronto para ignorar arquivos e pastas que não serão interessantes versionar.
 
 Ao observar o arquivo `package.json`, você possuirá algo semelhante a isso:
 
@@ -137,7 +137,7 @@ Ao observar o arquivo `package.json`, você possuirá algo semelhante a isso:
 }
 ```
 
-Note que o `create next app`, que diferentemente de um `create react app` instalou a dependência next além do react e do react-dom e forneceu alguns scripts para trabalharmos com nosso app. Com isso, podemos rodar o comando o seguinte comando para inicializar nossa aplicação:
+Note que o `create next app`, que diferentemente de um `create react app` instalou a dependência next além do react e do react-dom e forneceu alguns scripts para trabalharmos com nosso app. Com isso, podemos rodar o seguinte comando para inicializar nossa aplicação:
 
 ```
 yarn dev
