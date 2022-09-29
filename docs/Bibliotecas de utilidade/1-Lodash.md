@@ -1,3 +1,5 @@
+[![4noobs](../../assets/global/header-4noobs.svg)](https://github.com/he4rt/4noobs)
+
 # _Lodash
 
 ## O que é o Lodash
@@ -85,7 +87,6 @@ Te passaram algumas tasks para manipular apenas o array enquanto fazem seu onboa
 Agora chega de papinho e vamos botar a mão na massa!
 
 ### capitalize
-<!-- TODO: explicar melhor o snippet -->
 
 Como você pode notar, todos os nomes estão com a primeira letra minúscula. É legal
 fazer isso para fins de normalização da informação, mas não queremos mostrar assim
@@ -96,13 +97,23 @@ Então sua primeira task é deixar a primeira letra de todos os nomes em maiúsc
 Felizmente, com o lodash, isso ficar mais simples do que já é:
 
 ```js
-const capitalizedDevDepartment = funcionarios.map((worker) => ({
+const capitalizedDevDepartment = devDepartment.map((worker) => ({
   ...worker,
   firstName: _.capitalize(worker.firstName),
   lastName: _.capitalize(worker.lastName)
 }));
-
 ```
+
+No trecho de código acima nós usamos o map para gerar uma nova lista! Aqui
+[iteramos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
+sobre os elementos da lista `devDepartment`, e para cada elemento, nós adicionamos a
+informação já existente do funcionário usando o [spread
+operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+e sobrescrevemos o primeiro e segundo nome pelo retorno da função `capitalize()`
+aplicada aos valores antigos.
+
+Pareceu complicado na explicação, mas se você não entendeu, olhe o código novamente
+e pense em cada operação que ele está executando.
 
 Pronto! Resolvido. Temos todos os nomes começando com letra maiúscula. Nosso lista está
 assim:
@@ -159,7 +170,6 @@ Já pode rodar a pipeline de produção, galera. Essa aqui foi fácil!
 ---
 
 ### uniqWith & isEqual
-<!-- TODO: explicar melhor a definição das duas funções e o snippet -->
 
 Ao subir o código para produção, o cliente nota um problema: ele só tem 7 funcionários
 nesse departamento, mas estão aparecento 8. Você já deve ter notado o problema, certo?
@@ -171,6 +181,15 @@ vai combinar duas funções do lodash: `uniqWith` e `isEqual`**.
 ```js
 const normalizedWorkersList = _.uniqWith(workersOrderedBySalary, _.isEqual)
 ```
+
+Nessa curtia linha de código o Lodash está trabalhando bastante. Em resumo, a função
+`uniqWith` faz a comparação entre dois elementos de cada vez, utilizando um
+**comparador**, que no nosso caso é a função `isEqual()`. A função `isEqual` será
+invocada com dois itens como argumento, o elemento da vez (othVal), e os outros
+elementos que serão comparados(arrVal). Assim, todos os valores são comparados com
+todos os outros valores, livrando a lista de toda duplicação.
+
+Tá vendo como o Lodash abstrai bastante a complexidade dessas operações?
 
 Foi tão fácil que nem parece que a gente tá trabalhando. Agora nosso array de objetos
 está assim:
@@ -196,7 +215,6 @@ Que tal tentar resolver esse mesmo problema utilizando o uniqBy? Cheque a
 
 ---
 
-<!-- TODO: explicar melhor este código -->
 ### groupBy
 
 Outra feature que o cliente te pediu, é que o usuário possa agrupar os funcionários
@@ -206,6 +224,9 @@ exemplo:
 ```js
 const workersGroupedByLevel = _.groupBy(normalizedWorkersList, 'level')
 ```
+
+Aqui nós indicamos que queremos gerar um objeto a partir da lista `normalizedWorkersList`
+e agrupar os elementos a partir da key `level`.
 
 Com apenas uma linha, nós temos todos os funcionários agrupados pelo nível de senioridade.
 
@@ -235,6 +256,11 @@ Agora pode pedir um aumento!
 
 ## Conclusão
 
+Se você chegou até aqui, você já tem ótimos exemplos e uma boa justificativa para utilizar
+o Lodash. Muitas vezes as abstrações criadas pelo Lodash não serão o bastante para o caso
+que você precisa tratar, mas certamente esses momentos serão raros. É uma biblioteca que
+casa muito bem com o jeito funcional de pensar que o React trás enquanto framework.
+
 Um exercício muito interessante de fazer é **tentar implementar todas essas funções
 do zero**. Isso vai te dar uma boa ideia da complexidade que o lodash resolve.
 
@@ -242,3 +268,6 @@ Além disso, tentar ler o código que eles produzem é uma ótima forma de apren
 também, este é o link para o repositório open source deles:
 [Lodash](https://github.com/lodash/lodash).
 
+Bons estudos!
+
+[![4noobs](../../assets/global/footer-4noobs.svg)](https://github.com/he4rt/4noobs)
