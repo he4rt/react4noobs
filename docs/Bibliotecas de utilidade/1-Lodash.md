@@ -85,6 +85,7 @@ Te passaram algumas tasks para manipular apenas o array enquanto fazem seu onboa
 Agora chega de papinho e vamos botar a mão na massa!
 
 ### capitalize
+<!-- TODO: explicar melhor o snippet -->
 
 Como você pode notar, todos os nomes estão com a primeira letra minúscula. É legal
 fazer isso para fins de normalização da informação, mas não queremos mostrar assim
@@ -158,6 +159,7 @@ Já pode rodar a pipeline de produção, galera. Essa aqui foi fácil!
 ---
 
 ### uniqWith & isEqual
+<!-- TODO: explicar melhor a definição das duas funções e o snippet -->
 
 Ao subir o código para produção, o cliente nota um problema: ele só tem 7 funcionários
 nesse departamento, mas estão aparecento 8. Você já deve ter notado o problema, certo?
@@ -189,10 +191,12 @@ Existem formas até mais fáceis de resolver esse problema, como, por exemplo, u
 a função `uniqBy` do lodash. Mas eu quis mostrar esse exemplo para demonstrar que você
 pode compor funções do lodash à vontade.
 
-Que tal tentar resolver esse mesmo problema utilizando o uniqBy? Cheque a [documentação](https://lodash.com/docs/4.17.15#uniqBy)
+Que tal tentar resolver esse mesmo problema utilizando o uniqBy? Cheque a
+[documentação](https://lodash.com/docs/4.17.15#uniqBy).
 
 ---
 
+<!-- TODO: explicar melhor este código -->
 ### groupBy
 
 Outra feature que o cliente te pediu, é que o usuário possa agrupar os funcionários
@@ -225,6 +229,16 @@ Nosso array de funcionários agora é um objeto, e está assim:
 }
 ```
 
+Agora pode pedir um aumento!
+
 ---
 
 ## Conclusão
+
+Um exercício muito interessante de fazer é **tentar implementar todas essas funções
+do zero**. Isso vai te dar uma boa ideia da complexidade que o lodash resolve.
+
+Além disso, tentar ler o código que eles produzem é uma ótima forma de aprender
+também, este é o link para o repositório open source deles:
+[Lodash](https://github.com/lodash/lodash).
+
