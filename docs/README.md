@@ -56,6 +56,13 @@
 
 1. [react-router](./Roteamento/1-React-Router.md)
 2. [react-router switch](./Roteamento/2-React-Router-Switch.md)
+3. [TanStack Router](./Roteamento/TanStack-Router)
+   1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
+      1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
+   2. [Rotas Customizadas](./Roteamento/TanStack-Router/2-Rotas-customizadas.md)
+   3. [Contextos e Layouts](./Roteamento/TanStack-Router/3-Contextos-e-Layouts.md) <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+   4. [Caching]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+   5. [DevTools]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Cliente REST
 
