@@ -25,7 +25,7 @@ O _useState_ recebe como parâmetro o valor inicial do estado. E retorna um _arr
 ### Exemplo:
 
 ```jsx
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function Counter() {
   // Cria estado 'clicks' com valor inicial 0
@@ -36,7 +36,9 @@ function Counter() {
     <div>
       <h1>{clicks}</h1>
       {/* A função 'setClicks' é usada para mudar valor de 'clicks' */}
-      <button onClick={() => setClicks(clicks + 1)}>Clique Aqui!</button>
+      <button onClick={() => setClicks(oldState => oldState + 1)}>
+        Clique Aqui!
+      </button>
     </div>
   );
 }
@@ -51,7 +53,7 @@ O _useEffect_ é um Hook utilizado para realizar efeitos colaterais. Esse Hook r
 ### Exemplo:
 
 ```jsx
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 function Counter() {
   const [clicks, setClicks] = useState(0);
@@ -64,7 +66,9 @@ function Counter() {
   return (
     <div>
       <h1>{clicks}</h1>
-      <button onClick={() => setClicks(clicks + 1)}>Clique Aqui!</button>
+      <button onClick={() => setClicks(oldState => oldState + 1)}>
+        Clique Aqui!
+      </button>
     </div>
   );
 }
@@ -84,7 +88,7 @@ Caso você queira que uma função seja executada quando o componente é desmont
 useEffect(() => {
   // A função retornada pelo callback vai ser executada apenas quando o componente for desmontado
   return () => {
-    console.log("Componente Desmontado");
+    console.log('Componente Desmontado');
   };
 }, []);
 ```
@@ -109,7 +113,7 @@ O _useRef_ recebe como parâmetro um valor inicial e retorna um objeto mutável 
 ### Exemplo:
 
 ```jsx
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 
 function ContactForm() {
   // Criamos uma const que recebe o useRef passando null como parametro
@@ -127,7 +131,7 @@ function ContactForm() {
   return (
     <div>
       {/* Quando esse elemento for renderizado atualizará a variavel com a sua referência */}
-      <input ref={inputRef} placeholder="Digite seu Email" />
+      <input ref={inputRef} placeholder='Digite seu Email' />
 
       <button onClick={handleContinue}>Continuar</button>
     </div>
