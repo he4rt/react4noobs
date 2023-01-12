@@ -54,9 +54,10 @@
 
 ### Roteamento
 
-1. [react-router](./Roteamento/1-React-Router.md)
-2. [react-router switch](./Roteamento/2-React-Router-Switch.md)
-3. TanStack Router
+1. React Router
+  1. [Introdução](./Roteamento/1-React-Router.md)
+  2. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
+2. TanStack Router
    1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
       1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
    2. [Rotas Customizadas](./Roteamento/TanStack-Router/2-Rotas-customizadas.md)
