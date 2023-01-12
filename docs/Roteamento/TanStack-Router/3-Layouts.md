@@ -103,7 +103,7 @@ Lembrando que o exemplo acima foi utilizado um layout de escopo global, pois foi
 
 E pronto! A partir de agora já é possível utilizar os Layouts em sua aplicação de maneira fácil utilizando o **TanStack Router**.
 
-[Ir para Próxima Seção](./4-Caching.md) <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+[Ir para Próxima Seção]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 <p align="center">Made with :purple_heart:</p>
 

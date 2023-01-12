@@ -150,7 +150,7 @@ export default App;
 
 E pronto! A partir de agora já é possível navegar entre as páginas da aplicação utilizando o **TanStack Router**.
 
-[Ir para Próxima Seção](./2-Rotas Customizadas.md)
+[Ir para Próxima Seção](./2-Rotas-customizadas.md)
 
 <p align="center">Made with :purple_heart:</p>
 
