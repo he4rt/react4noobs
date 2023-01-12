@@ -189,7 +189,7 @@ export function ViewProfile() {
 
 E pronto! A partir de agora já é possível criar rotas dinâmicas e navegar na aplicação utilizando o **TanStack Router**.
 
-[Ir para Próxima Seção](./3-Contextos-e-Layouts.md)
+[Ir para Próxima Seção](./3-Layouts.md)
 
 <p align="center">Made with :purple_heart:</p>
 

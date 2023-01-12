@@ -14,11 +14,11 @@ O react em si não possui um gerenciamento próprio de rotas, mas podemos utiliz
 
 1. [react-router](./Roteamento/1-React-Router.md)
 2. [react-router switch](./Roteamento/2-React-Router-Switch.md)
-3. [TanStack Router](./Roteamento/TanStack-Router)
-   1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
-      1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
-   2. [Rotas Customizadas](./Roteamento/TanStack-Router/2-Rotas-customizadas.md)
-   3. [Layouts](./Roteamento/TanStack-Router/3-Layouts.md)
+3. TanStack Router
+   1. [Introdução](./TanStack-Router/1-Introducao.md)
+      1. [Type-Safety](./TanStack-Router/1.1-Type-Safety.md)
+   2. [Rotas Customizadas](./TanStack-Router/2-Rotas-customizadas.md)
+   3. [Layouts](./TanStack-Router/3-Layouts.md)
    4. [Caching]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
    5. [DevTools]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
