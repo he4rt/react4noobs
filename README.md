@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/he4rt/4noobs" target="_blank">
+  <a href="https://github.com/he4rt/4noobs" target="_blank" title="Clique para visualizar mais informações sobre o projeto 4noobs">
     <img src="./assets/global/header-4noobs.svg" alt="Cabeçalho do repositório representado pelo logotipo da He4rt, simbolizado por um coração roxo, na esquerda e a tipografia '4 noobs by He4rt devs' na direita">
   </a>
 </p>
@@ -13,14 +13,14 @@
   
   <p align="center">
     <br />
-    <a href="./docs/README.md">Explore a documentação »</a>
+    <a href="./docs/README.md" title="Clique para visualizar a documentação">Explore a documentação »</a>
     <br />
     <br />
-    <a href="https://github.com/he4rt/react4noobs/issues">Reporte um erro</a>
+    <a href="https://github.com/he4rt/react4noobs/issues" title="Clique para reportar um erro">Reporte um erro</a>
     ·
-    <a href="https://github.com/he4rt/react4noobs/issues">Solicite um conteúdo</a>
+    <a href="https://github.com/he4rt/react4noobs/issues" title="Clique para solicitar um novo conteúdo">Solicite um conteúdo</a>
     ·
-    <a href="#como-contribuir">Contribua com o repositório</a>
+    <a href="#como-contribuir" title="Clique para saber como contribuir com o repositório">Contribua com o repositório</a>
   </p>
 </p>
 
@@ -51,7 +51,7 @@ Atualmente o projeto conta com o esforço da comunidade para manter o conteúdo 
 
 ## Colaboradores
 
-<a href="https://github.com/he4rt/react4noobs/graphs/contributors">
+<a href="https://github.com/he4rt/react4noobs/graphs/contributors" title="Clique para visualizar a lista de contribuidores">
   <img src = "https://contrib.rocks/image?repo=he4rt/react4noobs" alt="Disposição dos conteúdos em grade com a foto de perfil de todos os contribuidores públicos do projeto" />
 </a>
 
