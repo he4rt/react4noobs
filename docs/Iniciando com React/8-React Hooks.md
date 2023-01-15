@@ -105,10 +105,12 @@ useEffect(() => {
 
 ## useRef
 
-O _useRef_ é um Hook utlizado para acessar a referência de um elemento HTML na DOM, se assemelha aos métodos _Finding HTML Elements_ do JavaScript nos Browsers.
+O _useRef_ é um Hook utlizado para acessar a referência valor sem que ele seja associado ao estado do componente para evitar que o elemento renderize novamente quando a refência mudar seu valor, esse hook recebe como parâmetro um valor inicial e retorna um objeto com uma referência mutável ao valor inserido, para acessar esse valor usamos a propriedade `.current` que é a referência do elemento.
+
+Com isso podemos salvar tambem elementos HTML para que consigamos efeitos que se assemelham aos métodos _Finding HTML Elements_ do JavaScript nos Browsers.
 Ex.: `document.getElementById()`, `document.getElementsByClassName()` e etc.
 
-O _useRef_ recebe como parâmetro um valor inicial e retorna um objeto mutável com uma propriedade `.current` com o valor que é a referência do elemento.
+Para que façamos isso, passamos essa Ref como propriedades para o componente que queremos referenciar. Assim guardamos uma referência do elemento DOM como valor da nossa Ref.
 
 ### Exemplo:
 
@@ -116,8 +118,9 @@ O _useRef_ recebe como parâmetro um valor inicial e retorna um objeto mutável 
 import React, { useRef } from 'react';
 
 function ContactForm() {
-  // Criamos uma const que recebe o useRef passando null como parametro
-  // Quando o elemento for renderizado em tela a variavel inputRef será atualizada
+  // Criamos uma const que recebe o useRef passando null como parâmetro inicial
+  // Quando o elemento for renderizado em tela a variável inputRef será atualizada
+  // A partir da primeira renderização, o valor será o elemento <input/>
   const inputRef = useRef(null);
 
   const handleContinue = () => {
@@ -130,7 +133,7 @@ function ContactForm() {
 
   return (
     <div>
-      {/* Quando esse elemento for renderizado atualizará a variavel com a sua referência */}
+      {/* Quando esse elemento for renderizado atualizará a variável com a sua referência */}
       <input ref={inputRef} placeholder='Digite seu Email' />
 
       <button onClick={handleContinue}>Continuar</button>
