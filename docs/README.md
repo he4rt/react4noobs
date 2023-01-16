@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../assets/global/header-4noobs.svg">
+    <img src="../assets/global/header-4noobs.svg" alt="Cabeçalho do repositório representado pelo logotipo da He4rt, simbolizado por um coração roxo, na esquerda e a tipografia '4 noobs by He4rt devs' na direita">
   </a>
 </p>
 
@@ -8,9 +8,8 @@
 
 ---
 
-- Conhecimento em HTML, CSS
-- Conhecimento em Javascript
-- Instalação do [NodeJS](https://nodejs.org/pt-br/download/) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install)
+- Conhecimentos em construção de páginas utilizando HTML, CSS e JavaScript
+- Instalação do [NodeJS](https://nodejs.org/pt-br/download/) e um gerenciador de pacotes à sua preferência ([npm](https://www.npmjs.com/), [yarn](https://classic.yarnpkg.com/pt-BR/docs/install) ou [pnpm](https://pnpm.io/))
 
 ## **Conteúdos**
 
@@ -41,22 +40,25 @@
 2. [Frameworks CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 3. [CSS in JS](./Estilizacao/CSS-in-JS.md)
    1. [styled-components](./Estilizacao/3.1-styled-components.md)
+   2. [Stitches](./Estilizacao/3.1-styled-components.md) <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 4. [Arquiteturas CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Controle de estado
 
 1. [API de Contexto](./Controle%20de%20estado/1-API-de-Contexto.md)
 2. [Redux]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+3. [Zustand]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Verificadores de tipos
 
 1. [Typescript](./Verificadores%20de%20Tipo/Typescript.md)
+2. [ReScript]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Roteamento
 
 1. React Router
-  1. [Introdução](./Roteamento/1-React-Router.md)
-  2. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
+   1. [Introdução](./Roteamento/1-React-Router.md)
+   2. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
 2. TanStack Router
    1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
       1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
@@ -92,19 +94,18 @@
 ### i18n
 
 1. [React Intl]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [React i18n Next]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
-### Renderização no lado do servidor
+### Renderização no lado do servidor e geração de sites estáticos
 
 1. [Next.js]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [Gatsby]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+3. [Remix]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
-### Gerador de sites estáticos
-
-1. [Gatsby]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-
-<p align="center">Made with :purple_heart:</p>
+<p align="center">Made with 💜</p>
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../assets/global/footer-4noobs.svg" width="380">
+    <img src="../assets/global/footer-4noobs.svg" width="380" alt="Tipografia com o título '4 noobs by He4rt devs' e o slogan 'Da comunidade para a comunidade 💜'" >
   </a>
 </p>
