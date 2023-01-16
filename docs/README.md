@@ -34,6 +34,7 @@
 1. [NPM e Yarn](./Ferramentas%20de%20build/1-npm-yarn.md)
    1. [Dependências](./Ferramentas%20de%20build/1.1-O-que-são-dependências.md)
 2. [Webpack](./Ferramentas%20de%20build/2-Webpack.md)
+3. [ViteJS](./Ferramentas%20de%20build/3-Vite.md)
 
 ### Estilização
 
@@ -55,9 +56,9 @@
 ### Roteamento
 
 1. React Router
-  1. [Introdução](./Roteamento/1-React-Router.md)
-  2. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
-2. TanStack Router
+1. [Introdução](./Roteamento/1-React-Router.md)
+1. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
+1. TanStack Router
    1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
       1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
    2. [Rotas Customizadas](./Roteamento/TanStack-Router/2-Rotas-customizadas.md)

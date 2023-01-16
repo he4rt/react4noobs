@@ -8,8 +8,6 @@
     <img src="../../assets/webpack-babel.jpeg">
 </p>
 
-
-
 # O que é WebPack?
 
 O Webpack é um empacotador de módulos para projetos web que utilizam html, css, javascript e imagens, sendo uma das principais ferramentas utilizadas no core do React.
@@ -68,13 +66,10 @@ Veja que temos uma parte que importa o arquivo 'bundle.js' ele será todo o java
 Para que esse arquivo seja criado, precisaremos do Webpack. Portanto, vamos criar o arquivo webpack.config.js, que será o arquivo de configuração do Webpack:
 
 ```js
-
 module.exports = {
-
-entry: './app.js',
-output: {
-filename: 'bundle.js',
-
+  entry: './app.js',
+  output: {
+    filename: 'bundle.js',
   },
 };
 ```
@@ -83,33 +78,31 @@ Feito já temos as configurações mínimas para uma aplicação com Webpack sen
 
 No caso nosso app.js sera o responsável pelo nosso javascript e por todo o resto ligado a nossa aplicação. Já o bundle.js será gerado automaticamente.
 
-
 Após esses passos, podemos alterar o 'package.json' para que possamos rodar o webpack e gerar o build:
 
 ```json
 {
-"name": "webpack-react-example",
-"version": "1.0.0",
-"description": "",
-"main": "index.js",
-"scripts": {
-"start": "webpack"
-},
-"author": "",
-"license": "ISC",
-"dependencies": {
-"react": "^15.4.1",
-"react-dom": "^15.4.1"
-},
-"devDependencies": {
-"babel-core": "^6.18.2",
-"babel-loader": "^6.2.8",
-"babel-preset-es2015": "^6.18.0",
-"babel-preset-react": "^6.16.0",
-"webpack": "^1.13.3"
+  "name": "webpack-react-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "webpack": "^1.13.3"
+  }
 }
-}
-
 ```
 
 Nossa alteração foi adicionar o script `start`. Com ele, podemos rodar nossa aplicação com o comando:
@@ -125,11 +118,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(<h1>Hello World</h1>, document.getElementById('app'));
-
 ```
 
 Porém, apesar desse código ser muito simples, possui duas limitações que nossos browsers não conseguem interpretar:
-
 
 - Código em React
 - Código em ES2015
@@ -155,26 +146,23 @@ module.exports = {
     ],
   },
 };
-
 ```
-
-
 
 Pode ter ficado complicado agora, mas vamos passo a passo.
 
 Primeiro, vamos pegar todos os arquivos que terminem com .js:
 
-```test: /\.js$/ ```
+`test: /\.js$/ `
 
 Depois, vamos excluir todos os arquivos que vem da pasta node_modules, porque não faz sentido tocarmos em libs externas:
 
-```exclude: /node_modules/ ```
+`exclude: /node_modules/ `
 
 Agora, basta informarmos que vamos usar o Babel como loader principal:
 
-```loader: 'babel```
+`loader: 'babel`
 
-E para fechar criaremos um novo arquivo chamado  `.babelrc` que sera responsavel por  definir os dois loaders que precisamos, o babel-preset-env e o preset-react, e o babel-preset-react:
+E para fechar criaremos um novo arquivo chamado `.babelrc` que sera responsavel por definir os dois loaders que precisamos, o babel-preset-env e o preset-react, e o babel-preset-react:
 
 ```
 {
@@ -185,9 +173,10 @@ E para fechar criaremos um novo arquivo chamado  `.babelrc` que sera responsavel
 }
 
 ```
+
 Pronto. Agora basta digitar o comando para rodar o Webpack:
 
-```npm start```
+`npm start`
 
 Feito isso, temos um bom exemplo de como o webpack funciona. Caso quiser se aprofundar na ferramenta e melhorar essa aplicação, é recomendado ler o post original desse tutorial [clicando aqui](https://medium.com/tableless/webpack-para-react-o-guia-final-cb8a95b369ed).
 
@@ -199,13 +188,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
-<React.StrictMode>
-<App />
-</React.StrictMode>,
-document.getElementById('root')
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 ```
-
 
 ```html
 
@@ -229,12 +217,11 @@ To create a production bundle, use 'npm run build' or 'yarn build'.
 
 Apenas um pedaço do código original do index.html
 
-
-##  Referências:
+## Referências:
 
 [Webpack para React: o Guia Final](https://medium.com/tableless/webpack-para-react-o-guia-final-cb8a95b369ed)
 
-[Ir para Próxima Seção](../Estilizacao/1.Preprocessadores%20CSS.md)
+[Ir para Próxima Seção](./3-Vite.md)
 
 <br>
 <p align="center">Made with :purple_heart:</p>
