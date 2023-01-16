@@ -139,6 +139,73 @@ function ContactForm() {
 }
 ```
 
+---
+
+## useMemo
+
+O _useMemo_ é um Hook que permite memorizar o valor de uma expressão. Isso pode ajudar a melhorar o desempenho de uma aplicação, pois evita que a expressão seja recalculada sempre que houver uma atualização no componente.
+
+### Exemplo:
+
+```jsx
+import { useMemo } from 'react';
+
+function List({ data }) {
+  // Use useMemo para memorizar o resultado de filterData
+  const filteredData = useMemo(() => filterData(data), [data]);
+
+  return (
+    <ul>
+      {filteredData.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+
+function filterData(data) {
+  // Cálculo complexo que filtra os dados baseado em algum critério
+  return data.filter(item => item.isActive);
+}
+```
+
+Neste exemplo, o componente **List** exibe uma lista de itens filtrados a partir de um conjunto de dados brutos. Usamos _useMemo_ para memorizar o resultado da função filterData para evitar que ela seja chamada sempre que os dados brutos mudarem. Isso garante que o cálculo complexo só seja executado quando realmente necessário, melhorando assim o desempenho da aplicação.
+
+Aqui, data é a propriedade que é passada para o componente List, quando data muda a função filterData é executada novamente, e quando não muda a função não é executada novamente e o valor já memorizado é utilizado.
+
+---
+
+## useCallback
+
+O _useCallback_ é um Hook que permite armazenar um cache da função a qual está se referindo. Isso pode ajudar a melhorar o desempenho de uma aplicação, pois evita que de acordo com a mudança dentro da aplicação, como um tema sendo alterado, venha a re-renderizar a função em questão.
+
+### Exemplo:
+
+```jsx
+import { useCallback } from 'react';
+
+function ProductPage({ productId, referrer, theme }) {
+  // Função utilizada para fazer a chamada para o backend e enviar dados do formulário
+  const handleSubmit = useCallback(
+    orderDetails => {
+      post('/product/' + productId + '/buy', {
+        referrer,
+        orderDetails,
+      });
+    },
+    [productId, referrer]
+  );
+
+  return (
+    <div className={theme}>
+      <ShippingForm onSubmit={handleSubmit} />
+    </div>
+  );
+}
+```
+
+Neste exemplo, o componente **ProductPage** é uma pagina na qual o usuário pode fazer a compra de um determinado produto, através do formulário que é disponibilizado, caso não houvesse um useCallback, toda vez que alterasse o tema da aplicação, o componente seria re-renderizado e junto dele o _handleSubmit_. Com o useCallback é possível ver que ao mudar o tema da aplicação a função não sofrerá mudanças e consequentemente não precisará ser `armazenada` novamente.
+
 <p align="center">Made with :purple_heart:</p>
 
 <p align="center">
