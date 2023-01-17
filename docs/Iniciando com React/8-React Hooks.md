@@ -43,6 +43,58 @@ function Counter() {
   );
 }
 ```
+---
+
+## useReducer
+
+o _useReducer_ é mais um Hook usado para gerenciar estados no nosso componente, mas com ele podemos centralizar a lógica que iremos aplicar ao estado do componente usando um _reducer_. Ao contrário do _useState_ onde usamos uma função para mudar diretamente o estado do nosso componente, com o useReducer usamos _Dispatchs_ para modificar o estado através de um _reducer_ intermediário em que passamos _actions_ como paramêtros para as modificações.
+
+### Exemplo:
+
+```jsx
+import React, { useReducer } from 'react';
+
+// Criamos um valor inicial do nosso reducer
+const initialInputState = {
+  value: '',
+  error: '',
+  validation: /^[a-zA-Z]*$/
+};
+
+// Definimos o reducer para executar o dispatch e
+// sempre que chamarmos a action para modificar o valor
+// validamos o input da action
+const inputReducer = (state, action) => {
+  switch(action.type){
+    case 'change':
+      if(state.validation.test(action.value))
+        return {...state, value: action.value, error: ''}
+      else
+        return {...state, value: action.value, error: 'Invalid input'}
+    default:
+      return state;
+  }
+};
+
+function InputWithValidation() {
+  const [inputState, dispatch] = useReducer(inputReducer, initialInputState);
+  
+  return (
+    <div>
+      {/*
+        Definimos o valor padrão do input e adicionamos
+        um dispatch para atualizar o valor
+      */}
+      <input value={inputState.value} onChange={
+        (e) => dispatch({type: 'change', value: e.target.value}
+      )} />
+      <p>{inputState.error}</p>
+    </div>
+  );
+}
+```
+
+Desse jeito conseguimos encapsular o comportamento do estado dentro de um reducer e gerenciar melhor a mudança de estados do componente. Mas é recomendado que o reducer seja uma função pura para que as actions tenham um efeito mais previsível.
 
 ---
 
@@ -105,10 +157,12 @@ useEffect(() => {
 
 ## useRef
 
-O _useRef_ é um Hook utlizado para acessar a referência de um elemento HTML na DOM, se assemelha aos métodos _Finding HTML Elements_ do JavaScript nos Browsers.
+O _useRef_ é um Hook utlizado para acessar a referência valor sem que ele seja associado ao estado do componente para evitar que o elemento renderize novamente quando a refência mudar seu valor, esse hook recebe como parâmetro um valor inicial e retorna um objeto com uma referência mutável ao valor inserido, para acessar esse valor usamos a propriedade `.current` que é a referência do elemento.
+
+Com isso podemos salvar tambem elementos HTML para que consigamos efeitos que se assemelham aos métodos _Finding HTML Elements_ do JavaScript nos Browsers.
 Ex.: `document.getElementById()`, `document.getElementsByClassName()` e etc.
 
-O _useRef_ recebe como parâmetro um valor inicial e retorna um objeto mutável com uma propriedade `.current` com o valor que é a referência do elemento.
+Para que façamos isso, passamos essa Ref como propriedades para o componente que queremos referenciar. Assim guardamos uma referência do elemento DOM como valor da nossa Ref.
 
 ### Exemplo:
 
@@ -116,8 +170,9 @@ O _useRef_ recebe como parâmetro um valor inicial e retorna um objeto mutável 
 import React, { useRef } from 'react';
 
 function ContactForm() {
-  // Criamos uma const que recebe o useRef passando null como parametro
-  // Quando o elemento for renderizado em tela a variavel inputRef será atualizada
+  // Criamos uma const que recebe o useRef passando null como parâmetro inicial
+  // Quando o elemento for renderizado em tela a variável inputRef será atualizada
+  // A partir da primeira renderização, o valor será o elemento <input/>
   const inputRef = useRef(null);
 
   const handleContinue = () => {
@@ -130,7 +185,7 @@ function ContactForm() {
 
   return (
     <div>
-      {/* Quando esse elemento for renderizado atualizará a variavel com a sua referência */}
+      {/* Quando esse elemento for renderizado atualizará a variável com a sua referência */}
       <input ref={inputRef} placeholder='Digite seu Email' />
 
       <button onClick={handleContinue}>Continuar</button>
@@ -138,6 +193,73 @@ function ContactForm() {
   );
 }
 ```
+
+---
+
+## useMemo
+
+O _useMemo_ é um Hook que permite memorizar o valor de uma expressão. Isso pode ajudar a melhorar o desempenho de uma aplicação, pois evita que a expressão seja recalculada sempre que houver uma atualização no componente.
+
+### Exemplo:
+
+```jsx
+import { useMemo } from 'react';
+
+function List({ data }) {
+  // Use useMemo para memorizar o resultado de filterData
+  const filteredData = useMemo(() => filterData(data), [data]);
+
+  return (
+    <ul>
+      {filteredData.map(item => (
+        <li key={item.id}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}
+
+function filterData(data) {
+  // Cálculo complexo que filtra os dados baseado em algum critério
+  return data.filter(item => item.isActive);
+}
+```
+
+Neste exemplo, o componente **List** exibe uma lista de itens filtrados a partir de um conjunto de dados brutos. Usamos _useMemo_ para memorizar o resultado da função filterData para evitar que ela seja chamada sempre que os dados brutos mudarem. Isso garante que o cálculo complexo só seja executado quando realmente necessário, melhorando assim o desempenho da aplicação.
+
+Aqui, data é a propriedade que é passada para o componente List, quando data muda a função filterData é executada novamente, e quando não muda a função não é executada novamente e o valor já memorizado é utilizado.
+
+---
+
+## useCallback
+
+O _useCallback_ é um Hook que permite armazenar um cache da função a qual está se referindo. Isso pode ajudar a melhorar o desempenho de uma aplicação, pois evita que de acordo com a mudança dentro da aplicação, como um tema sendo alterado, venha a re-renderizar a função em questão.
+
+### Exemplo:
+
+```jsx
+import { useCallback } from 'react';
+
+function ProductPage({ productId, referrer, theme }) {
+  // Função utilizada para fazer a chamada para o backend e enviar dados do formulário
+  const handleSubmit = useCallback(
+    orderDetails => {
+      post('/product/' + productId + '/buy', {
+        referrer,
+        orderDetails,
+      });
+    },
+    [productId, referrer]
+  );
+
+  return (
+    <div className={theme}>
+      <ShippingForm onSubmit={handleSubmit} />
+    </div>
+  );
+}
+```
+
+Neste exemplo, o componente **ProductPage** é uma pagina na qual o usuário pode fazer a compra de um determinado produto, através do formulário que é disponibilizado, caso não houvesse um useCallback, toda vez que alterasse o tema da aplicação, o componente seria re-renderizado e junto dele o _handleSubmit_. Com o useCallback é possível ver que ao mudar o tema da aplicação a função não sofrerá mudanças e consequentemente não precisará ser `armazenada` novamente.
 
 <p align="center">Made with :purple_heart:</p>
 
