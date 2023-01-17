@@ -33,6 +33,7 @@
 1. [NPM e Yarn](./Ferramentas%20de%20build/1-npm-yarn.md)
    1. [Dependências](./Ferramentas%20de%20build/1.1-O-que-são-dependências.md)
 2. [Webpack](./Ferramentas%20de%20build/2-Webpack.md)
+3. [ViteJS](./Ferramentas%20de%20build/3-Vite.md)
 
 ### Estilização
 
