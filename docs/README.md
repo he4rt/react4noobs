@@ -41,13 +41,13 @@
 2. [Frameworks CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 3. [CSS in JS](./Estilizacao/CSS-in-JS.md)
    1. [styled-components](./Estilizacao/3.1-styled-components.md)
-   2. [Stitches](./Estilizacao/3.1-styled-components.md) <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+   2. [Stitches]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 4. [Arquiteturas CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Controle de estado
 
 1. [API de Contexto](./Controle%20de%20estado/1-API-de-Contexto.md)
-2. [Redux]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+2. [Redux](./Controle%20de%20estado/2-Redux.md)
 3. [Zustand]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Verificadores de tipos
@@ -58,8 +58,8 @@
 ### Roteamento
 
 1. React Router
-   1. [Introdução](./Roteamento/1-React-Router.md)
-   2. [Mais páginas](./Roteamento/2-React-Router-More-Pages.md)
+   1. [Introdução](./Roteamento/React-Router/1-Introducao.md)
+   2. [Rotas Customizadas](./Roteamento/React-Router/2-Rotas-customizadas.md)
 2. TanStack Router
    1. [Introdução](./Roteamento/TanStack-Router/1-Introducao.md)
       1. [Type-Safety](./Roteamento/TanStack-Router/1.1-Type-Safety.md)
@@ -99,7 +99,7 @@
 
 ### Renderização no lado do servidor e geração de sites estáticos
 
-1. [Next.js]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+1. [Next.js](./Renderizacao%20no%20Servidor/1-Nextjs.md)
 2. [Gatsby]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 3. [Remix]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 

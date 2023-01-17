@@ -1,8 +1,16 @@
 <p align="center">
-  <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/header-4noobs.svg">
+  <a href="https://github.com/he4rt/4noobs" target="_blank" title="Clique para visualizar mais informações sobre o projeto 4noobs">
+    <img src="../../../assets/global/header-4noobs.svg" alt="Cabeçalho do repositório representado pelo logotipo da He4rt, simbolizado por um coração roxo, na esquerda e a tipografia '4 noobs by He4rt devs' na direita">
   </a>
 </p>
+
+# TanStack Router - Layouts
+
+> 🔥 **Tá com pressa?** Se liga no sumário:
+> 1. [Definição](#o-que-são-layouts-aplicado-no-contexto-de-rotas)
+> 2. [Estrutura das páginas](#construindo-a-estrutura-das-páginas)
+> 3. [Estrutura do Layout](#construindo-a-estrutura-do-layout)
+> 4. [Estruturando as rotas](#estruturando-rotas-com-o-tanstack-router)  
 
 ## O que são Layouts aplicado no contexto de rotas?
 
@@ -103,12 +111,12 @@ Lembrando que o exemplo acima foi utilizado um layout de escopo global, pois foi
 
 E pronto! A partir de agora já é possível utilizar os Layouts em sua aplicação de maneira fácil utilizando o **TanStack Router**.
 
-[Ir para Próxima Seção]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+[Ir para Próxima Seção](./4-Caching.md)
 
-<p align="center">Made with :purple_heart:</p>
+<p align="center">Made with 💜</p>
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/footer-4noobs.svg" width="380">
+    <img src="../../../assets/global/footer-4noobs.svg" width="380" alt="Tipografia com o título '4 noobs by He4rt devs' e o slogan 'Da comunidade para a comunidade 💜'">
   </a>
 </p>

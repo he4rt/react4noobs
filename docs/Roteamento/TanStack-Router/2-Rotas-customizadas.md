@@ -1,8 +1,19 @@
 <p align="center">
-  <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/header-4noobs.svg">
+  <a href="https://github.com/he4rt/4noobs" target="_blank" title="Clique para visualizar mais informações sobre o projeto 4noobs">
+    <img src="../../../assets/global/header-4noobs.svg" alt="Cabeçalho do repositório representado pelo logotipo da He4rt, simbolizado por um coração roxo, na esquerda e a tipografia '4 noobs by He4rt devs' na direita">
   </a>
 </p>
+
+# TanStack Router - Rotas Customizadas
+
+> 🔥 **Tá com pressa?** Se liga no sumário:
+> 1. [Children Routes](#criando-children-routes-subrotas)
+> 2. [Rotas com parâmetros](#criando-rotas-com-parâmetros)
+> 3. [Consumindo parâmetros](#consumindo-parâmetros-de-uma-rota)
+> 4. [Navegando entre rotas](#navegando-entre-rotas)  
+> 4.1 [Hook useNavigation](#utilizando-o-hook-usenavigation)  
+> 4.2 [Componente Link](#utilizando-o-componente-link)  
+> 5. [Navegando para rotas anteriores](#navegando-para-uma-rota-anterior)  
 
 ## Criando Children Routes (subrotas)
 
@@ -93,7 +104,6 @@ export function ViewProfile() {
     from: "/profile/$id", // Caminho da rota, note que se você habilitou o Type-Safe, já irá se auto-completar
   });
 
-
   // Desestruturando os parâmetros
   const { id } = params;
 
@@ -115,12 +125,10 @@ Para navegar entre rotas, há duas formas de fazer isso: utilizando o hook `useN
 O hook `useNavigation` retorna uma função que permite navegar para uma rota específica. Para utilizá-lo, basta importar a função `useNavigation` do **TanStack Router** e chamar a função retornada por ela. Veja o exemplo abaixo:
 
 ```TSX
-// ARQUIVO: ViewProfile.tsx
-
 // Importando a função useNavigation do TanStack Router
 import { useNavigation } from '@tanstack/react-router';
 
-export function ViewProfile() {
+export function ExampleRoute() {
   // Obtendo a função de navegação
   const navigate = useNavigation();
 
@@ -145,16 +153,14 @@ export function ViewProfile() {
 O componente `Link` é um componente que permite navegar para uma rota específica. Para utilizá-lo, basta importar o componente `Link` do **TanStack Router** e passar o caminho da rota para qual você deseja navegar. Veja o exemplo abaixo:
 
 ```TSX
-// ARQUIVO: ViewProfile.tsx
-
 // Importando o componente Link do TanStack Router
 import { Link } from '@tanstack/react-router';
 
-export function ViewProfile() {
+export function ExampleRoute() {
   return (
     // Renderizando o botão de navegação
     <Link to="/profile/$id" params={{ id: "1234" }}>
-      Navegar para outro usuário
+      Navegar para usuário 1234
     </Link>
   )
 }
@@ -165,12 +171,10 @@ export function ViewProfile() {
 Para navegar para a rota anterior, você pode utilizar a variável history desestruturada do hook `useRouter` do **TanStack Router**. Essa variável contém é um objeto que contém a função `back` que permite navegar para a rota anterior. Veja o exemplo abaixo:
 
 ```TSX
-// ARQUIVO: ViewProfile.tsx
-
 // Importando a função useRouter do TanStack Router
 import { useRouter } from '@tanstack/react-router';
 
-export function ViewProfile() {
+export function ExampleRoute() {
   // Obtendo a variável history
   const { history } = useRouter();
 
@@ -191,10 +195,10 @@ E pronto! A partir de agora já é possível criar rotas dinâmicas e navegar na
 
 [Ir para Próxima Seção](./3-Layouts.md)
 
-<p align="center">Made with :purple_heart:</p>
+<p align="center">Made with 💜</p>
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/footer-4noobs.svg" width="380">
+    <img src="../../../assets/global/footer-4noobs.svg" width="380" alt="Tipografia com o título '4 noobs by He4rt devs' e o slogan 'Da comunidade para a comunidade 💜'">
   </a>
 </p>
