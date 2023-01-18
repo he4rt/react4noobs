@@ -141,13 +141,15 @@ function ContactForm() {
 ---
 ## useContext
 
-O useContext é um hook para compartilhar dados de usuarios entre components, ao inves de usarmos varios props repidos _(props  drilling)_, podemos utilizar recursos de contexto que ja esta nativo no React.
+O useContext é um hook para compartilhar dados de usuários entre components, ao invés de usarmos vários props rápidos _(props  drilling)_, podemos utilizar recursos de contexto que já está nativo no React.
 
 ```jsx
 const UserContext = React.createContext();
 ```
+### Provider
 
-Depois disso devemos envolver o App inteiro em um provider, (Para esse exemplo foi envolvido o App inteiro, mas se for o caso de apenas um componente consumir o recurso pode ser envolvido apenas o componente)
+O provider sincroniza o conteúdo do contexto com a renderização dos componentes que consumirem, sendo assim o provider só vai ser necessário quando os componentes precisarem do valor do contexto para renderizar o conteúdo corretamente.  
+
 
 ```jsx
 const user = {name: 'Matheus'} 
@@ -167,7 +169,10 @@ const user = useContext(UserContext);
 );
 ```
 
-Um outro exemplo que é bastante utilizado e para adicionar os dark mode
+Alguns dos exemplos que são utilizados com o useContext, são para gerenciar authenticação, seleção de temas. 
+
+
+Uns outro exemplo que é bastante utilizado e para adicionar os dark mode
 
 Concluindo, essa é uma forma de tornar o seu código mais limpo evitando a necessidade de utilizar várias e várias props.
 
