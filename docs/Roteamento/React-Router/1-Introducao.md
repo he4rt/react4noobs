@@ -90,26 +90,26 @@ Agora que já temos as páginas criadas, vamos criar as rotas para elas utilizan
 // ARQUIVO: router.ts
 
 // Importando funções do React Router
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouteObject } from 'react-router-dom';
 
 // Importando as páginas da aplicação
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 
 // Criando a rota para a página inicial
-const homeRoute = {
+const homeRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize caso seu projeto possui TypeScript
   path: '/' // Caminho da rota
   element: <Home /> // Componente que será renderizado
 }
 
 // Criando a rota para a página sobre nós
-const aboutRoute = {
+const aboutRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize caso seu projeto possui TypeScript
   path: '/about', // Caminho da rota
   element: About, // Componente que será renderizado
 };
 
 // Adicionando as rotas ao gerenciador
-const routes = [homeRoute, aboutRoute];
+const routes: RouteObject[] = [homeRoute, aboutRoute]; // Note que aqui o objeto está sendo tipado, apenas utilize caso seu projeto possui TypeScript
 
 // Criando o gerenciador de rotas com o adapter para navegadores
 const router = createBrowserRouter([routes]);
