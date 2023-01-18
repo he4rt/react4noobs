@@ -1,8 +1,20 @@
 <p align="center">
-  <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/header-4noobs.svg">
+  <a href="https://github.com/he4rt/4noobs" target="_blank" title="Clique para visualizar mais informações sobre o projeto 4noobs">
+    <img src="../../../assets/global/header-4noobs.svg" alt="Cabeçalho do repositório representado pelo logotipo da He4rt, simbolizado por um coração roxo, na esquerda e a tipografia '4 noobs by He4rt devs' na direita">
   </a>
 </p>
+
+# TanStack Router
+
+> 🔥 **Tá com pressa?** Se liga no sumário:
+> 1. [O que é](#o-que-é-o-tanstack-router)  
+> 1.1. [TypeSafety](./1.1-Type-Safety.md)
+> 2. [Vantagens](#algumas-vantagens-da-utilização-do-tanstack-router)
+> 3. [Instalação](#como-instalar-o-tanstack-router)
+> 4. [Mão no código](#iniciando-com-o-tanstack-router)  
+> 4.1 [Estrutura das páginas](#construindo-a-estrutura-das-páginas)  
+> 4.2 [Estruturando as rotas](#estruturando-rotas-com-o-tanstack-router)  
+> 4.3 [Utilizando na aplicação](#utilizando-o-tanstack-router-na-aplicação)  
 
 ## O que é o TanStack Router?
 
@@ -110,7 +122,7 @@ const aboutRoute = rootRoute.createRoute({
 const routes = [homeRoute, aboutRoute];
 const routeConfig = rootRoute.addChildren(routes);
 
-// Criando a rota com o adapter para react
+// Criando o gerenciador de rotas com o adapter para react
 const router = createReactRouter({ routeConfig });
 
 export default router;
@@ -127,7 +139,7 @@ declare module '@tanstack/react-router' {
 
 ## Utilizando o TanStack Router na aplicação
 
-A partir do momento que já temos as rotas criadas com o **TanStack Router**, basta utilizá-las na aplicação.
+A partir do momento que já temos as rotas criadas com o **TanStack Router**, basta utilizá-las na aplicação aplicando o Provider do próprio **TanStack Router**, como mostra o exemplo a seguir:
 
 ```TSX
 // ARQUIVO: App.ts *ou inicializador da aplicação e semelhantes*
@@ -152,10 +164,10 @@ E pronto! A partir de agora já é possível navegar entre as páginas da aplica
 
 [Ir para Próxima Seção](./2-Rotas-customizadas.md)
 
-<p align="center">Made with :purple_heart:</p>
+<p align="center">Made with 💜</p>
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
-    <img src="../../../assets/global/footer-4noobs.svg" width="380">
+    <img src="../../../assets/global/footer-4noobs.svg" width="380" alt="Tipografia com o título '4 noobs by He4rt devs' e o slogan 'Da comunidade para a comunidade 💜'">
   </a>
 </p>
