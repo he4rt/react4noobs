@@ -27,7 +27,7 @@ Ele também possui uma grande compatibilidade com bibliotecas e ferramentas exte
 
 - [x] Possui uma impecável [documentação](https://reactrouter.com/)
 - [x] É vastamente utilizado, entretanto obter ajuda/informações é muito fácil
-- [x] Possui inumeros hooks para carregamento e gerenciamento de dados internos e externos, navegação entre páginas, obtenção de parâmetros, dentre outros
+- [x] Possui inúmeros hooks para carregamento e gerenciamento de dados internos e externos, navegação entre páginas, obtenção de parâmetros, dentre outros
 
 ## Como instalar o React Router
 
