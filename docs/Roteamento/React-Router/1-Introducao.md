@@ -97,13 +97,13 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 
 // Criando a rota para a página inicial
-const homeRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize caso seu projeto possui TypeScript
+const homeRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize tipagens caso seu projeto possuir TypeScript
   path: '/' // Caminho da rota
   element: <Home /> // Componente que será renderizado
 }
 
 // Criando a rota para a página sobre nós
-const aboutRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize caso seu projeto possui TypeScript
+const aboutRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize tipagens caso seu projeto possuir TypeScript
   path: '/about', // Caminho da rota
   element: About, // Componente que será renderizado
 };

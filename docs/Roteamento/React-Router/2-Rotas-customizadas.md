@@ -30,22 +30,22 @@ Em resumo Children routes são uma forma de organizar suas rotas de maneira hier
 // ARQUIVO: routes.ts
 
 // Importando funções do React Router
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouteObject } from 'react-router-dom';
 
 // ... Importação das páginas
 
 // Criando a Parent Route
-const profileRoute = {
+const profileRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize tipagens caso seu projeto possuir TypeScript
   path: '/' // Caminho da rota
   element: <Profile /> // Componente que será renderizado
 }
 
 // Criando as Children Routes
-const editProfileRoute = {
+const editProfileRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize tipagens caso seu projeto possuir TypeScript
   path: '/profile/edit', // Caminho da rota !! Note que é necessário inserir o path da parent route no início
   element: <EditProfile />, // Componente que será renderizado
 };
-const changePasswordRoute = {
+const changePasswordRoute: RouteObject = { // Note que aqui o objeto está sendo tipado, apenas utilize tipagens caso seu projeto possuir TypeScript
   path: '/profile/change-password', // Caminho da rota !! Note que é necessário inserir o path da parent route no início
   element: <ChangePassword />, // Componente que será renderizado
 };
@@ -69,7 +69,7 @@ A sintaxe para criar uma rota com parâmetros é similar a criar uma rota normal
 
 ```TSX
 // Criando a rota com parâmetro
-const viewProfileRoute = {
+const viewProfileRoute: RouteObject = {
   path: '/profile/:id',
   element: <ViewProfile />,
 };
