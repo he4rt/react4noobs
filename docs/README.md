@@ -25,6 +25,13 @@
 6. [Ciclo de Vida](./6-Ciclo-de-vida.md)
 7. [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
 8. [React Hooks](./Iniciando%20com%20React/8-React%20Hooks.md)
+   1. [useState](./Iniciando%20com%20React/8.1-useState.md)
+   2. [useEffect](./Iniciando%20com%20React/8.2-useEffect.md)
+   3. [useContext](./Iniciando%20com%20React/8.3-useContext.md)
+   4. [useRef](./Iniciando%20com%20React/8.4-useRef.md)
+   5. [useReducer](./Iniciando%20com%20React/8.5-useReducer.md)
+   6. [useMemo](./Iniciando%20com%20React/8.6-useMemo.md)
+   7. [useCallback](./Iniciando%20com%20React/8.7-useCallback.md)
 
 ### Ferramentas de build
 
