@@ -97,7 +97,7 @@ Agora que já temos as páginas criadas, vamos criar as rotas para elas utilizan
 // ARQUIVO: router.ts
 
 // Importando funções do TanStack Router
-import { createReactRouter, createRouteConfig } from '@tanstack/react-router';
+import { ReactRouter, createRouteConfig } from '@tanstack/react-router';
 
 // Importando as páginas da aplicação
 import { Home } from './pages/Home';
@@ -123,7 +123,10 @@ const routes = [homeRoute, aboutRoute];
 const routeConfig = rootRoute.addChildren(routes);
 
 // Criando o gerenciador de rotas com o adapter para react
-const router = createReactRouter({ routeConfig });
+const router = new ReactRouter({
+  routeConfig,
+  defaultPreload: 'intent'
+});
 
 export default router;
 ```
