@@ -71,7 +71,7 @@ Agora que já temos as páginas criadas, vamos criar as rotas para elas utilizan
 // Note que a extensão mudou de .ts para .tsx porque iremos inserir componentes html em sua estrutura
 
 // Importando funções do TanStack Router
-import { createReactRouter, createRouteConfig, Link, Outlet } from '@tanstack/react-router';
+import { ReactRouter, createRouteConfig, Link, Outlet } from '@tanstack/react-router';
 
 // Importando o Layout
 import { RootLayout } from './layouts/RootLayout';
@@ -102,7 +102,10 @@ const routes = [homeRoute, aboutRoute];
 const routeConfig = rootRoute.addChildren(routes);
 
 // Criando a rota com o adapter para react
-const router = createReactRouter({ routeConfig });
+const router = new ReactRouter({
+  routeConfig,
+  defaultPreload: 'intent'
+});
 
 export default router;
 ```

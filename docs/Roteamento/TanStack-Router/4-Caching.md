@@ -23,7 +23,7 @@ Caching em aplicações web é uma técnica utilizada para armazenar dados em me
 - [x] Auto-carregamento de páginas
 - [x] Amigável com cache externo
 
-[Ir para Próxima Seção]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+[Ir para Próxima Seção](./5-DevTools.md)
 
 <p align="center">Made with 💜</p>
 

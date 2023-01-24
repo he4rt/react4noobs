@@ -29,7 +29,7 @@ Em resumo Children routes são uma forma de organizar suas rotas de maneira hier
 // ARQUIVO: routes.ts
 
 // Importando funções do TanStack Router
-import { createReactRouter, createRouteConfig } from '@tanstack/react-router';
+import { ReactRouter, createRouteConfig } from '@tanstack/react-router';
 
 // ... Importação das páginas
 
@@ -57,6 +57,8 @@ const profileRouteConfig = profileRoute.addChildren(profileRoutes);
 // Adicionando as rotas ao gerenciador
 const routes = [profileRouteConfig];
 const routeConfig = rootRoute.addChildren(routes);
+
+// ... Criação do Router
 ```
 
 ## Criando rotas com parâmetros
@@ -71,7 +73,7 @@ A sintaxe para criar uma rota com parâmetros é similar a criar uma rota normal
 // ARQUIVO: routes.ts
 
 // Importando funções do TanStack Router
-import { createReactRouter, createRouteConfig } from '@tanstack/react-router';
+import { ReactRouter, createRouteConfig } from '@tanstack/react-router';
 
 // ... Importação das páginas
 
@@ -86,6 +88,8 @@ const viewProfileRoute = rootRoute.createRoute({
 // Adicionando a rota ao gerenciador
 const routes = [viewProfileRoute];
 const routeConfig = rootRoute.addChildren(routes);
+
+// ... Criação do Router
 ```
 
 ## Consumindo parâmetros de uma rota

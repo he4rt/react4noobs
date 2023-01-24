@@ -21,7 +21,7 @@ O react em si não possui um gerenciamento próprio de rotas, mas podemos utiliz
    2. [Rotas Customizadas](./TanStack-Router/2-Rotas-customizadas.md)
    3. [Layouts](./TanStack-Router/3-Layouts.md)
    4. [Caching](./TanStack-Router/4-Caching.md)
-   5. [DevTools]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+   5. [DevTools](./TanStack-Router/5-DevTools.md)
 
 <p align="center">Made with 💜</p>
 
