@@ -17,6 +17,7 @@
 
 1. [Introdução](./Iniciando%20com%20React/1-Introducao.md)
 2. [O que é React?](./Iniciando%20com%20React/2-O%20que%20e%20React.md)
+   1. [Iniciando um projeto React](./Iniciando%20com%20React/2.1-iniciando%20um%20projeto%20react.md)
 3. [JSX e Babel](./Iniciando%20com%20React/3-JSX%20e%20Babel.md)
 4. [Componentização](./Iniciando%20com%20React/4-Componentizacao.md)
    1. [Formas de declarar](./Iniciando%20com%20React/4.1-FormasDeDeclarar.md)
