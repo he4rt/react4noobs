@@ -91,7 +91,7 @@
 ### Bibliotecas de utilidade
 
 - [Lodash]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-- [Moment](./Bibliotecas%20de%20utilidade/2-Moment.md)
+
 - [classnames]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Testes
