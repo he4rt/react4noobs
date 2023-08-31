@@ -100,11 +100,6 @@
 - [Testes de Integração](./Testes/2-testes-de-integracao.md)
 - [Testes E2E]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
-### i18n
-
-- [React Intl]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-- [React i18n Next]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-
 ### Renderização no lado do servidor e geração de sites estáticos
 
 - [Next.js](./Renderizacao%20no%20Servidor/1-Nextjs.md)
