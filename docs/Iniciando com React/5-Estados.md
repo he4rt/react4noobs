@@ -10,9 +10,9 @@ Neste capítulo você entenderá o que são **Estados** no React.
 
 ## O que é?
 
-Estados são dados que podem variar, sendo que essa variação pode ser causada pela ação do usuário em sua aplicação. Normalmente já trabalhamos com isso, sabe quando você faz um contador em javascript e o valor fica toda hora alterando de 0, 1, 2, 3 , 4, etc... Isso são estados. No caso do React os estados também são uma forma de verificação para a renderização, então quando esse valor(estado) é alterado causa uma nova renderização.
+Estados são dados que podem variar, sendo que essa variação pode ser causada pela ação do usuário em sua aplicação. Normalmente já trabalhamos com isso, sabe quando você faz um contador em javascript e o valor fica toda hora alterando de 0, 1, 2, 3 , 4, etc... Isso são estados. No caso do React os estados também são uma forma de verificação para a renderização, então quando esse valor (estado) é alterado causa uma nova renderização.
 
-<p>**Esse também é um dos motivos do React ser one way databinding**(Significa que ele observa as mudanças por apenas um caminho para então atualizar a arvore de elementos(DOM)).</p>
+<p>Esse também é um dos motivos do React ser <strong>one way databinding</strong> (Significa que ele observa as mudanças por apenas um caminho para então atualizar a arvore de elementos(DOM)).</p>
 
 Vamos pra mais um exemplo:
 
@@ -23,7 +23,7 @@ Vamos pra mais um exemplo:
 Bom no React temos algumas formas de lidar com isso, seja pelos hooks ou pelos componentes de classe.
 Como não falamos sobre hooks ainda, trabalharemos apenas com componentes de classe.
 
-Nesse exemplo vamos trabalhar apenas com um estado, porém é possivel por quantos quiser no objeto.
+Nesse exemplo vamos trabalhar apenas com um estado, porém é possivel colocar quantos quiser no objeto.
 
 ```js
 import React from 'react';
@@ -37,7 +37,7 @@ class Counter extends React.Component {
     }
   }
 
- // É possivel acessar o estado com this.state.nome do estado
+ // É possivel acessar o estado com this.state.nome-do-estado
   render(){
     return (
       <div>
@@ -49,10 +49,10 @@ class Counter extends React.Component {
 }
 ```
 
-Agora o React trabalha com conceitos de imutabilidade, portantdo você nunca poderá alterar um dado diretamente. Como por exemplo: this.state.counter = 10; Ele não permite isso.
+Agora o React trabalha com conceitos de imutabilidade, portantdo você nunca poderá alterar um dado diretamente. Como por exemplo: this.state.counter = 10; Ele não permite isso, a imutabilidade obriga que a variável seja destruída e uma nova seja colocada no lugar, mas normalmente isso é feito de forma transparente para o programador, e por isso que você não pode alterar a variável diretamente.
 
-Com o conceito de imutabilidade, sempre iremos definir novos dados ao invez de modificar o dado.
-Para isso o React usa uma função chamada setState que adiciona um novo valor a variavel.
+Dessa forma, devido ao conceito de imutabilidade, sempre iremos definir novos dados ao invés de modificar o dado.
+Para isso o React usa uma função chamada **setState** que adiciona um novo valor a variável.
 
 ```js
   // No contrutor de classe, criamos nossos estados através do this.state
