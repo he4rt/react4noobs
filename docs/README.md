@@ -45,12 +45,9 @@
 
 ### Estilização
 
-- [Preprocessadores CSS](./Estilizacao/1.Preprocessadores%20CSS.md)
-- [Frameworks CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 - [CSS in JS](./Estilizacao/CSS-in-JS.md)
   - [styled-components](./Estilizacao/3.1-styled-components.md)
   - [Stitches]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-- [Arquiteturas CSS]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Controle de estado
 
