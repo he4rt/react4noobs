@@ -24,6 +24,7 @@
   - [Propriedades](./Iniciando%20com%20React/4.2-Propriedades.md)
 - [Estados](./Iniciando%20com%20React/5-Estados.md)
 - [Ciclo de Vida](./Iniciando%20com%20React/6-Ciclo-de-vida.md)
+- [Listas](./Iniciando%20com%20React/Listas-no-react.md)
 - [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
 - [React Hooks](<./Iniciando%20com%20React/()-React%20Hooks.md>)
   - [useState](<./Iniciando%20com%20React/().1-useState.md>)
