@@ -15,8 +15,8 @@
 
 # Como renderizar uma lista
 
-Durante o desenvolvimento de um aplicativo é muito comum em algum momento você precisar mostrar em tela uma lista de itens, sejam lá quais sejam eles. Obviamente voçê não irá pegar e por um por um no código, não seria prático e quase impossivel de dar manutenção. <br/>
-No React, graças ao JSX conseguimos renderizar listas de uma forma bem simples utilizando uma função existente nos `arrays` chamada `map`. Com isso, podemos iterar sobre uma lista e retornar `componentes React` de acordo com a mesma.
+Durante o desenvolvimento de um aplicativo, é muito comum que, em algum momento, você precise mostrar uma lista de itens na tela, independentemente de quais sejam esses itens. Obviamente, você não vai pegar e inserir cada um deles no código, pois não seria prático e seria quase impossível de mantê-los atualizados. <br/>
+No React, graças ao JSX, conseguimos renderizar listas de forma bastante simples, utilizando uma função existente nos arrays chamada map. Com isso, podemos iterar sobre uma lista e retornar componentes React de acordo com ela.
 
 ```jsx
 const lista = ['item1', 'item2', 'item3'];
@@ -37,11 +37,11 @@ function Componente() {
 
 </p>
 
-Como podemos ver no código acima, literalmente realizamos um map de nossa lista para que retorne um componente/tag para cada item.
+Como podemos ver no código acima, realizamos um mapeamento (map) literal da nossa lista para que ele retorne um componente/tag para cada item.
 
-Ahn, vale lembrar que também podemos utilizar do `retorno explicito` para deixar o código mais enxuto. Utilizamos essa forma principalmente quando precisamos apenas renderizar o componente sem nenhum tipo de processamento, calculo e etc. Como por exemplo: `Criar uma variavel pra renderizar algum tipo de dado a depender do conteudo do item.` <br/>
+Ah, vale lembrar que também podemos utilizar o `retorno explícito` para deixar o código mais conciso. Utilizamos essa forma principalmente quando precisamos apenas renderizar o componente sem nenhum tipo de processamento, cálculo, etc. Por exemplo, criar uma variável para renderizar algum tipo de dado, dependendo do conteúdo do item. <br/>
 
-Vale ressaltar que só é permitido ser retornado `um` componente por retorno, ou seja, caso precise que retorne mais de um... Englobe-o com um `fragment`, uma `div` ou alguma outra tag.
+Vale ressaltar que só é permitido retornar `um` componente por vez, ou seja, caso seja necessário retornar mais de um, é preciso envolvê-los com um `fragment,` uma `div` ou alguma outra tag.
 
 ```jsx
 const lista = ['item1', 'item2', 'item3'];
@@ -55,18 +55,17 @@ function Componente() {
 }
 ```
 
-Voçê sabia que os exemplos acima tem um problema?
-Então, se rodar os exemplo e abrir o `inspetor` do seu navegador, irá se deparar com a seguinte mensagem de erro:
+Você sabia que os exemplos acima têm um problema? Então, se rodar os exemplos e abrir o `inspetor` do seu navegador, irá se deparar com a seguinte mensagem de erro:
 
 <p align="center">
 <img src="../../assets/lists/lists-examples-2.png" alt="resultado do código acima"/>
 </p>
 
-O erro basicamente diz para gente: `Cada item de uma lista precisa ter uma chave(key) unica`.
+Percebe-se que o erro basicamente nos diz: `Cada item de uma lista precisa ter uma chave (key) única`.
 
 # O que são Keys e por que precisamos delas
 
-A este ponto, a pergunta principal deve ser: "Certo, mas o que são essas tais keys?" Basicamente o atributo key é um identificador unico que pode ser uma `string` ou `número` para que o `React` possa encontrar nosso elemento na `DOM(Document Object Modal)` e realizar as atualizações corretas(Adicionar em tela, remover da tela, alterar valores e etc.).
+Neste ponto, a pergunta principal deve ser: "Certo, mas o que são essas tais `keys`?" Basicamente, o atributo `key` é um identificador único que pode ser uma `string ou um número`, para que o React possa encontrar nosso elemento na `DOM (Document Object Model)` e realizar as atualizações corretas (adicionar na tela, remover da tela, alterar valores, etc.).
 
 ```jsx
 const lista = ['item1', 'item2', 'item3'];
@@ -80,14 +79,15 @@ function Componente() {
 }
 ```
 
-Você sempre deve selecionar alguma informação `unica` para atribuir a uma `key`. E essas keys não podem mudar, caso contrario elas perdem o seu proposito.
+Você sempre deve selecionar uma informação única para atribuir a uma `key`. Além disso, essas keys não podem mudar, caso contrário, elas perdem o seu propósito.
 
 `!!Nota importante -> Evite utilizar` <br/>
 
-- A `index(posição)` do elemento na lista como `key`, pois dentro de um array pode ocorrer diversas alterações, como reordenação. <br/>
-- O `Math.random()` pois ele gera números aleatórios e a cada renderização os proprios irão ser alterados.
+- A posição (index) do elemento na lista não é uma boa escolha como key, pois dentro de um array podem ocorrer diversas alterações, como reordenação, e isso pode levar a problemas de renderização.
 
-Lembre-se que `keys` são propriedades que o React utiliza para um proposito e ela existe `apenas` para a biblioteca. Se por acaso a informação que tu passa pelas `keys` precise que seu componente receba como propriedade para realizar algo, crie uma nova propriedade e atribua o valor ao mesmo.
+- O uso de Math.random() não é apropriado para gerar keys, pois ele gera números aleatórios a cada renderização, o que pode causar instabilidade no comportamento do React.
+
+- Lembre-se de que as keys são propriedades específicas que o React utiliza para otimizar a renderização, e elas existem apenas para o propósito interno da biblioteca. Se você precisar que uma informação seja passada para o componente como propriedade para realizar alguma ação, é melhor criar uma nova propriedade e atribuir o valor a ela, em vez de usar a key para essa finalidade.
 
 ```jsx
 <Componente key={name} name={name} />
@@ -95,9 +95,9 @@ Lembre-se que `keys` são propriedades que o React utiliza para um proposito e e
 
 # Posso utilizar Fragments ao renderizar uma lista?
 
-Sim, podemos utilizar `Fragments` em uma lista, mas não da forma que estamos acostumados. Pois Fragments nada mais são que uma forma de agrupar diversos elementos sem precisar utilizar uma tag html especifica. Quando renderizado, ele basicamente desaparece e renderiza na nossa arvore apenas o seu conteudo. Por isso que para se usar nas listas, onde precisamos sempre declamar a `key`, é preciso da importação do componente `Fragment` do react para utilizarmos.
+Sim, podemos utilizar Fragments em uma lista, mas não da forma com a qual estamos acostumados. Os Fragments são basicamente uma forma de agrupar diversos elementos sem a necessidade de usar uma tag HTML específica. Quando renderizados, eles essencialmente desaparecem e renderizam apenas o seu conteúdo na nossa árvore de elementos. Portanto, quando usamos Fragments em listas, onde precisamos sempre declarar a key, é necessário importar o componente Fragment do React para utilizá-lo.
 
-Normalmente utlizamos o componente através da famosa abreviação.
+Normalmente, utilizamos o componente Fragment por meio da famosa abreviação
 
 ```jsx
 <>
@@ -107,7 +107,7 @@ Normalmente utlizamos o componente através da famosa abreviação.
 </>
 ```
 
-Mas para listas, precisa ser assim:
+Mas, para listas precisa ser assim:
 
 ```jsx
 import { Fragment } from 'react';
