@@ -41,10 +41,10 @@ Por que foi criado?
 
   Como fazer isso em pequenas requisições?
 
-Vamos agora tentar melhorar a compreensão do [GraphQL](2), já que ele é muito amplo, vou lhe apresentar alguns exemplos. 
+Vamos agora tentar melhorar a compreensão do [GraphQL](2), já que ele é muito amplo, vou lhe apresentar alguns exemplos.
 
 ## Exemplos
- 
+
 Em um Instagram, precisamos exibir os dados especifico de um usuário. Nessa página temos, username, posts, bio, stories... Como podemos fazer solução com [_REST_](5) e [GraphQL](2)?
 
 ### Rest
@@ -104,6 +104,7 @@ type User {
   stories: [Story]
 }
 ```
+
 Oq significa esse modelo acima definido?
 
 Temos uma fonte de dados chamada User, ao ser acessada ela permite que você receba como resposta id, name, posts, stories.
@@ -111,7 +112,7 @@ Vamos tentar entender agora o campo name.
 
 O tipo do campo `name` é string?
 
--  `Não!` string é aquilo que este campo vai responder ao ser acessado pelo cliente. Os campos no graphql são recursos que abrem as portas para a ligação ou não com outros recursos.
+- `Não!` string é aquilo que este campo vai responder ao ser acessado pelo cliente. Os campos no graphql são recursos que abrem as portas para a ligação ou não com outros recursos.
 
 Para entender melhor precisamos olhar agora para o compo `posts`.
 
@@ -133,7 +134,6 @@ A todas essas definições de dados, a todas essas modelagens, chamamos `typedef
 
 ATENÇÃO! _Os tipos no graphql nada tem que ver com "tipagem de dados"_
 
-
 ### Definindo resolução de tipos
 
 Os `resolvers` no graphql são os responsáveis por, dado um modelo de dados, analisar o que o cliente quer e responder com o modelo de dados que esta definido.
@@ -153,7 +153,7 @@ const resolvers = {
   Post: {
     id: () => '1',
     title: () => 'Post',
-    media: () => {} 
+    media: () => {}
   }
 }
 ```
@@ -171,19 +171,20 @@ type Query {
   User(id: ID): User
 }
 ```
+
 Criamos no nosso modelo que é uma query User que recebe um id como parametro e retorna um User, mas agora precisamos criar o resolver que retorna esse user:
 
 ```javascript
-  const resolvers = {
-    Query: {
-      User: () => ({
-        id: '1',
-        name: 'User',
-        posts: [{title: 'Post1'}, {title: 'Post2'}],
-        stories: []
-      })
-    }
-  }
+const resolvers = {
+  Query: {
+    User: () => ({
+      id: '1',
+      name: 'User',
+      posts: [{ title: 'Post1' }, { title: 'Post2' }],
+      stories: [],
+    }),
+  },
+};
 ```
 
 Temos aqui um objeto resolver, que resolve Query, temos um item User que é uma função que retorna um objeto User.
@@ -200,7 +201,7 @@ query {
     }
   }
 }
-  ```
+```
 
 E com isso podemos ter como resposta:
 
@@ -210,11 +211,12 @@ E com isso podemos ter como resposta:
     "User": {
       "id": 1,
       "name": "User",
-      "posts": [{"title": "Post1"}, {"title": "Post2"}]
+      "posts": [{ "title": "Post1" }, { "title": "Post2" }]
     }
   }
 }
 ```
+
 ## Vantagens
 
 - Rápido.
@@ -235,8 +237,6 @@ De maneira simples, utilizamos os hooks para receber os dados requisitados pelo 
 ## Conclusão
 
 _Como utilizo o GraphQL?_ Nas próximas seções veremos como utilizar o [GraphQL](2) mais afundo com algumas bibliotecas dentro do React. Caso já queira ir dando uma olhada no [GraphQL](2), o [_GitHub_](7) possui um **[playground do GitHub público](https://docs.github.com/en/graphql/overview/explorer)**!
-
-[Ir para Próxima Seção](../Bibliotecas%20de%20utilidade/2-Moment.md)
 
 <p align="center">Made with 💜</p>
 
