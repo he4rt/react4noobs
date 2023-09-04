@@ -43,8 +43,6 @@ Após isso, basta você codar e o vite irá fazer o resto. Ele irá criar um ser
 
 [Site oficial do ViteJS](https://vitejs.dev)
 
-[Ir para Próxima Seção](../Estilizacao/1.Preprocessadores%20CSS.md)
-
 <br>
 <p align="center">Made with :purple_heart:</p>
 
