@@ -147,6 +147,8 @@ export default App
 
 7. Resultado
 
+https://github.com/gabrielduete/react4noobs/assets/59345698/781b13d9-f22e-47f6-a48f-6fb900467e2d
+
 Assim, a gente torna a criação e o uso de modais extremamente flexíveis e reutilizáveis. `Modal.Toggle` é responsável por ativar a exibição do modal, enquanto `Modal.Content` deve exibir o conteúdo do nosso modal.
 
 Essa estrutura permite que os desenvolvedores personalizem facilmente o comportamento e o conteúdo dos modais de acordo com as necessidades específicas de suas aplicações, tornando o código mais limpo e organizado.
