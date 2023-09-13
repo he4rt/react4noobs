@@ -94,3 +94,78 @@ function App() {
 	)
 }
 ```
+
+## Fatiando sua store
+
+A medida que for construindo, a sua "store" pode ficar cada vez maior e mais difícil de dar manutenção, por isso pode ser interessante criar "slices" da sua store que são pequenas e específicas "stores".
+
+Abaixo vemos uma pequena store com um "state" chamado "fishes" e uma "action" para adcionar o valor de 1 a cada vez que é acionado:
+
+```js
+export const createFishSlice = (set) => ({
+  fishes: 0,
+  addFish: () => set((state) => ({ fishes: state.fishes + 1 })),
+})
+```
+
+Já nesta outra, temos um "state" chamado de "bears" e duas "actions", a primeira adciona mais 1 ao estado de "bears" e a segunda subtrai do estado "fishes" o valor de 1:
+
+```js
+export const createBearSlice = (set) => ({
+  bears: 0,
+  addBear: () => set((state) => ({ bears: state.bears + 1 })),
+  eatFish: () => set((state) => ({ fishes: state.fishes - 1 })),
+})
+```
+
+Agora podemos juntar essas duas stores em uma só "useBoundStore".
+
+```js
+import { create } from 'zustand'
+import { createBearSlice } from './bearSlice'
+import { createFishSlice } from './fishSlice'
+
+export const useBoundStore = create((...a) => ({
+  ...createBearSlice(...a),
+  ...createFishSlice(...a),
+}))
+```
+
+E por fim podemos utilizar normalmente em nosso componente React:
+
+```jsx
+import { useBoundStore } from './stores/useBoundStore'
+
+function App() {
+  const bears = useBoundStore((state) => state.bears)
+  const fishes = useBoundStore((state) => state.fishes)
+  const addBear = useBoundStore((state) => state.addBear)
+  return (
+    <div>
+      <h2>Number of bears: {bears}</h2>
+      <h2>Number of fishes: {fishes}</h2>
+      <button onClick={() => addBear()}>Add a bear</button>
+    </div>
+  )
+}
+
+export default App
+```
+
+## Conclusão
+
+Usar Zustand é realmente simples e fácil como você pôde perceber lendo este material, e essa é a proposta desta solução para gerenciamento de estados no React. Na sua documentação oficial há alguns outros detalhes para caso você precise dar uma conferida como a sua utilização com typescript e outros guias interessantes.
+
+[Documentação Oficial](https://docs.pmnd.rs/zustand/getting-started/introduction)
+
+Achou algo de errado? Algo que possa melhorar? Fique a vontade para [abrir uma issue](https://github.com/he4rt/react4noobs/issues). Vejo você na próximo seção!
+
+[Ir para Próxima Seção](../Estilizacao/1.Preprocessadores%20CSS.md)
+
+<p align="center">Made with :purple_heart:</p>
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
