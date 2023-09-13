@@ -23,7 +23,7 @@ yarn add zustand
 # Como ele funciona
 Assim como no Redux, o Zustand funciona com uma única "store" onde serão armazenados os estados necessários a sua aplicação.
 
-Primeiramente criamos a nossa "store": 
+Primeiramente criamos a nossa `store`: 
 ```js
 import { create } from 'zustand'
 
@@ -34,7 +34,7 @@ const useStore = create((set) => ({
 }))
 ```
 
-Como podemos ver no código acima, a nossa "store" é um "hook"
+Como podemos ver no código acima, a nossa `store` é um `hook`
 onde temos:
 1. O estado e o seu valor inicial -> `bears: 0`
 2. Função para acrescentar 1 ao valor do estado atual -> `increasePopulation`
@@ -54,13 +54,13 @@ function Controls() {
 }
 ```
 
-Perceba que pode-se utilizar o "hook" `useStore` em qualquer lugar e sem a necessidade de "providers" como acontece no Redux.
+Perceba que pode-se utilizar o "hook" `useStore` em qualquer lugar e sem a necessidade de `providers` como acontece no Redux.
 
 
 ## Atualizando estado
 
-Para atualizar o estado basta utilizar a função que realiza esta ação ("action").
-Pegando o exemplo da "store" anterior e adcionando o estado `bearName` e a respectiva "action" `updateBearName` temos a seguinte configuração da nossa "store":
+Para atualizar o estado basta utilizar a função que realiza esta ação (`action`).
+Pegando o exemplo da "store" anterior e adcionando o estado `bearName` e a respectiva `action` `updateBearName` temos a seguinte configuração da nossa `store`:
 
 ```js
 const useStore = create((set) => ({
@@ -97,9 +97,9 @@ function App() {
 
 ## Fatiando sua store
 
-A medida que for construindo, a sua "store" pode ficar cada vez maior e mais difícil de dar manutenção, por isso pode ser interessante criar "slices" da sua store que são pequenas e específicas "stores".
+A medida que for construindo, a sua `store` pode ficar cada vez maior e mais difícil de dar manutenção, por isso pode ser interessante criar `slices` da sua `store` que são pequenas e específicas `stores`.
 
-Abaixo vemos uma pequena store com um "state" chamado "fishes" e uma "action" para adcionar o valor de 1 a cada vez que é acionado:
+Abaixo vemos uma pequena store com um `state` chamado `fishes` e uma `action` para adcionar o valor de 1 a cada vez que é acionado:
 
 ```js
 export const createFishSlice = (set) => ({
@@ -108,7 +108,7 @@ export const createFishSlice = (set) => ({
 })
 ```
 
-Já nesta outra, temos um "state" chamado de "bears" e duas "actions", a primeira adciona mais 1 ao estado de "bears" e a segunda subtrai do estado "fishes" o valor de 1:
+Já nesta outra, temos um `state` chamado de `bears` e duas `actions`, a primeira adciona mais 1 ao estado de `bears` e a segunda subtrai do estado `fishes` o valor de 1:
 
 ```js
 export const createBearSlice = (set) => ({
@@ -118,7 +118,7 @@ export const createBearSlice = (set) => ({
 })
 ```
 
-Agora podemos juntar essas duas stores em uma só "useBoundStore".
+Agora podemos juntar essas duas stores em uma só `useBoundStore`.
 
 ```js
 import { create } from 'zustand'
