@@ -26,6 +26,7 @@
 - [Ciclo de Vida](./Iniciando%20com%20React/6-Ciclo-de-vida.md)
 - [Listas](./Iniciando%20com%20React/Listas-no-react.md)
 - [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
+- [Refs](./Iniciando%20com%20React/Refs.md)
 - [React Hooks](<./Iniciando%20com%20React/()-React%20Hooks.md>)
   - [useState](<./Iniciando%20com%20React/().1-useState.md>)
   - [useEffect](<./Iniciando%20com%20React/().2-useEffect.md>)
@@ -59,7 +60,6 @@
 ### Verificadores de tipos
 
 - [Typescript](./Verificadores%20de%20Tipo/Typescript.md)
-- [ReScript]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Roteamento
 
@@ -89,8 +89,6 @@
 ### Bibliotecas de utilidade
 
 - [Lodash]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
-
-- [classnames]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 ### Testes
 
