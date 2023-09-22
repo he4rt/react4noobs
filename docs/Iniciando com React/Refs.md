@@ -90,7 +90,7 @@ function Formulario() {
   const inputPasswordRef = useRef(); // Ref responsavél pelo input onde será digitada a senha.
 
   const onSubmit = (event) => {
-    event.preventDefault(); // Evitar o comportamento padrão dos formulários,ou seja evitar que a tela recarregue.
+    event.preventDefault(); // Evitar o comportamento padrão dos formulários, ou seja evitar que a tela recarregue.
     console.log({
       name: inputNameRef.current.value,
       password: inputPasswordRef.current.value,
