@@ -86,7 +86,7 @@ Neste exemplo, teremos um input onde o usuário pode escrever o que bem entender
 import { useRef } from 'react';
 
 function Formulario() {
-  const inputNameRef = useRef(); // Ref responsável pelo input onde será digitado o Nome
+  const inputNameRef = useRef(); // Ref responsável pelo input onde será digitado o nome.
   const inputPasswordRef = useRef(); // Ref responsavél pelo input onde será digitada a senha.
 
   const onSubmit = (event) => {
