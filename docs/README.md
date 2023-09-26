@@ -35,7 +35,7 @@
   - [useReducer](<./Iniciando%20com%20React/().5-useReducer.md>)
   - [useMemo](<./Iniciando%20com%20React/().6-useMemo.md>)
   - [useCallback](<./Iniciando%20com%20React/().7-useCallback.md>)
-- [Controlled vs Uncontrolled components](<./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md>)
+- [Controlled vs Uncontrolled components](./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md)
 
 ### Ferramentas de build
 
@@ -102,6 +102,11 @@
 - [Next.js](./Renderizacao%20no%20Servidor/1-Nextjs.md)
 - [Gatsby]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 - [Remix]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+
+### Design patterns
+
+- [Compound Components](./Design%20Patterns/1-Compound%20Components.md)
+- [React HOC Structure]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
 <p align="center">Made with 💜</p>
 
