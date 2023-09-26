@@ -35,7 +35,7 @@
   - [useReducer](<./Iniciando%20com%20React/().5-useReducer.md>)
   - [useMemo](<./Iniciando%20com%20React/().6-useMemo.md>)
   - [useCallback](<./Iniciando%20com%20React/().7-useCallback.md>)
-- [Controlled vs Uncontrolled components](./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md)
+- [Controlled vs Uncontrolled components](<./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md>)
 
 ### Ferramentas de build
 
