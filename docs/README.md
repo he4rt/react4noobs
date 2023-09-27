@@ -103,6 +103,11 @@
 - [Gatsby]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 - [Remix]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
 
+### Design patterns
+
+- [Compound Components](./Design%20Patterns/1-Compound%20Components.md)
+- [React HOC Structure]() <img alt="Badge em breve" src="https://img.shields.io/badge/-EM%20BREVE-red">
+
 <p align="center">Made with 💜</p>
 
 <p align="center">
