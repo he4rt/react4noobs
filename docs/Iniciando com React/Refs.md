@@ -254,7 +254,7 @@ Espero que tenha gostado e caso tenha surgido alguma duvida, sinta-se livre para
 
 Seeyaa!
 
-[Ir para a próxima seção](./8-React%20Hooks.md)
+[Ir para a próxima seção](./Renderizacao-condicional.md)
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
