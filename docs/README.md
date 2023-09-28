@@ -27,6 +27,7 @@
 - [Listas](./Iniciando%20com%20React/Listas-no-react.md)
 - [Manipulando Eventos](./Iniciando%20com%20React/7-Manipulando%20Eventos.md)
 - [Refs](./Iniciando%20com%20React/Refs.md)
+- [Renderização Condicional](./Iniciando%20com%20React/Renderizacao-condicional.md)
 - [React Hooks](<./Iniciando%20com%20React/()-React%20Hooks.md>)
   - [useState](<./Iniciando%20com%20React/().1-useState.md>)
   - [useEffect](<./Iniciando%20com%20React/().2-useEffect.md>)
@@ -35,7 +36,7 @@
   - [useReducer](<./Iniciando%20com%20React/().5-useReducer.md>)
   - [useMemo](<./Iniciando%20com%20React/().6-useMemo.md>)
   - [useCallback](<./Iniciando%20com%20React/().7-useCallback.md>)
-- [Controlled vs Uncontrolled components](<./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md>)
+- [Controlled vs Uncontrolled components](./Iniciando%20com%20React/Controlled-vs-uncontrolled-components.md)
 
 ### Ferramentas de build
 
