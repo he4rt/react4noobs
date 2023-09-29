@@ -66,7 +66,7 @@ Pegando o exemplo da "store" anterior e adcionando o estado `bearName` e a respe
 const useStore = create((set) => ({
   bears: 0,
   bearName: '',
-  updateBearName: () => set((bearName) => ({ bearName: bearName}))
+  updateBearName: (bearName) => set(() => ({ bearName: bearName}))
   increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
   removeAllBears: () => set({ bears: 0 }),
 }))
@@ -94,6 +94,8 @@ function App() {
 	)
 }
 ```
+
+Observação: `shallow` se trata de uma função comparadora utilizada para verificar se arrays e objetos tem os mesmos elementos aos anteriores. Se você verificar `{name: 'zustand'} === {name: 'zustand'}` esta sentença no javascript a resposta será sempre `false` pois são instâncias distintas, são dois objetos diferentes que contém os mesmos valores, então se faz necessário o uso da função comparadora para não gerar excessivas renderizações em sua aplicação.
 
 ## Fatiando sua store
 
