@@ -53,9 +53,7 @@ function Controls() {
   return <button onClick={increasePopulation}>one up</button>
 }
 ```
-
 Perceba que pode-se utilizar o "hook" `useStore` em qualquer lugar e sem a necessidade de `providers` como acontece no Redux.
-
 
 ## Atualizando estado
 
