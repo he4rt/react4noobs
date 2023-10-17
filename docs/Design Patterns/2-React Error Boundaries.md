@@ -111,15 +111,15 @@ export default App
 
 Resultado:
 
-![Crash na aplicação por conta do seguinte erro: 'users' is not defined](../../assets/error-boundaries-4.png)
+![Resultado do código anterior compilado, com o título: 'Eita, deu ruim! D:' sendo exibido](../../assets/error-boundaries-4.png)
 
 Terminal:
 
-![Crash na aplicação por conta do seguinte erro: 'users' is not defined](../../assets/error-boundaries-5.png)
+![Resultado do terminal com o aviso de erro: 'users is not defined' sendo exibido](../../assets/error-boundaries-5.png)
 
 Veja que criamos um componente fallback para exibir caso ocorra algum erro em qualquer componente que está encapsulado no `<ErrorBoundary />`, onde diferente do `try...catch`, conseguimos fazer uma tratativa de erro global. Então se tivessemos vários componentes encapsulados no `<ErrorBoundary />` e algum deles ocorresse algum erro que não foi tratado localmente, seria exibido o componente da fallback
 
-### Método `onError`
+# Método `onError`
 
 Usando o exemplo anterior, podemos adicionar o método `onError`:
 
@@ -154,13 +154,56 @@ const App = () => {
 export default App
 ```
 
-![Alt text](image-9.png)
+Perceba que adicionamos uma `prop` `onError` no `<ErrorBoundary />`, se vermos o resultado `console.log` do `onError`:
 
-Com o `onError` conseguimos retornar no `arg1` o erro que causado na aplicação e no `arg2` temos informações do source map. Com isso podemos utilizar alguns servicos para monitorar os erros da aplicação, como sentry, kibana, etc...
+![Resultado do console.log do onError do código anterior](../../assets/error-boundaries-6.png)
 
-![Alt text](image-10.png)
+Com o `onError` conseguimos retornar no `arg1` o erro que causado na aplicação e no `arg2` temos informações do source map. Com isso podemos utilizar alguns serviços para monitorar os erros da aplicação, como sentry, kibana, etc...
 
-## Referências
+Veja como ficaria o código se quiséssemos usar o onError para disparar algum evento em algum serviço:
+
+```jsx
+import React from 'react'
+
+import { ErrorBoundary } from 'react-error-boundary'
+
+const Counter = () => {
+  users?.map(({ user }) => {
+    return <h1>He4rt User: {user}</h1>
+  })
+}
+
+const ErrorHandler = () => {
+  return <h1>Eita, deu ruim! D:</h1>
+}
+
+const notifyError = () => {
+  // func para mandar notificação de erro para o sentry ou alguma outra plataforma de monitoramento
+}
+
+const App = () => {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorHandler}
+      onError={(arg1, arg2) => {
+        console.log({ arg1, arg2 })
+      }}
+    >
+      <Counter />
+    </ErrorBoundary>
+  )
+}
+
+export default App
+```
+
+# Conclusão
+
+Vimos como encapsular e tratar erro genericos de maneira global usando Error Boundaries, também vimos na prática como utilizar usando o `react-error-boundary`.
+
+Fica a dica de pesquisar um pouco como era feito os Erros Boundaries usando componentes de classe. E também praticar um pouco em projetos pessoais. Não é algo que você vai usar com frequência no dia a dia, mas é importante entender esse conceito para ter mais uma carta na manga na hora de tratar erros em React.
+
+# Referências
 
 - [Doc antiga do react](https://pt-br.legacy.reactjs.org/docs/error-boundaries.html)
 - [Error Boundaries no ReactJS - Tratamento de Erros #014](https://www.youtube.com/watch?v=6FRzHRoZmG8&ab_channel=Jo%C3%A3oBibiano)
