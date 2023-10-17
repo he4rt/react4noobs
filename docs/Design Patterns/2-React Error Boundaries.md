@@ -46,6 +46,7 @@ export default App
 ![Aviso de aplicação compliada com o seguinte erro: 'users' is not defined](../../assets/error-boundaries-1.png)
 
 Mesmo dando erro, ele compila a aplicação:
+
 ![Aplicação rodando com o título 'Deu ruim'](../../assets/error-boundaries-2.png)
 
 ---
