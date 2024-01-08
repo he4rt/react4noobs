@@ -80,6 +80,8 @@ E isso traria problemas caso quiséssemos tratar o erro de uma renderização de
 
 # Criando um componente Error Boundaries
 
+Vamos criar um componente Error Boundaries usando um componente de classe, é importante lembrar que componentes de classes estão defasados, mas é importante entender caso se depare com algum na sua jornada.
+
 ```jsx
 import React, { Component } from 'react'
 
@@ -133,6 +135,8 @@ class App extends Component {
 
 export default App
 ```
+
+Podemos ver nesse exemplo aspectos importantes do Error Boundaries. Criamos nosso método que vai ser chamado sempre que ocorrer um erro não tratado em QUALQUER componente filho. Em seguida criamos um componente que pode gerar um erro e envolvmentos o componente de Error Boundary na aplicação, onde será gerado um erro em um dos componentes filhos e exibir a mensagem ''Desculpe, algo deu errado.'' na tela.
 
 # Utilizando o `react-error-boundary`
 
