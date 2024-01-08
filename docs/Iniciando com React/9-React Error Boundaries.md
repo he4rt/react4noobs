@@ -78,6 +78,62 @@ Erro:
 
 E isso traria problemas caso quiséssemos tratar o erro de uma renderização de páginas por exemplo, e quiséssemos usar a mesma tratativa para todas as páginas.
 
+# Criando um componente Error Boundaries
+
+```jsx
+import React, { Component } from 'react'
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  // Este método é chamado quando ocorre um erro em qualquer componente filho
+  componentDidCatch(error, info) {
+    this.setState({ hasError: true })
+    // Você pode registrar o erro ou realizar ações específicas aqui
+    console.error('Erro capturado:', error)
+    console.error('Informações do erro:', info)
+  }
+
+  render() {
+    // Se ocorreu um erro, você pode renderizar uma mensagem de erro personalizada
+    if (this.state.hasError) {
+      return <p>Desculpe, algo deu errado.</p>
+    }
+
+    // Se não houve erro, renderiza normalmente os componentes filhos
+    return this.props.children
+  }
+}
+
+// Exemplo de componente que pode gerar um erro
+class ComponenteComErro extends Component {
+  render() {
+    // Simulando um erro (isso seria geralmente uma operação que pode falhar)
+    throw new Error('Erro simulado!')
+    return <div>Conteúdo do componente com erro</div>
+  }
+}
+
+// Componente pai usando o ErrorBoundary
+class App extends Component {
+  render() {
+    return (
+      <ErrorBoundary>
+        <div>
+          <h1>Minha Aplicação</h1>
+          <ComponenteComErro />
+        </div>
+      </ErrorBoundary>
+    )
+  }
+}
+
+export default App
+```
+
 # Utilizando o `react-error-boundary`
 
 Como visto anteriormente, necessariamente componentes de Error Boundary são criados como componentes de classe, mas componentes de classe já estão depreciados. Então podemos usar o [react-error-boundary](https://github.com/bvaughn/react-error-boundary) para utilizar Error Boundaries como componentes funcionais que está mais próximo aos códigos React que vemos no dia a dia.
@@ -210,3 +266,11 @@ Fica a dica de pesquisar um pouco como era feito os Erros Boundaries usando comp
 - [Error Boundaries no ReactJS - Tratamento de Erros #014](https://www.youtube.com/watch?v=6FRzHRoZmG8&ab_channel=Jo%C3%A3oBibiano)
 - [A FORMA CORRETA DE TRATAR ERROS NO REACT](https://youtu.be/cV4JswN3L24)
 - [Trate erros de JavaScript no React com Error Boundaries](https://youtu.be/vfwbOgpSvQA)
+
+[Ir para a próxima seção](./Controlled-vs-uncontrolled-components.md)
+
+<p align="center">
+  <a href="https://github.com/he4rt/4noobs" target="_blank">
+    <img src="../../assets/global/footer-4noobs.svg" width="380">
+  </a>
+</p>
