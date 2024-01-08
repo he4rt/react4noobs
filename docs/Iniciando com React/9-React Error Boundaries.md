@@ -261,11 +261,59 @@ export default App
 
 Em situações de erro não tratado, o React adota uma abordagem mais drástica, desmontando a árvore de componentes para manter a estabilidade e prevenir efeitos colaterais indesejados. Por isso é importante enfatizar o uso de componentes Error Boundaries para capturar e lidar com erros de forma controlada.
 
+# Error Boundary com StackTrace
+
+Também podemos utilizar o error boundaries para exibir informações detalhadas de erro de forma mais amigável e sem desmontar toda a tela.
+Vejamos o exemplo a seguir:
+
+```jsx
+import React from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
+
+// Simulando o erro
+const Counter = () => {
+  throw new Error('Erro simulado!')
+  return <h1>He4rt User: {user}</h1>
+}
+
+const ErrorFallback = ({ error, resetErrorBoundary }) => {
+  return (
+    <div role="alert">
+      <p>Algo deu errado:</p>
+      <pre style={{ whiteSpace: 'normal' }}>{error.message}</pre>
+      <button onClick={resetErrorBoundary}>Tentar novamente</button>
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onError={(error, info) => {
+        // Aqui podemos enviar o erro para um serviço de monitoramento
+        // ou realizar outras ações de tratamento.
+        console.error('Erro:', error)
+        console.error('Informações do erro:', info)
+      }}
+    >
+      <Counter />
+    </ErrorBoundary>
+  )
+}
+
+export default App
+```
+
+Nesse exemplo, podemos ver que `ErrorFallback` é chamada quando ocorre um erro dentro do componente `Counter`. O componente `ErrorBoundary` fornece um objeto `error` contendo informações sobre o erro, incluindo a mensagem de erro. Esse objeto pode ser usado para exibir o `stack trace` de maneira mais simplificada.
+
+Lembrando que devemos adaptar esse exemplo de acordo com as necessidades específicas para cada aplicação. Onde o componente ErrorFallback deve ser construído para exibir informações de erro de acordo com as especificidades que varia de cada aplicação.
+
 # Conclusão
 
-Vimos como encapsular e tratar erro genericos de maneira global usando Error Boundaries, também vimos na prática como utilizar usando o `react-error-boundary`.
+Vimos como encapsular e tratar erro genericos de maneira global usando Error Boundaries com componentes de classe, também vimos na prática como utilizar usando o `react-error-boundary`.
 
-Fica a dica de pesquisar um pouco como era feito os Erros Boundaries usando componentes de classe. E também praticar um pouco em projetos pessoais. Não é algo que você vai usar com frequência no dia a dia, mas é importante entender esse conceito para ter mais uma carta na manga na hora de tratar erros em React.
+Fica a dica de praticar um pouco em projetos pessoais. Não é algo que você vai usar com frequência no dia a dia, mas é importante entender esse conceito para ter mais uma carta na manga na hora de tratar erros em React.
 
 # Referências
 
