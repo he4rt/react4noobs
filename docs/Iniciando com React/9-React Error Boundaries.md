@@ -261,6 +261,60 @@ export default App
 
 Em situações de erro não tratado, o React adota uma abordagem mais drástica, desmontando a árvore de componentes para manter a estabilidade e prevenir efeitos colaterais indesejados. Por isso é importante enfatizar o uso de componentes Error Boundaries para capturar e lidar com erros de forma controlada.
 
+---
+
+Podemos também registrar o erro para observabilidade. Veja o exemplo:
+
+```jsx
+import React from 'react'
+import { ErrorBoundary } from 'react-error-boundary'
+
+// Simulando um erro
+const Counter = () => {
+  throw new Error('Erro simulado!')
+  return <h1>He4rt User: {user}</h1>
+}
+
+const ErrorFallback = ({ error, resetErrorBoundary }) => {
+  // Aqui, podemos registrar o erro para observabilidade
+  registrarErroParaObservabilidade(error)
+
+  return (
+    <div role="alert">
+      <p>Algo deu errado. Estamos trabalhando para resolver o problema!</p>
+      <button onClick={resetErrorBoundary}>Tentar novamente</button>
+    </div>
+  )
+}
+
+const registrarErroParaObservabilidade = (error) => {
+  // Simulando o envio do erro para um serviço de observabilidade (por exemplo, Sentry)
+  console.error('Erro enviado para observabilidade:', error)
+  // Lógica adicional para enviar o erro para um serviço externo
+  // Exemplo: Sentry.captureException(error);
+}
+
+const App = () => {
+  return (
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onError={(error, info) => {
+        // Aqui você pode enviar o erro para um serviço de monitoramento
+        // ou realizar outras ações de tratamento.
+        console.error('Erro:', error)
+        console.error('Informações do erro:', info)
+      }}
+    >
+      <Counter />
+    </ErrorBoundary>
+  )
+}
+
+export default App
+```
+
+Podemos ver que a função `registrarErroParaObservabilidade` é chamada dentro do componente `ErrorFallback` com o objetivo de simular o envio do erro para um serviço de observabilidade, como o Sentry. Essa lógica pode ser adaptada para se integrar com o serviço de observabilidade escolhido em sua aplicação. Importante lembrar de personalizar a função de acordo com as necessidades específicas de cada aplicação e do serviço de observabilidade que a mesma esta utilizando.
+
 # Error Boundary com StackTrace
 
 Também podemos utilizar o error boundaries para exibir informações detalhadas de erro de forma mais amigável e sem desmontar toda a tela.
