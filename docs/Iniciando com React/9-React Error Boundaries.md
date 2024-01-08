@@ -247,6 +247,7 @@ const App = () => {
     <ErrorBoundary
       FallbackComponent={ErrorHandler}
       onError={(arg1, arg2) => {
+        // Quando ocorre um erro não tratado, o React desmonta toda a tela.
         console.log({ arg1, arg2 })
       }}
     >
@@ -257,6 +258,8 @@ const App = () => {
 
 export default App
 ```
+
+Em situações de erro não tratado, o React adota uma abordagem mais drástica, desmontando a árvore de componentes para manter a estabilidade e prevenir efeitos colaterais indesejados. Por isso é importante enfatizar o uso de componentes Error Boundaries para capturar e lidar com erros de forma controlada.
 
 # Conclusão
 
