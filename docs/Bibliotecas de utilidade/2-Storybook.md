@@ -8,8 +8,10 @@
 
 ## Instalando o Storybook
 
-```js
+```bash
 npx storybook@latest init
+# ou
+yarn dlx storybook@latest init
 ```
 
 O comando acima fará as seguintes alterações em seu ambiente local:
@@ -23,8 +25,10 @@ O comando acima fará as seguintes alterações em seu ambiente local:
 
 O Storybook inclui um servidor de desenvolvimento integrado. Ao executar o comando do Storybook, ele inicia o servidor local, exibe o endereço e abre automaticamente uma nova aba no navegador com uma tela de boas-vindas.
 
-```js
+```bash
 npm run storybook
+# ou
+yarn storybook
 ```
 
 ## Renderizar estilos de componentes
