@@ -18,3 +18,11 @@ O comando acima fará as seguintes alterações em seu ambiente local:
 🛠 Configurará os scripts necessários para executar e construir o Storybook.<br>
 🛠 Adicionará a configuração padrão do Storybook.<br>
 📝 Adicionará alguns exemplos de histórias para você começar.
+
+## Iniciar o Storybook
+
+O Storybook inclui um servidor de desenvolvimento integrado. Ao executar o comando do Storybook, ele inicia o servidor local, exibe o endereço e abre automaticamente uma nova aba no navegador com uma tela de boas-vindas.
+
+```js
+npm run storybook
+```
