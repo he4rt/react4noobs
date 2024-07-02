@@ -26,3 +26,17 @@ O Storybook inclui um servidor de desenvolvimento integrado. Ao executar o coman
 ```js
 npm run storybook
 ```
+
+## Renderizar estilos de componentes
+
+O Storybook não impõe uma maneira específica de gerar ou carregar CSS e renderiza os elementos DOM fornecidos. No entanto, pode ser necessário configurar suas ferramentas de CSS para que os componentes sejam exibidos corretamente. Existem guias de configuração disponíveis para ferramentas populares na comunidade.
+
+- [Tailwind](https://storybook.js.org/recipes/tailwindcss/)
+- [Material UI](https://storybook.js.org/recipes/@mui/material/)
+- [Vuetify](https://storybook.js.org/recipes/vuetify/)
+- [Styled Components](https://storybook.js.org/recipes/styled-components/)
+- [Emotion](https://storybook.js.org/recipes/@emotion/styled/)
+- [Sass](https://storybook.js.org/recipes/sass/)
+- [Bootstrap](https://storybook.js.org/recipes/bootstrap/)
+- [Less](https://storybook.js.org/recipes/less/)
+- [Vanilla-extract](https://storybook.js.org/recipes/@vanilla-extract/css/)
