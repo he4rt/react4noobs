@@ -6,6 +6,18 @@
 
 [**Storybook**](https://storybook.js.org/) é uma ferramenta de desenvolvimento que permite criar e testar componentes de interface de usuário (UI) de forma isolada. É amplamente utilizada em projetos de desenvolvimento front-end para criar bibliotecas de componentes reutilizáveis e garantir a consistência visual e funcionalidade dos componentes antes de integrá-los em um projeto maior.
 
+### Design System
+
+Quando alinhado a um Design System, o Storybook potencializa a criação de interfaces consistentes e reutilizáveis.
+
+Essa adição destaca os principais benefícios e a sinergia entre o Storybook e um Design System, proporcionando uma visão clara de como eles trabalham juntos para melhorar o desenvolvimento de interfaces de usuário.
+
+Aqui vai um exemplo:
+
+- [Atomium](https://github.com/juntossomosmais/atomium)
+
+- [Atomium StoryBook](https://juntossomosmais.github.io/atomium/?path=/docs/introduction--docs)
+
 ## Instalando o Storybook
 
 ```bash
@@ -30,6 +42,8 @@ npm run storybook
 # ou
 yarn storybook
 ```
+
+![Welcome StoryBook](https://storybook.js.org/_next/image?url=%2Fdocs-assets%2F8.1%2Fget-started%2Fexample-onboarding-wizard.png&w=3840&q=75)
 
 ## Renderizar estilos de componentes
 
