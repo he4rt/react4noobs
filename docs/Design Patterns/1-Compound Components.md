@@ -190,6 +190,8 @@ Vimos o quanto escrever componentes no padrão Compound Components pode ser úti
 
 Fique à vontade para explorar e brincar criando componentes com Compoud Components, use com sabedória e veja se realmente faz sentido aplicar no seu contexto, as vezes, se não for bem aplicado, ele pode mais atrapalhar doque ajudar.
 
+[Ir para a próxima seção](./2-React%20Error%20Boundaries.md)
+
 <p align="center">Made with 💜</p>
 
 <p align="center">
