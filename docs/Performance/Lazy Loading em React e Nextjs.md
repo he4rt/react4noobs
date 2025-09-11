@@ -33,7 +33,7 @@ adicionar mais uma que pode facilitar ainda mais nossa vida:
 
 - [Dynamic Imports (Next.js)](https://nextjs.org/docs/pages/building-your-application/optimizing/lazy-loading#nextdynamic)
 - [React Lazy (React)](https://react.dev/reference/react/lazy)
-- [react-lazyload (biblioteca externa)](https://www.npmjs.com/package/react-lazy-load)
+- [react-lazyload (biblioteca externa)](https://www.npmjs.com/package/react-lazyload)
 
 # 1. Dynamic Imports
 
