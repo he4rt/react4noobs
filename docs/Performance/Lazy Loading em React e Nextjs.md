@@ -182,7 +182,7 @@ para conversar.
 
 **Fique com Deus e bons estudos!**
 
-[Caso queira, explore também seção de Design Patterns.](../Design%20Patterns/1-Compound%20Components.md)
+[Caso queira, explore também a seção de Design Patterns.](../Design%20Patterns/1-Compound%20Components.md)
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
