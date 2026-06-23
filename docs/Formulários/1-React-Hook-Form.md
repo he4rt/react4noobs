@@ -8,7 +8,7 @@
 
 ## O que é o React Hook Form?
 
-O **React Hook Form (RHF)** é uma biblioteca leve e performática para manipulação de formulários em aplicações **React**.
+O **[React Hook Form (RHF)](https://react-hook-form.com/)** é uma biblioteca leve e performática para manipulação de formulários em aplicações **React**.
 Seu principal objetivo é simplificar a criação, validação e submissão de formulários, reduzindo a necessidade de *boilerplate* e melhorando a performance através do uso dos **React Hooks**.
 
 Ao invés de controlar cada campo de formulário através de *states* e *handlers* (como em `onChange` e [`useState`](../Iniciando%20com%20React/8.1-useState.md)), o React Hook Form utiliza **referências diretas ([refs](../Iniciando%20com%20React/Refs.md))** para registrar e monitorar os campos, tornando o código mais limpo e eficiente.
@@ -196,7 +196,7 @@ export function ControlledInputExample() {
 ## Boas práticas
 
 * Sempre defina mensagens de erro personalizadas.
-* Use *defaultValues* para inicializar o formulário.
+* Use `defaultValues` para inicializar o formulário.
 * Evite [`useState`](../Iniciando%20com%20React/8.1-useState.md) para controlar campos — o RHF já faz isso internamente.
 * Prefira `Controller` apenas para componentes externos controlados.
 * Valide com bibliotecas externas apenas quando necessário.
