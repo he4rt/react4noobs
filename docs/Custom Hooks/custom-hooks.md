@@ -125,7 +125,7 @@ os estados de carregamento, erro e dados retornados.
 
 Perceba como o componente ficou mais limpo: Ele não sabe **como** a requisição é feita, apenas **usa** o resultado.
 
-<center>Made with 💜</center>
+<p align="center">Made with 💜</p>
 
 <p align="center">
   <a href="https://github.com/he4rt/4noobs" target="_blank">
